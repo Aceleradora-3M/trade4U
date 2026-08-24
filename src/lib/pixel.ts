@@ -5,10 +5,10 @@ declare global {
   }
 }
 
-const PIXEL_ID = process.env.NEXT_PUBLIC_META_PIXEL_ID;
+const PIXEL_ID = "488367055531398";
 
 function fbq(...args: unknown[]) {
-  if (typeof window !== "undefined" && window.fbq && PIXEL_ID) {
+  if (typeof window !== "undefined" && window.fbq) {
     window.fbq(...args);
   }
 }

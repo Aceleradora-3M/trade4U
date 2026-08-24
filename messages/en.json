@@ -1,0 +1,613 @@
+{
+  "nav": {
+    "challenges": "Challenges",
+    "howItWorks": "How it works",
+    "about": "About",
+    "faq": "FAQ",
+    "contact": "Contact",
+    "login": "Log In",
+    "dashboard": "Dashboard",
+    "platform": "Trading Platform"
+  },
+  "cta": {
+    "getFunded": "Get Funded",
+    "viewChallenges": "View Challenges",
+    "learnMore": "Learn more",
+    "buyChallenge": "Buy Challenge",
+    "startToday": "Start Your Challenge Today",
+    "startTodaySub": "Trade real capital up to $150,000. Keep 90% of your profits.",
+    "startChallenge": "Start Challenge",
+    "freeTrial": "Free trial",
+    "login": "Log in"
+  },
+  "hero": {
+    "platform": "Trading Platform Available",
+    "badge": "Now funding new traders worldwide",
+    "titleA": "Empowering",
+    "titleB": "Promising",
+    "titleC": "Traders Worldwide",
+    "sub": "Prove your skills, get funded with up to $150K and keep up to 90% of your profits — paid in real cash within 24 hours.",
+    "s1": "Profit Split",
+    "s2": "Max Account Size",
+    "s3": "Payout Processing",
+    "s4": "One-Day Challenge",
+    "f1": "90% profit split for the trader",
+    "f2": "Payouts processed within 24 hours",
+    "f3": "Futures trading with CME data"
+  },
+  "trustbar": {
+    "eyebrow": "Recognized by the industry",
+    "year": "Prop Firm of the Year",
+    "experience": "Best Trading Experience",
+    "rated": "Rated Excellent",
+    "latam": "Best Prop Firm LATAM"
+  },
+  "bigstats": {
+    "countries": "Countries Served",
+    "paid": "Paid to Trade4U Traders",
+    "traders": "Active Traders",
+    "processing": "Guaranteed Payout Processing",
+    "instruments": "Available Instruments"
+  },
+  "conditions": {
+    "eyebrow": "TRADING CONDITIONS",
+    "title": "Built for serious traders",
+    "sub": "Transparent rules across every program. No hidden traps.",
+    "target": "Profit Target",
+    "daily": "Daily Drawdown",
+    "max": "Max Drawdown",
+    "leverage": "Leverage",
+    "minDays": "Min Trading Days",
+    "news": "News Trading",
+    "weekend": "Weekend Holding",
+    "allowed": "Allowed",
+    "targetVal": "Per program",
+    "dailyVal": "End of Day",
+    "maxVal": "Static / Trailing",
+    "leverageVal": "Micro 10 / Mini 1",
+    "minDaysVal": "From 1 day",
+    "newsVal": "Restricted",
+    "weekendVal": "Allowed"
+  },
+  "platform": {
+    "eyebrow": "BLACKARROW PLATFORM",
+    "title": "Trade futures on BlackArrow — built for performance",
+    "sub": "BlackArrow is our official trading platform: real-time CME data, native futures execution and the depth-of-market tools serious futures traders rely on.",
+    "f1": "Real-time CME data feed included",
+    "f2": "Micro and Mini futures contracts",
+    "f3": "Depth of market and advanced order types",
+    "f4": "Web, desktop and mobile apps",
+    "f5": "One BlackArrow login for all your accounts",
+    "cta": "Discover BlackArrow"
+  },
+  "proof": {
+    "eyebrow": "PAYOUT PROOF",
+    "title": "Real payouts to real traders",
+    "sub": "Verified withdrawals processed in under 24 hours. You could be next.",
+    "paid": "Paid",
+    "amount": "Payout",
+    "account": "Account"
+  },
+  "models": {
+    "eyebrow": "ACCOUNT MODELS",
+    "title": "Choose your funding journey",
+    "sub": "Three programs designed for every trading style.",
+    "from": "Starting from",
+    "cta": "Get Started"
+  },
+  "model": {
+    "b": {
+      "twoStep": "Two-phase evaluation, proven model",
+      "split90": "Up to 90% profit split",
+      "upTo150k": "Accounts up to $150,000",
+      "scaleUp": "Scale to higher capital with consistency",
+      "lowEntry": "Lowest entry fee in the market",
+      "activation": "Pay activation only when you pass",
+      "fastTrack": "Fast-track to funded status",
+      "noEval": "No evaluation, no profit target",
+      "tradeNow": "Trade live capital from day one"
+    }
+  },
+  "promo": {
+    "welcome": "Welcome to Trade4U"
+  },
+  "payouts": {
+    "recent": "Recent payouts to our traders"
+  },
+  "trust": {
+    "accounts": "Trade4U Accounts",
+    "traders": "Rewarded Traders",
+    "paid": "Total Rewarded",
+    "split": "90% Profit Split",
+    "payout": "Fast Payouts",
+    "sltp": "No SL/TP Required",
+    "data": "Real-Time Data"
+  },
+  "award": {
+    "year": "Prop Firm of The Year 2025",
+    "experience": "Best Trading Experience",
+    "rated": "Rated Excellent",
+    "africa": "Best Prop Firm LATAM"
+  },
+  "section": {
+    "challenges": {
+      "title": "Choose your path to funding",
+      "sub": "Four programs designed for every type of trader."
+    },
+    "how": {
+      "title": "How it works",
+      "sub": "Three steps from evaluation to your first payout.",
+      "s1": {
+        "title": "1. Choose your challenge",
+        "body": "Pick the account size and program that match your trading style."
+      },
+      "s2": {
+        "title": "2. Hit the target",
+        "body": "Trade futures, follow the rules and meet your profit target."
+      },
+      "s3": {
+        "title": "3. Get funded & paid",
+        "body": "Trade live capital and withdraw 90% of your profits."
+      }
+    },
+    "pricing": {
+      "title": "Standard Challenge pricing",
+      "sub": "Two-phase evaluation. Start as low as $287."
+    },
+    "why": {
+      "title": "Why traders choose Trade4U",
+      "f1": {
+        "title": "Consistency-friendly",
+        "body": "Clear consistency rules so good traders get paid."
+      },
+      "f2": {
+        "title": "Transparent rules",
+        "body": "No hidden traps. Every metric documented."
+      },
+      "f3": {
+        "title": "Fast payouts",
+        "body": "Withdraw your profits without delays."
+      },
+      "f4": {
+        "title": "Pro platforms",
+        "body": "Trade on industry-standard futures platforms."
+      },
+      "f5": {
+        "title": "Dedicated support",
+        "body": "Real humans, real fast answers."
+      },
+      "f6": {
+        "title": "Scale your account",
+        "body": "Grow with us as you prove your edge."
+      }
+    },
+    "faq": {
+      "title": "Frequently Asked Questions",
+      "sub": "Everything you need to know before starting.",
+      "viewAll": "View all FAQs"
+    }
+  },
+  "challenge": {
+    "standard": {
+      "name": "Standard Challenge",
+      "tagline": "Two-phase evaluation. Proven path to funding."
+    },
+    "instant": {
+      "name": "Instant Activation",
+      "tagline": "Reduced cost. Pay activation only when you pass."
+    },
+    "oneday": {
+      "name": "One-Day Challenge",
+      "tagline": "One session. One target. Get funded today."
+    },
+    "instantFunded": {
+      "name": "Instant Funded",
+      "tagline": "No evaluation. Trade live capital from day one."
+    },
+    "instantFunding": {
+      "name": "Instant Funding",
+      "tagline": "No challenge phase. Trade live capital from day one."
+    },
+    "freedom": {
+      "name": "Freedom",
+      "tagline": "30-day challenge with no minimum trading days."
+    }
+  },
+  "badge": {
+    "popular": "Most Popular",
+    "noEval": "No Evaluation"
+  },
+  "phase": {
+    "1": {
+      "challenge": "Phase 1 — Challenge"
+    },
+    "2": {
+      "funded": "Phase 2 — Funded"
+    },
+    "evaluation": "Evaluation",
+    "funded": "Funded Account",
+    "fundedAccount": "Funded Account",
+    "challenge30": "Challenge — 30 days",
+    "fundedFreedom": "Funded (Freedom)"
+  },
+  "rule": {
+    "duration": "Duration",
+    "minDays": "Min Trading Days",
+    "profitTarget": "Profit Target",
+    "dailyDD": "Daily Drawdown",
+    "maxDD": "Max Drawdown",
+    "leverage": "Leverage",
+    "split": "Profit Split",
+    "commissions": "Commissions",
+    "consistency": "Consistency Rule",
+    "sltp": "SL / TP",
+    "news": "News Trading",
+    "profitableDays": "Profitable Days",
+    "inactivity": "Inactivity",
+    "reset": "Reset",
+    "exposure": "Contract Exposure",
+    "maxAccounts": "Max Accounts",
+    "activation": "Activation Fee",
+    "minProfitDays": "Min Profitable Days",
+    "minDailyProfit": "Min Daily Profit",
+    "maxLoss": "Max Loss"
+  },
+  "panel": {
+    "tradingRules": "Trading Rules",
+    "restrictions": "Restrictions",
+    "accountSizes": "Account Sizes",
+    "startingFrom": "Starting from",
+    "profitSplit": "Profit Split",
+    "leverage": "Leverage",
+    "commissions": "Commissions"
+  },
+  "summary": {
+    "price": "Price",
+    "target": "Profit Target",
+    "maxDD": "Max Drawdown",
+    "activation": "Activation",
+    "staticAt": "Static at"
+  },
+  "footer": {
+    "tagline": "Funded futures trading for serious traders.",
+    "product": "Product",
+    "company": "Company",
+    "legal": "Legal",
+    "terms": "Terms",
+    "privacy": "Privacy",
+    "risk": "Risk Disclosure",
+    "disclaimer": "Trading futures involves substantial risk and is not suitable for every investor. Past performance is not indicative of future results. Trade4U provides simulated trading evaluations.",
+    "rights": "All rights reserved."
+  },
+  "about": {
+    "title": "Built by traders, for traders",
+    "body": "Trade4U was founded with a simple mission: give skilled futures traders access to real capital with rules that reward consistency, not luck. We combine institutional-grade infrastructure with a 90/10 profit split — the most generous in the industry."
+  },
+  "contact": {
+    "title": "Get in touch",
+    "sub": "Questions about our programs? We respond within 24 hours.",
+    "name": "Name",
+    "email": "Email",
+    "message": "Message",
+    "send": "Send message",
+    "email24h": "24h response time",
+    "liveChat": "Live Chat",
+    "hours": "Mon–Fri · 9am–6pm ET",
+    "toast": "Thanks! We'll get back to you within 24 hours."
+  },
+  "faq": {
+    "q1": "What platforms can I trade on?",
+    "a1": "Industry-standard futures platforms compatible with major data feeds.",
+    "q2": "How fast are payouts?",
+    "a2": "Payouts are processed quickly once minimum requirements are met.",
+    "q3": "Do I need a stop-loss?",
+    "a3": "Stop-losses are not required (recommended on the One-Day Challenge).",
+    "q4": "What happens if I trade during news?",
+    "a4": "Trading 5 minutes before/after high-impact news (FOMC, NFP, CPI, GDP) results in account closure.",
+    "q5": "Can I hold positions overnight?",
+    "a5": "Position-holding rules depend on the program. See each challenge page for details.",
+    "q6": "What's the consistency rule?",
+    "a6": "It limits how much a single day or trade can contribute to your total profits, ensuring sustainable trading."
+  },
+  "apart": {
+    "eyebrow": "What Sets Us Apart",
+    "title": "Why traders choose Trade4U",
+    "sub": "The top reasons to trade with us.",
+    "split": {
+      "title": "15% Profit Share in Challenge",
+      "body": "Earn 15% of all your profits during the evaluation phase."
+    },
+    "payouts": {
+      "title": "Lightning-Fast Payouts",
+      "body": "Guaranteed processing in just 24 hours."
+    },
+    "weekly": {
+      "title": "Weekly Payouts",
+      "body": "Withdraw funded account profits as often as every week."
+    },
+    "scale": {
+      "title": "Scale Without Limits",
+      "body": "Show consistency and scale your account up to 100% payouts."
+    },
+    "loyalty": {
+      "title": "Trade2Earn",
+      "body": "Loyalty rewards for every trade you place."
+    },
+    "norules": {
+      "title": "No Consistency Rules",
+      "body": "Trade freely with no consistency restrictions, anytime."
+    }
+  },
+  "platforms": {
+    "eyebrow": "TRADING PLATFORM",
+    "title": "Powered by BlackArrow",
+    "new": "Official",
+    "ctrader": {
+      "body": "Native CME futures execution with one-click trading and a depth-of-market ladder built for scalpers."
+    },
+    "mt5": {
+      "body": "Real-time quotes, advanced charting and the precision tools serious futures traders demand."
+    },
+    "dxtrade": {
+      "body": "Web, desktop and mobile — manage all your funded futures accounts from a single BlackArrow login."
+    }
+  },
+  "featured": {
+    "eyebrow": "Featured In"
+  },
+  "journey": {
+    "eyebrow": "YOUR JOURNEY",
+    "title": "How Does It Work?",
+    "sub": "We give you a demo account to prove your skills. Pass the evaluation and earn real money.",
+    "step": "Step",
+    "phase1": "Evaluation Phase",
+    "phase2": "Funded Phase",
+    "phase3": "Payout",
+    "s1": {
+      "title": "Complete the Evaluation",
+      "body": "Hit the profit target while staying within daily and total drawdown limits."
+    },
+    "s2": {
+      "title": "Earn as a Funded Trader",
+      "body": "You get a new account where you earn up to 90% of profits in real money."
+    },
+    "s3": {
+      "title": "Get Paid",
+      "body": "Withdraw as soon as 7 days after your first trade. Fast payouts."
+    }
+  },
+  "plans": {
+    "eyebrow": "CHOOSE YOUR JOURNEY",
+    "title": "Your Funding Journey Starts Here",
+    "sub": "Pick the plan that best fits your trading style.",
+    "oneStep": "1 Step",
+    "twoStep": "2 Step",
+    "account": "Account",
+    "oneStepBright": "1-Step Bright",
+    "twoStepClassic": "2-Step Classic",
+    "phase1": "Step 1",
+    "phase2": "Step 2",
+    "fundedStage": "Funded Stage",
+    "tradingPeriod": "Trading Period",
+    "minDays": "Min Trading Days",
+    "maxDailyLoss": "Max Daily Loss",
+    "maxTotalLoss": "Max Total Loss",
+    "profitTarget": "Profit Target",
+    "tokens": "Trade4U Tokens",
+    "refundable": "Refundable Fee",
+    "free": "Free",
+    "noConsistency": "No Consistency Rules",
+    "mt5Available": "BlackArrow Platform Included",
+    "fastSupport": "24/7 Live Support",
+    "payOptions": "Payment Options"
+  },
+  "love": {
+    "eyebrow": "OUR BENEFITS",
+    "title": "Why traders love Trade4U?",
+    "sub": "The highest-rated prop trading experience in the industry.",
+    "experience": {
+      "title": "Built for Futures Traders",
+      "body": "Designed specifically for serious CME futures traders."
+    },
+    "spreads": {
+      "title": "Up to $150K Funded",
+      "body": "Trade with up to $150,000 in simulated capital."
+    },
+    "multiasset": {
+      "title": "Futures Trading",
+      "body": "Trade Micro and Mini futures contracts on CME instruments."
+    },
+    "platforms": {
+      "title": "Professional Platforms",
+      "body": "Trade on the platforms preferred by serious futures traders."
+    },
+    "support": {
+      "title": "Dedicated Support",
+      "body": "Get help from our team whenever you need it."
+    },
+    "global": {
+      "title": "Worldwide Access",
+      "body": "Open to traders across the globe."
+    }
+  },
+  "team": {
+    "eyebrow": "GLOBAL TEAM",
+    "title": "Global Presence, Dedicated Team",
+    "body": "Trade4U is powered by a global team of 30+ professionals with deep experience at central banks and the world's top prop firms.",
+    "stat1": "Dedicated Pros",
+    "stat2": "Global Offices",
+    "stat3": "Customer Support",
+    "spain": "Spain",
+    "usa": "United States",
+    "argentina": "Argentina",
+    "hq": "HQ",
+    "support": "24/7 support in English, Spanish and Portuguese."
+  },
+  "payoutssec": {
+    "eyebrow": "PAYOUTS",
+    "title": "Reach Financial Success",
+    "sub": "Check the latest payouts to our traders. You could be next!",
+    "fast": "Fast Payouts",
+    "bigTitle": "Lightning-Fast Payouts",
+    "bigBody": "Renowned speed and reliability. Fast, easy and hassle-free for you as a trader.",
+    "process": {
+      "title": "Simple Payout Process",
+      "body": "Easily request payouts from your dashboard."
+    },
+    "crypto": {
+      "title": "Crypto Payouts",
+      "body": "USDC received instantly in your wallet."
+    },
+    "bank": {
+      "title": "Bank Transfer",
+      "body": "Get paid via trusted banking partners."
+    },
+    "stat1": "Average Payout Time",
+    "stat2": "Profit Split",
+    "stat3": "Customer Support",
+    "stat4": "Total Payouts"
+  },
+  "reviews": {
+    "eyebrow": "REVIEWS",
+    "title": "Hear From Our Traders",
+    "sub": "Real traders. Real stories."
+  },
+  "rev": {
+    "r1": {
+      "name": "Diego R.",
+      "title": "An actual real prop firm",
+      "body": "After years trying prop firms, I hadn't found one that came close. Phase 2 credentials right after passing Phase 1, funded the next day and payouts without delay."
+    },
+    "r2": {
+      "name": "Hana T.",
+      "title": "No weird tricks",
+      "body": "Clear rules, fixed drawdown, reasonable targets — everything makes sense. Built by traders, for traders."
+    },
+    "r3": {
+      "name": "Elias O.",
+      "title": "Exceptional experience",
+      "body": "Three months trading with them. Transparent platform, reliable payouts and they keep every promise. Zero complaints."
+    },
+    "r4": {
+      "name": "Yusuf A.",
+      "title": "Best first withdrawal",
+      "body": "Flawless service. Two payouts in under eight hours. The bar of the industry."
+    },
+    "r5": {
+      "name": "Clara H.",
+      "title": "My 6th payout",
+      "body": "Consistent efficiency. My latest payout landed in under 14 hours. Trade4U sets the standard."
+    }
+  },
+  "videos": {
+    "eyebrow": "TESTIMONIALS",
+    "title": "Trader Stories",
+    "sub": "Real traders who grew their accounts and withdrew fast with us."
+  },
+  "t2e": {
+    "eyebrow": "TRADE2EARN",
+    "title": "Discover Our Loyalty Program",
+    "sub": "Be rewarded for your daily trading commitment, regardless of results.",
+    "trade": {
+      "title": "Trade",
+      "body": "Every trade — winner or loser — generates Trade4U Tokens at every phase."
+    },
+    "earn": {
+      "title": "Earn",
+      "body": "Tokens accumulate based on volume (lots) traded, in your dashboard wallet."
+    },
+    "spend": {
+      "title": "Spend",
+      "body": "Use tokens to boost payouts or unlock free evaluations."
+    }
+  },
+  "ctafinal": {
+    "eyebrow": "START TODAY",
+    "title": "Your Funding Journey Starts Here",
+    "sub": "Join thousands of traders already trading with Trade4U and keeping up to 90% of their profits."
+  },
+  "eyebrow": {
+    "process": "Process",
+    "pricing": "Pricing",
+    "programs": "Programs",
+    "contact": "Contact",
+    "faq": "FAQ",
+    "why": "Why Trade4U"
+  },
+  "table": {
+    "eyebrow": "PRICING & ACCOUNTS",
+    "title": "Pick your account, fund your trading",
+    "sub": "Compare every program side by side. Real prices, no hidden fees.",
+    "col": {
+      "account": "Account size",
+      "price": "Price",
+      "activation": "Activation",
+      "target": "Profit target",
+      "maxDD": "Max drawdown"
+    },
+    "foot": {
+      "split": "Up to 90% profit split on every program",
+      "platforms": "Trade futures on professional platforms"
+    },
+    "learnMore": "Learn more about this program",
+    "popular": "Popular",
+    "challengeWord": "Challenge",
+    "accountWord": "Account",
+    "challengeAccount": "FUNDED ACCOUNT",
+    "from": "From",
+    "total": "Total",
+    "oneTimePayment": "One-time payment",
+    "accountLabelOrder": "after"
+  },
+  "detail": {
+    "seePricing": "See pricing & buy",
+    "howItWorks": "How it works",
+    "phase": "Phase",
+    "phases": {
+      "eyebrow": "PROGRAM STRUCTURE",
+      "title": "What each phase looks like",
+      "sub": "From evaluation to your first payout — every step explained."
+    },
+    "cta": {
+      "title": "Ready to start this program?",
+      "sub": "Pick your account size and start trading today. Pricing is on the homepage.",
+      "note": "Up to 90% profit split · Payouts in 24 hours"
+    }
+  },
+  "perks": {
+    "payouts24h": "Payouts in 24h"
+  },
+  "val": {
+    "eod": "EOD",
+    "perAccount": "Per account",
+    "minDays": "5 positive days",
+    "consistency": "40%",
+    "maxAccounts": "Up to 20 accounts",
+    "trailing": "RT (Trailing)",
+    "none": "None",
+    "oneTimeFee": "One-time fee",
+    "noMinDays": "No minimum"
+  },
+  "tip": {
+    "profitTarget": "Profit goal you must reach in this phase.",
+    "maxDD": "Maximum total loss allowed before the account is breached.",
+    "dailyDD": "Maximum loss allowed within a single trading day.",
+    "duration": "Time window allowed to complete the phase.",
+    "minDays": "Minimum number of trading days required.",
+    "leverage": "Maximum leverage available per contract type.",
+    "split": "Profit share between trader and firm.",
+    "commissions": "Round-trip commission per contract.",
+    "consistency": "Daily P&L cannot exceed this share of the total.",
+    "sltp": "Stop-loss / take-profit usage policy.",
+    "news": "Trading during high-impact news releases.",
+    "profitableDays": "Profitable days required for a payout.",
+    "inactivity": "Account closes after this period without trades.",
+    "reset": "Cost to reset the account after a breach.",
+    "exposure": "Maximum simultaneous contract exposure allowed.",
+    "maxAccounts": "Maximum number of accounts you can hold at once.",
+    "minProfitDays": "Minimum number of profitable trading days required.",
+    "minDailyProfit": "Minimum profit you must reach on a profitable day.",
+    "maxLoss": "Maximum loss allowed during the challenge phase.",
+    "activation": "Fee charged once to activate the funded account."
+  }
+}

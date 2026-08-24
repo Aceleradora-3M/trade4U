@@ -1,0 +1,77 @@
+declare global {
+  interface Window {
+    fbq: (...args: unknown[]) => void;
+    _fbq: (...args: unknown[]) => void;
+  }
+}
+
+const PIXEL_ID = process.env.NEXT_PUBLIC_META_PIXEL_ID;
+
+function fbq(...args: unknown[]) {
+  if (typeof window !== "undefined" && window.fbq && PIXEL_ID) {
+    window.fbq(...args);
+  }
+}
+
+export function trackPageView() {
+  fbq("track", "PageView");
+}
+
+export function trackStartChallenge(
+  challengeType: string,
+  size: string,
+  price: string
+) {
+  fbq("track", "InitiateCheckout", {
+    content_name: `${challengeType} - ${size}`,
+    content_category: "Challenge",
+    value: parseFloat(price.replace(/[^0-9.]/g, "")),
+    currency: "USD",
+  });
+}
+
+export function trackInitiateCheckout25k() {
+  fbq("trackCustom", "initiate_checkout_25k", {
+    content_name: "Instant Funding - $25K",
+    content_category: "Challenge",
+    value: 99,
+    currency: "USD",
+  });
+}
+
+export function trackInitiateCheckout50k() {
+  fbq("trackCustom", "initiate_checkout_50k", {
+    content_name: "Instant Funding - $50K",
+    content_category: "Challenge",
+    value: 199,
+    currency: "USD",
+  });
+}
+
+export function trackBuyChallenge(
+  challengeType: string,
+  size: string,
+  price: string
+) {
+  fbq("track", "Purchase", {
+    content_name: `${challengeType} - ${size}`,
+    content_category: "Challenge",
+    value: parseFloat(price.replace(/[^0-9.]/g, "")),
+    currency: "USD",
+  });
+}
+
+export function trackContact() {
+  fbq("track", "Contact");
+}
+
+export function trackLead() {
+  fbq("track", "Lead");
+}
+
+export function trackViewContent(contentName: string, category: string) {
+  fbq("track", "ViewContent", {
+    content_name: contentName,
+    content_category: category,
+  });
+}

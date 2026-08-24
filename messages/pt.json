@@ -1,0 +1,613 @@
+{
+  "nav": {
+    "challenges": "Desafios",
+    "howItWorks": "Como Funciona",
+    "about": "Sobre Nós",
+    "faq": "FAQ",
+    "contact": "Contato",
+    "login": "Entrar",
+    "dashboard": "Dashboard",
+    "platform": "Plataforma de Trading"
+  },
+  "cta": {
+    "getFunded": "Seja Financiado",
+    "viewChallenges": "Ver Desafios",
+    "learnMore": "Saiba Mais",
+    "buyChallenge": "Iniciar Desafio",
+    "startToday": "Comece seu Desafio hoje",
+    "startTodaySub": "Opere capital de até $150.000. Mantenha 90% dos seus lucros.",
+    "startChallenge": "Iniciar Desafio",
+    "freeTrial": "Teste Grátis",
+    "login": "Entrar"
+  },
+  "hero": {
+    "platform": "Plataforma de Trading Disponível",
+    "badge": "Financiando novos traders em todo o mundo",
+    "titleA": "Impulsionando",
+    "titleB": "Traders",
+    "titleC": "Promissores no Mundo",
+    "sub": "Prove suas habilidades, opere com até $150.000 e fique com até 90% dos seus lucros — pagos em dinheiro em menos de 24 horas.",
+    "s1": "Divisão de Lucros",
+    "s2": "Conta Máxima",
+    "s3": "Processamento de Pagamento",
+    "s4": "Desafio One-Day",
+    "f1": "90% de divisão de lucros para o trader",
+    "f2": "Pagamentos processados em 24 horas",
+    "f3": "Trading de futuros com dados CME"
+  },
+  "trustbar": {
+    "eyebrow": "Reconhecidos pela indústria",
+    "year": "Prop Firm do Ano",
+    "experience": "Melhor Experiência de Trading",
+    "rated": "Avaliada Excelente",
+    "latam": "Melhor Prop Firm LATAM"
+  },
+  "bigstats": {
+    "countries": "Países atendidos",
+    "paid": "Pago a Traders Trade4U",
+    "traders": "Traders Ativos",
+    "processing": "Processamento de Pagamentos Garantido",
+    "instruments": "Instrumentos Disponíveis"
+  },
+  "conditions": {
+    "eyebrow": "CONDIÇÕES DE TRADING",
+    "title": "Feito para traders sérios",
+    "sub": "Regras transparentes em todos os programas. Sem armadilhas.",
+    "target": "Meta de Lucro",
+    "daily": "Drawdown Diário",
+    "max": "Drawdown Máximo",
+    "leverage": "Alavancagem",
+    "minDays": "Dias Mín. de Trading",
+    "news": "Trading em Notícias",
+    "weekend": "Posições no Fim de Semana",
+    "allowed": "Permitido",
+    "targetVal": "Por programa",
+    "dailyVal": "Fim do dia",
+    "maxVal": "Estático / Trailing",
+    "leverageVal": "Micro 10 / Mini 1",
+    "minDaysVal": "A partir de 1 dia",
+    "newsVal": "Restrito",
+    "weekendVal": "Permitido"
+  },
+  "platform": {
+    "eyebrow": "PLATAFORMA PRO",
+    "title": "Opere em plataformas padrão da indústria",
+    "sub": "Dados CME em tempo real, liquidez profunda e todas as ferramentas — opere futuros nas plataformas profissionais mais populares.",
+    "f1": "Dados CME em tempo real inclusos",
+    "f2": "Contratos Micro e Mini de futuros",
+    "f3": "Book de ofertas e ordens avançadas",
+    "f4": "Web, desktop e app mobile",
+    "f5": "Um único dashboard para todas as contas",
+    "cta": "Explorar a plataforma"
+  },
+  "proof": {
+    "eyebrow": "PROVA DE PAGAMENTOS",
+    "title": "Pagamentos reais para traders reais",
+    "sub": "Saques verificados processados em menos de 24 horas. Você pode ser o próximo.",
+    "paid": "Pago",
+    "amount": "Pagamento",
+    "account": "Conta"
+  },
+  "models": {
+    "eyebrow": "MODELOS DE CONTA",
+    "title": "Escolha sua jornada de financiamento",
+    "sub": "Três programas para cada estilo de trading.",
+    "from": "A partir de",
+    "cta": "Começar"
+  },
+  "model": {
+    "b": {
+      "twoStep": "Avaliação de duas fases, modelo comprovado",
+      "split90": "Até 90% de divisão de lucros",
+      "upTo150k": "Contas até $150.000",
+      "scaleUp": "Escale com consistência para mais capital",
+      "lowEntry": "Menor taxa de entrada do mercado",
+      "activation": "Pague a ativação só quando passar",
+      "fastTrack": "Caminho rápido para financiamento",
+      "noEval": "Sem avaliação, sem meta de lucro",
+      "tradeNow": "Opere com capital desde o dia um"
+    }
+  },
+  "promo": {
+    "welcome": "Bem-vindo à Trade4U"
+  },
+  "payouts": {
+    "recent": "Pagamentos recentes aos nossos traders"
+  },
+  "trust": {
+    "accounts": "Contas Trade4U",
+    "traders": "Traders recompensados",
+    "paid": "Total pago",
+    "split": "90% Divisão de Lucros",
+    "payout": "Pagamentos Rápidos",
+    "sltp": "Sem SL/TP Obrigatório",
+    "data": "Dados em Tempo Real"
+  },
+  "award": {
+    "year": "Prop Firm do Ano 2025",
+    "experience": "Melhor Experiência de Trading",
+    "rated": "Avaliação Excelente",
+    "africa": "Melhor Prop Firm LATAM"
+  },
+  "section": {
+    "challenges": {
+      "title": "Escolha seu caminho ao financiamento",
+      "sub": "Quatro programas pensados para cada tipo de trader."
+    },
+    "how": {
+      "title": "Como funciona",
+      "sub": "Três passos da avaliação ao seu primeiro pagamento.",
+      "s1": {
+        "title": "1. Escolha seu challenge",
+        "body": "Selecione o tamanho da conta e o programa que se adequa ao seu estilo."
+      },
+      "s2": {
+        "title": "2. Atinja a meta",
+        "body": "Opere futuros, siga as regras e atinja seu objetivo de lucro."
+      },
+      "s3": {
+        "title": "3. Seja financiado e receba",
+        "body": "Opere com capital e saque 90% dos seus lucros."
+      }
+    },
+    "pricing": {
+      "title": "Preços do Desafio Standard",
+      "sub": "Avaliação em duas fases. A partir de $287."
+    },
+    "why": {
+      "title": "Por que os traders escolhem a Trade4U",
+      "f1": {
+        "title": "Consistência justa",
+        "body": "Regras claras de consistência para que o bom trader receba."
+      },
+      "f2": {
+        "title": "Regras transparentes",
+        "body": "Sem armadilhas ocultas. Tudo está documentado."
+      },
+      "f3": {
+        "title": "Pagamentos rápidos",
+        "body": "Retire seus lucros sem demora."
+      },
+      "f4": {
+        "title": "Plataforma BlackArrow",
+        "body": "Opere futuros na BlackArrow, a plataforma oficial dos nossos desafios."
+      },
+      "f5": {
+        "title": "Suporte dedicado",
+        "body": "Pessoas reais, respostas rápidas."
+      },
+      "f6": {
+        "title": "Escale sua conta",
+        "body": "Cresça conosco enquanto demonstra seu edge."
+      }
+    },
+    "faq": {
+      "title": "Perguntas Frequentes",
+      "sub": "Tudo o que você precisa saber antes de começar.",
+      "viewAll": "Ver todas as FAQs"
+    }
+  },
+  "challenge": {
+    "standard": {
+      "name": "Desafio Standard",
+      "tagline": "Avaliação em duas fases. Caminho comprovado ao financiamento."
+    },
+    "instant": {
+      "name": "Instant Activation",
+      "tagline": "Custo reduzido. Pague a ativação apenas ao aprovar."
+    },
+    "oneday": {
+      "name": "Desafio One-Day",
+      "tagline": "Uma sessão. Um objetivo. Financiamento no mesmo dia."
+    },
+    "instantFunded": {
+      "name": "Instant Funded",
+      "tagline": "Sem avaliação. Opere com capital desde o primeiro dia."
+    },
+    "instantFunding": {
+      "name": "Instant Funding",
+      "tagline": "Sem fase de desafio. Opere com capital desde o primeiro dia."
+    },
+    "freedom": {
+      "name": "Freedom",
+      "tagline": "Desafio de 30 dias sem mínimo de dias de operação."
+    }
+  },
+  "badge": {
+    "popular": "Mais Popular",
+    "noEval": "Sem Avaliação"
+  },
+  "phase": {
+    "1": {
+      "challenge": "Fase 1 — Desafio"
+    },
+    "2": {
+      "funded": "Fase 2 — Financiada"
+    },
+    "evaluation": "Avaliação",
+    "funded": "Conta Financiada",
+    "fundedAccount": "Conta Financiada",
+    "challenge30": "Desafio — 30 dias",
+    "fundedFreedom": "Financiada (Freedom)"
+  },
+  "rule": {
+    "duration": "Duração",
+    "minDays": "Dias Mínimos",
+    "profitTarget": "Meta de Lucro",
+    "dailyDD": "Drawdown Diário",
+    "maxDD": "Drawdown Máx.",
+    "leverage": "Alavancagem",
+    "split": "Divisão de Lucros",
+    "commissions": "Comissões",
+    "consistency": "Regra de Consistência",
+    "sltp": "SL / TP",
+    "news": "News Trading",
+    "profitableDays": "Dias Lucrativos",
+    "inactivity": "Inatividade",
+    "reset": "Reset",
+    "exposure": "Exposição de Contratos",
+    "maxAccounts": "Máx. Contas",
+    "activation": "Taxa de Ativação",
+    "minProfitDays": "Dias Lucrativos Mínimos",
+    "minDailyProfit": "Lucro Mínimo Diário",
+    "maxLoss": "Perda Máxima"
+  },
+  "panel": {
+    "tradingRules": "Regras de Trading",
+    "restrictions": "Restrições",
+    "accountSizes": "Tamanhos de Conta",
+    "startingFrom": "A partir de",
+    "profitSplit": "Divisão de Lucros",
+    "leverage": "Alavancagem",
+    "commissions": "Comissões"
+  },
+  "summary": {
+    "price": "Preço",
+    "target": "Meta de Lucro",
+    "maxDD": "Drawdown Máx.",
+    "activation": "Ativação",
+    "staticAt": "Estático em"
+  },
+  "footer": {
+    "tagline": "Trading de futuros financiado para traders sérios.",
+    "product": "Produto",
+    "company": "Empresa",
+    "legal": "Legal",
+    "terms": "Termos",
+    "privacy": "Privacidade",
+    "risk": "Divulgação de Risco",
+    "disclaimer": "Operar futuros envolve risco substancial e não é adequado para todos os investidores. O desempenho passado não garante resultados futuros. A Trade4U oferece avaliações de trading simulado.",
+    "rights": "Todos os direitos reservados."
+  },
+  "about": {
+    "title": "Feito por traders, para traders",
+    "body": "A Trade4U nasceu com uma missão simples: dar aos traders de futuros acesso a capital com regras que valorizam a consistência, e não a sorte. Combinamos uma infraestrutura de nível institucional com uma divisão de lucros de 90/10 — uma das mais generosas do setor."
+  },
+  "contact": {
+    "title": "Fale Conosco",
+    "sub": "Dúvidas sobre nossos programas? Respondemos em 24 horas.",
+    "name": "Nome",
+    "email": "Email",
+    "message": "Mensagem",
+    "send": "Enviar mensagem",
+    "email24h": "Resposta em 24h",
+    "liveChat": "Chat ao Vivo",
+    "hours": "Seg–Sex · 9h–18h ET",
+    "toast": "Obrigado! Responderemos em menos de 24 horas."
+  },
+  "faq": {
+    "q1": "Em quais plataformas posso operar?",
+    "a1": "Você opera na BlackArrow, a plataforma oficial dos desafios da Trade4U, com data feeds CME em tempo real.",
+    "q2": "Quão rápidos são os pagamentos?",
+    "a2": "Os pagamentos são processados rapidamente após cumprir os requisitos mínimos.",
+    "q3": "Preciso de stop-loss?",
+    "a3": "O stop-loss não é obrigatório (recomendado no Desafio One-Day).",
+    "q4": "O que acontece se eu operar durante notícias?",
+    "a4": "Operar 5 minutos antes/depois de notícias de alto impacto (FOMC, NFP, CPI, GDP) resulta em fechamento da conta.",
+    "q5": "Posso manter posições overnight?",
+    "a5": "As regras de overnight dependem do programa. Consulte cada página de challenge.",
+    "q6": "O que é a regra de consistência?",
+    "a6": "Limita quanto um único dia ou trade pode contribuir para o total dos seus lucros, garantindo um trading sustentável."
+  },
+  "apart": {
+    "eyebrow": "O Que Nos Diferencia",
+    "title": "Por que os traders escolhem a Trade4U",
+    "sub": "As principais razões para operar conosco.",
+    "split": {
+      "title": "15% de Divisão na Fase Desafio",
+      "body": "Ganhe 15% de todos os seus lucros durante a fase de avaliação."
+    },
+    "payouts": {
+      "title": "Pagamentos Rápidos como um Raio",
+      "body": "Processamento garantido em apenas 24 horas."
+    },
+    "weekly": {
+      "title": "Pagamentos Semanais",
+      "body": "Receba lucros da sua conta financiada toda semana."
+    },
+    "scale": {
+      "title": "Escalar Sem Limites",
+      "body": "Mostre consistência e escale sua conta com até 90% de divisão de lucros."
+    },
+    "loyalty": {
+      "title": "Trade2Earn",
+      "body": "Recompensas de fidelidade por cada operação que você fizer."
+    },
+    "norules": {
+      "title": "Sem Regras de Consistência",
+      "body": "Opere livremente sem restrições de consistência."
+    }
+  },
+  "platforms": {
+    "eyebrow": "PLATAFORMA DE TRADING",
+    "title": "Powered by BlackArrow",
+    "new": "Oficial",
+    "ctrader": {
+      "body": "Execução nativa de futuros CME com trading de um clique e escada DOM para scalpers."
+    },
+    "mt5": {
+      "body": "Cotações em tempo real, gráficos avançados e a precisão que traders de futuros exigem."
+    },
+    "dxtrade": {
+      "body": "Web, desktop e mobile — todas as suas contas financiadas em um único login BlackArrow."
+    }
+  },
+  "featured": {
+    "eyebrow": "Destacados Em"
+  },
+  "journey": {
+    "eyebrow": "SUA JORNADA",
+    "title": "Como Funciona?",
+    "sub": "Damos a você uma conta demo para demonstrar suas habilidades. Após passar a avaliação, você ganha dinheiro real.",
+    "step": "Passo",
+    "phase1": "Fase de Avaliação",
+    "phase2": "Fase Financiada",
+    "phase3": "Pagamento",
+    "s1": {
+      "title": "Complete a Avaliação",
+      "body": "Atinja a meta de lucros dentro dos limites de drawdown diário e total."
+    },
+    "s2": {
+      "title": "Ganhe como Trader Financiado",
+      "body": "Você recebe uma conta onde ganha até 90% dos lucros em dinheiro real."
+    },
+    "s3": {
+      "title": "Receba seu Pagamento",
+      "body": "Saque em até 7 dias após sua primeira operação. Pagamentos rápidos."
+    }
+  },
+  "plans": {
+    "eyebrow": "ESCOLHA SUA JORNADA",
+    "title": "Sua Jornada de Financiamento Começa Aqui",
+    "sub": "Escolha o plano que melhor se adapta ao seu estilo de trading.",
+    "oneStep": "1 Passo",
+    "twoStep": "2 Passos",
+    "account": "Conta",
+    "oneStepBright": "1-Step Bright",
+    "twoStepClassic": "2-Step Classic",
+    "phase1": "Passo 1",
+    "phase2": "Passo 2",
+    "fundedStage": "Etapa Financiada",
+    "tradingPeriod": "Período de Trading",
+    "minDays": "Dias Mín. de Trading",
+    "maxDailyLoss": "Perda Diária Máx.",
+    "maxTotalLoss": "Perda Total Máx.",
+    "profitTarget": "Meta de Lucro",
+    "tokens": "Trade4U Tokens",
+    "refundable": "Taxa Reembolsável",
+    "free": "Grátis",
+    "noConsistency": "Sem Regras de Consistência",
+    "mt5Available": "Plataforma BlackArrow Incluída",
+    "fastSupport": "Suporte 24/7 ao Vivo",
+    "payOptions": "Opções de Pagamento"
+  },
+  "love": {
+    "eyebrow": "NOSSOS BENEFÍCIOS",
+    "title": "Por que os traders amam a Trade4U?",
+    "sub": "A experiência de prop trading mais bem avaliada da indústria.",
+    "experience": {
+      "title": "Feito para Traders de Futuros",
+      "body": "Pensado especificamente para traders sérios de futuros CME."
+    },
+    "spreads": {
+      "title": "Até $150K Financiados",
+      "body": "Opere com até $150,000."
+    },
+    "multiasset": {
+      "title": "Trading de Futuros",
+      "body": "Opere contratos Micro e Mini de futuros sobre instrumentos CME."
+    },
+    "platforms": {
+      "title": "Plataformas Profissionais",
+      "body": "Opere nas plataformas preferidas por traders sérios de futuros."
+    },
+    "support": {
+      "title": "Suporte Dedicado",
+      "body": "Receba ajuda do nosso time quando precisar."
+    },
+    "global": {
+      "title": "Acesso Global",
+      "body": "Aberto a traders do mundo inteiro."
+    }
+  },
+  "team": {
+    "eyebrow": "EQUIPE GLOBAL",
+    "title": "Presença Global, Equipe Dedicada",
+    "body": "A Trade4U é impulsionada por uma equipe global de mais de 30 profissionais com experiência em bancos e nas principais prop firms do mundo.",
+    "stat1": "Profissionais Dedicados",
+    "stat2": "Escritórios Globais",
+    "stat3": "Suporte ao Cliente",
+    "spain": "Espanha",
+    "usa": "Estados Unidos",
+    "argentina": "Argentina",
+    "hq": "Sede",
+    "support": "Suporte 24/7 em espanhol, inglês e português."
+  },
+  "payoutssec": {
+    "eyebrow": "PAGAMENTOS",
+    "title": "Alcance o Sucesso Financeiro",
+    "sub": "Confira os últimos pagamentos aos nossos traders. Você pode ser o próximo!",
+    "fast": "Pagamentos Rápidos",
+    "bigTitle": "Pagamentos Rápidos como um Raio",
+    "bigBody": "Velocidade e confiabilidade reconhecidas. Rápido, fácil e sem complicações para você como trader.",
+    "process": {
+      "title": "Processo de pagamento simples",
+      "body": "Solicite facilmente seu pagamento a partir do seu painel."
+    },
+    "crypto": {
+      "title": "Pagamento em Cripto",
+      "body": "USDC recebido instantaneamente em sua carteira."
+    },
+    "bank": {
+      "title": "Transferência Bancária",
+      "body": "Receba pagamentos através de parceiros bancários confiáveis."
+    },
+    "stat1": "Tempo Médio de Pagamento",
+    "stat2": "Divisão de Lucros",
+    "stat3": "Suporte ao Cliente",
+    "stat4": "Pagamentos Totais"
+  },
+  "reviews": {
+    "eyebrow": "AVALIAÇÕES",
+    "title": "Ouça os Nossos Traders",
+    "sub": "Traders reais. Histórias reais."
+  },
+  "rev": {
+    "r1": {
+      "name": "Diego R.",
+      "title": "Uma prop firm de verdade",
+      "body": "Após anos testando prop firms, não tinha encontrado uma à altura. Credenciais da Fase 2 ao passar a primeira, conta financiada no dia seguinte e pagamentos sem demora."
+    },
+    "r2": {
+      "name": "Hana T.",
+      "title": "Sem armadilhas estranhas",
+      "body": "Regras claras, drawdown fixo, meta razoável: tudo faz sentido. Feita por traders, para traders."
+    },
+    "r3": {
+      "name": "Elias O.",
+      "title": "Experiência excepcional",
+      "body": "Três meses operando com eles. Plataforma transparente, pagamentos confiáveis e cumprem cada promessa. Zero queixas."
+    },
+    "r4": {
+      "name": "Yusuf A.",
+      "title": "O melhor primeiro pagamento",
+      "body": "Serviço impecável. Dois pagamentos em menos de oito horas. Referência da indústria."
+    },
+    "r5": {
+      "name": "Clara H.",
+      "title": "Meu sexto pagamento",
+      "body": "Eficiência constante. Meu último pagamento chegou em menos de 14 horas. A Trade4U define o padrão."
+    }
+  },
+  "videos": {
+    "eyebrow": "DEPOIMENTOS",
+    "title": "Histórias de Traders",
+    "sub": "Traders reais que cresceram suas contas e sacaram rápido conosco."
+  },
+  "t2e": {
+    "eyebrow": "TRADE2EARN",
+    "title": "Conheça Nosso Programa de Fidelidade",
+    "sub": "Seja recompensado pelo seu compromisso diário com o trading, independentemente dos seus resultados.",
+    "trade": {
+      "title": "Negocie",
+      "body": "Cada operação, vencedora ou perdedora, gera Trade4U Tokens em cada fase do processo."
+    },
+    "earn": {
+      "title": "Ganhe",
+      "body": "Os tokens se acumulam de acordo com o volume (lotes) que você opera, na sua carteira do painel."
+    },
+    "spend": {
+      "title": "Gaste",
+      "body": "Use seus tokens para melhorar seus pagamentos ou desbloquear avaliações grátis."
+    }
+  },
+  "ctafinal": {
+    "eyebrow": "COMECE HOJE",
+    "title": "Sua Jornada de Financiamento Começa Aqui",
+    "sub": "Junte-se a milhares de traders que já operam com a Trade4U e mantêm até 90% dos seus lucros."
+  },
+  "eyebrow": {
+    "process": "Processo",
+    "pricing": "Preços",
+    "programs": "Programas",
+    "contact": "Contato",
+    "faq": "FAQ",
+    "why": "Por que Trade4U"
+  },
+  "table": {
+    "eyebrow": "PREÇOS E CONTAS",
+    "title": "Escolha sua conta e comece a operar",
+    "sub": "Compare todos os programas lado a lado. Preços reais, sem taxas ocultas.",
+    "col": {
+      "account": "Tamanho da conta",
+      "price": "Preço",
+      "activation": "Ativação",
+      "target": "Meta de lucro",
+      "maxDD": "Drawdown máximo"
+    },
+    "foot": {
+      "split": "Até 90% de divisão de lucros em todos os programas",
+      "platforms": "Opere futuros em plataformas profissionais"
+    },
+    "learnMore": "Saiba mais sobre este programa",
+    "popular": "Popular",
+    "challengeWord": "Desafio",
+    "accountWord": "Conta",
+    "challengeAccount": "CONTA FINANCIADA",
+    "from": "Valor",
+    "total": "Total",
+    "oneTimePayment": "Pagamento único",
+    "accountLabelOrder": "before"
+  },
+  "detail": {
+    "seePricing": "Ver preços e comprar",
+    "howItWorks": "Como funciona",
+    "phase": "Fase",
+    "phases": {
+      "eyebrow": "ESTRUTURA DO PROGRAMA",
+      "title": "Como é cada fase",
+      "sub": "Da avaliação ao seu primeiro pagamento — cada passo explicado."
+    },
+    "cta": {
+      "title": "Pronto para começar este programa?",
+      "sub": "Escolha o tamanho da conta e comece hoje. Os preços estão na página inicial.",
+      "note": "Até 90% de divisão de lucros · Pagamentos em 24 horas"
+    }
+  },
+  "perks": {
+    "payouts24h": "Pagamentos em 24h"
+  },
+  "val": {
+    "eod": "EOD",
+    "perAccount": "Por conta",
+    "minDays": "5 dias positivos",
+    "consistency": "40%",
+    "maxAccounts": "Até 20 contas",
+    "trailing": "RT (Trailing)",
+    "none": "Nenhuma",
+    "oneTimeFee": "Pagamento único",
+    "noMinDays": "Sem mínimo"
+  },
+  "tip": {
+    "profitTarget": "Meta de lucro que você deve atingir nesta fase.",
+    "maxDD": "Perda total máxima permitida antes da conta ser reprovada.",
+    "dailyDD": "Perda máxima permitida em um único dia de operação.",
+    "duration": "Prazo disponível para completar a fase.",
+    "minDays": "Número mínimo de dias de operação exigidos.",
+    "leverage": "Alavancagem máxima disponível por tipo de contrato.",
+    "split": "Divisão de lucros entre trader e firma.",
+    "commissions": "Comissão por contrato (round-trip).",
+    "consistency": "O resultado diário não pode ultrapassar esse percentual do total.",
+    "sltp": "Política de uso de stop-loss / take-profit.",
+    "news": "Operação durante notícias de alto impacto.",
+    "profitableDays": "Dias lucrativos exigidos para um pagamento.",
+    "inactivity": "A conta é encerrada após esse período sem operações.",
+    "reset": "Custo para resetar a conta após um breach.",
+    "exposure": "Exposição máxima simultânea de contratos permitida.",
+    "maxAccounts": "Número máximo de contas que você pode manter simultaneamente.",
+    "minProfitDays": "Número mínimo de dias lucrativos exigidos.",
+    "minDailyProfit": "Lucro mínimo a atingir em um dia lucrativo.",
+    "maxLoss": "Perda máxima permitida durante a fase de desafio.",
+    "activation": "Taxa cobrada uma única vez para ativar a conta fundada."
+  }
+}

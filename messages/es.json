@@ -17,6 +17,7 @@
     "startToday": "Empieza tu Desafío hoy",
     "startTodaySub": "Opera capital real de hasta $150,000. Conserva el 90% de tus ganancias.",
     "startChallenge": "Iniciar Desafío",
+    "contactUs": "Contactar Soporte",
     "freeTrial": "Prueba gratuita",
     "login": "Iniciar sesión"
   },
@@ -78,7 +79,17 @@
     "f3": "Profundidad de mercado y órdenes avanzadas",
     "f4": "Web, escritorio y app móvil",
     "f5": "Un solo dashboard para todas tus cuentas",
-    "cta": "Explorar la plataforma"
+    "cta": "Explorar la plataforma",
+    "card1": "Ejecución Ultrarrápida",
+    "card1Desc": "Ejecuta operaciones en milisegundos con nuestra infraestructura optimizada.",
+    "card2": "Gráficos Avanzados",
+    "card2Desc": "Gráficos profesionales con más de 100 indicadores.",
+    "card3": "Gestión de Riesgo",
+    "card3Desc": "Controles de riesgo integrados para proteger tu capital.",
+    "card4": "Acceso Multimercado",
+    "card4Desc": "Opera futuros en CME, CBOT, NYMEX y COMEX.",
+    "card5": "Trading Móvil",
+    "card5Desc": "Apps completas para iOS y Android."
   },
   "proof": {
     "eyebrow": "PRUEBA DE PAGOS",
@@ -281,7 +292,15 @@
   },
   "about": {
     "title": "Hecho por traders, para traders",
-    "body": "Trade4U nace con una misión simple: dar a los traders de futuros acceso a capital real con reglas que premian la consistencia, no la suerte. Combinamos infraestructura institucional con un split 90/10 — el más generoso de la industria."
+    "body": "Trade4U nace con una misión simple: dar a los traders de futuros acceso a capital real con reglas que premian la consistencia, no la suerte. Combinamos infraestructura institucional con un split 90/10 — el más generoso de la industria.",
+    "missionTitle": "Nuestra Misión",
+    "valuesTitle": "Nuestros Valores",
+    "value1": "Transparencia",
+    "value1Desc": "Reglas claras, sin costos ocultos. Lo que ves es lo que obtienes.",
+    "value2": "El Trader Primero",
+    "value2Desc": "Cada decisión que tomamos prioriza el éxito de nuestros traders.",
+    "value3": "Innovación",
+    "value3Desc": "Mejoramos constantemente nuestra tecnología y programas."
   },
   "contact": {
     "title": "Contáctanos",
@@ -307,7 +326,9 @@
     "q5": "¿Puedo mantener posiciones overnight?",
     "a5": "Las reglas de overnight dependen del programa. Consulta cada página de challenge.",
     "q6": "¿Qué es la regla de consistencia?",
-    "a6": "Limita cuánto puede aportar un solo día o trade al total de tus ganancias, asegurando un trading sostenible."
+    "a6": "Limita cuánto puede aportar un solo día o trade al total de tus ganancias, asegurando un trading sostenible.",
+    "supportTitle": "¿Aún tienes preguntas?",
+    "supportBody": "Nuestro equipo de soporte está disponible 24/7 para ayudarte."
   },
   "apart": {
     "eyebrow": "Lo Que Nos Separa",
@@ -342,6 +363,7 @@
     "eyebrow": "PLATAFORMA DE TRADING",
     "title": "Powered by BlackArrow",
     "new": "Oficial",
+    "supported": "Plataformas Soportadas",
     "ctrader": {
       "body": "Ejecución nativa de futuros CME con trading de un clic y escalera DOM para scalpers."
     },
@@ -374,7 +396,11 @@
     "s3": {
       "title": "Recibe tu Pago",
       "body": "Cobra tan pronto como 7 días después de tu primera operación. Pagos rápidos."
-    }
+    },
+    "detailTitle": "Tu Viaje en Detalle",
+    "rule1": "Sin Martingala",
+    "rule2": "Días mínimos de trading",
+    "rule3": "Respetar límites de drawdown"
   },
   "plans": {
     "eyebrow": "ELIGE TU VIAJE",

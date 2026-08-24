@@ -17,6 +17,7 @@
     "startToday": "Start Your Challenge Today",
     "startTodaySub": "Trade real capital up to $150,000. Keep 90% of your profits.",
     "startChallenge": "Start Challenge",
+    "contactUs": "Contact Support",
     "freeTrial": "Free trial",
     "login": "Log in"
   },
@@ -78,7 +79,17 @@
     "f3": "Depth of market and advanced order types",
     "f4": "Web, desktop and mobile apps",
     "f5": "One BlackArrow login for all your accounts",
-    "cta": "Discover BlackArrow"
+    "cta": "Discover BlackArrow",
+    "card1": "Lightning Fast Execution",
+    "card1Desc": "Execute trades in milliseconds with our optimized infrastructure.",
+    "card2": "Advanced Charting",
+    "card2Desc": "Professional-grade charts with 100+ indicators.",
+    "card3": "Risk Management",
+    "card3Desc": "Built-in risk controls to protect your capital.",
+    "card4": "Multi-Market Access",
+    "card4Desc": "Trade futures across CME, CBOT, NYMEX, and COMEX.",
+    "card5": "Mobile Trading",
+    "card5Desc": "Full-featured mobile apps for iOS and Android."
   },
   "proof": {
     "eyebrow": "PAYOUT PROOF",
@@ -281,7 +292,15 @@
   },
   "about": {
     "title": "Built by traders, for traders",
-    "body": "Trade4U was founded with a simple mission: give skilled futures traders access to real capital with rules that reward consistency, not luck. We combine institutional-grade infrastructure with a 90/10 profit split — the most generous in the industry."
+    "body": "Trade4U was founded with a simple mission: give skilled futures traders access to real capital with rules that reward consistency, not luck. We combine institutional-grade infrastructure with a 90/10 profit split — the most generous in the industry.",
+    "missionTitle": "Our Mission",
+    "valuesTitle": "Our Values",
+    "value1": "Transparency",
+    "value1Desc": "Clear rules, no hidden fees. What you see is what you get.",
+    "value2": "Trader First",
+    "value2Desc": "Every decision we make puts our traders' success first.",
+    "value3": "Innovation",
+    "value3Desc": "Constantly improving our technology and programs."
   },
   "contact": {
     "title": "Get in touch",
@@ -307,7 +326,9 @@
     "q5": "Can I hold positions overnight?",
     "a5": "Position-holding rules depend on the program. See each challenge page for details.",
     "q6": "What's the consistency rule?",
-    "a6": "It limits how much a single day or trade can contribute to your total profits, ensuring sustainable trading."
+    "a6": "It limits how much a single day or trade can contribute to your total profits, ensuring sustainable trading.",
+    "supportTitle": "Still have questions?",
+    "supportBody": "Our support team is available 24/7 to help you."
   },
   "apart": {
     "eyebrow": "What Sets Us Apart",
@@ -342,6 +363,7 @@
     "eyebrow": "TRADING PLATFORM",
     "title": "Powered by BlackArrow",
     "new": "Official",
+    "supported": "Supported Platforms",
     "ctrader": {
       "body": "Native CME futures execution with one-click trading and a depth-of-market ladder built for scalpers."
     },
@@ -374,7 +396,11 @@
     "s3": {
       "title": "Get Paid",
       "body": "Withdraw as soon as 7 days after your first trade. Fast payouts."
-    }
+    },
+    "detailTitle": "Your Journey in Detail",
+    "rule1": "No Martingale",
+    "rule2": "Minimum trading days",
+    "rule3": "Respect drawdown limits"
   },
   "plans": {
     "eyebrow": "CHOOSE YOUR JOURNEY",

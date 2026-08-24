@@ -8,8 +8,8 @@ interface SectionProps {
 
 export default function Section({ children, className = "", id }: SectionProps) {
   return (
-    <section id={id} className={`py-16 md:py-24 px-4 ${className}`}>
-      <div className="max-w-7xl mx-auto">{children}</div>
+    <section id={id} className={`py-20 md:py-28 ${className}`}>
+      <div className="container">{children}</div>
     </section>
   );
 }

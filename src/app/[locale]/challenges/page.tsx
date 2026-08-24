@@ -20,25 +20,28 @@ export async function generateMetadata({
   return { title: titles[locale] || titles.en };
 }
 
+const tKeyMap: Record<string, string> = {
+  standard: "standard",
+  instant: "instant",
+  oneday: "oneday",
+  instantFunded: "instantFunded",
+};
+
 function ChallengesContent() {
   const section = useTranslations("section.challenges");
   const t = useTranslations("challenge");
   const cta = useTranslations("cta");
 
-  // Map challenge slug to translation namespace key
-  const tKeyMap: Record<string, string> = {
-    standard: "standard",
-    instant: "instant",
-    oneday: "oneday",
-    instantFunded: "instantFunded",
-  };
-
   return (
     <>
       {/* Hero */}
-      <section className="bg-gradient-hero pt-32 pb-20 px-4">
-        <div className="max-w-4xl mx-auto text-center">
+      <section className="relative pt-32 pb-20 overflow-hidden">
+        <div className="absolute inset-0 bg-gradient-to-b from-accent/5 via-transparent to-transparent" />
+        <div className="container relative text-center">
           <AnimatedSection>
+            <p className="text-xs font-semibold tracking-widest text-accent uppercase mb-4">
+              Trade4U Prop
+            </p>
             <h1 className="font-display font-bold text-4xl md:text-5xl lg:text-6xl text-gradient mb-6">
               {section("title")}
             </h1>
@@ -62,7 +65,7 @@ function ChallengesContent() {
                   href={`/challenges/${challenge.slug}`}
                   className="group block h-full"
                 >
-                  <div className="bg-white/[0.02] border border-white/5 rounded-2xl p-6 md:p-8 h-full hover:border-accent/30 transition-all hover:shadow-elevated">
+                  <div className="bg-gradient-card border border-border rounded-3xl p-6 md:p-8 h-full hover:border-accent/30 transition-smooth hover:shadow-elevated">
                     <h3 className="font-display font-bold text-xl md:text-2xl text-foreground mb-2">
                       {t(`${key}.name`)}
                     </h3>
@@ -70,17 +73,16 @@ function ChallengesContent() {
                       {t(`${key}.tagline`)}
                     </p>
 
-                    {/* Quick stats from funded phase */}
                     <div className="grid grid-cols-2 gap-3 mb-6">
-                      <div className="bg-white/[0.03] rounded-lg p-3">
+                      <div className="bg-white/[0.04] rounded-xl p-3">
                         <p className="text-xs text-muted-foreground mb-1">
                           Profit Split
                         </p>
-                        <p className="text-sm font-semibold text-foreground">
+                        <p className="text-sm font-semibold text-accent">
                           {fundedPhase.profitSplit}
                         </p>
                       </div>
-                      <div className="bg-white/[0.03] rounded-lg p-3">
+                      <div className="bg-white/[0.04] rounded-xl p-3">
                         <p className="text-xs text-muted-foreground mb-1">
                           Max Drawdown
                         </p>

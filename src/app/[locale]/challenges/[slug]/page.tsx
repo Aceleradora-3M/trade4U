@@ -7,7 +7,7 @@ import AnimatedSection from "@/components/shared/AnimatedSection";
 import Button from "@/components/shared/Button";
 import Badge from "@/components/shared/Badge";
 import { Link } from "@/i18n/navigation";
-import { ArrowLeft, ExternalLink } from "lucide-react";
+import { ArrowLeft } from "lucide-react";
 import ChallengeDetailClient from "./client";
 
 export function generateStaticParams() {
@@ -31,7 +31,6 @@ export async function generateMetadata({
   return { title: names[slug] || slug };
 }
 
-// Map slug to translation key prefix
 const tKeyMap: Record<string, string> = {
   standard: "standard",
   instant: "instant",
@@ -52,12 +51,13 @@ function ChallengeDetailContent({ slug }: { slug: string }) {
   return (
     <>
       {/* Hero */}
-      <section className="bg-gradient-hero pt-32 pb-16 px-4">
-        <div className="max-w-4xl mx-auto">
+      <section className="relative pt-32 pb-16 overflow-hidden">
+        <div className="absolute inset-0 bg-gradient-to-b from-accent/5 via-transparent to-transparent" />
+        <div className="container relative">
           <AnimatedSection>
             <Link
               href="/challenges"
-              className="inline-flex items-center gap-2 text-sm text-muted-foreground hover:text-accent transition-colors mb-6"
+              className="inline-flex items-center gap-2 text-sm text-muted-foreground hover:text-accent transition-smooth mb-6"
             >
               <ArrowLeft className="w-4 h-4" />
               Back
@@ -87,18 +87,16 @@ function ChallengeDetailContent({ slug }: { slug: string }) {
           </p>
         </AnimatedSection>
 
-        {/* Phase cards with rules */}
         <div className="space-y-6">
           {challenge.phases.map((phase, i) => (
             <AnimatedSection key={i} delay={i * 0.1}>
-              <div className="bg-white/[0.02] border border-white/5 rounded-2xl p-6 md:p-8">
+              <div className="bg-gradient-card border border-border rounded-3xl p-6 md:p-8">
                 <div className="flex items-center gap-3 mb-6">
                   <Badge variant={i === challenge.phases.length - 1 ? "green" : "teal"}>
                     {detail("phase")} {i + 1}
                   </Badge>
                 </div>
 
-                {/* Rules table */}
                 <div className="grid sm:grid-cols-2 gap-x-8 gap-y-0">
                   {[
                     { label: ruleT("duration"), value: phase.duration },
@@ -115,7 +113,7 @@ function ChallengeDetailContent({ slug }: { slug: string }) {
                   ].map((rule, j) => (
                     <div
                       key={j}
-                      className="flex items-center justify-between py-3 border-b border-white/5 last:border-0"
+                      className="flex items-center justify-between py-3 border-b border-border last:border-0"
                     >
                       <span className="text-sm text-muted-foreground">
                         {rule.label}
@@ -133,7 +131,7 @@ function ChallengeDetailContent({ slug }: { slug: string }) {
       </Section>
 
       {/* Pricing */}
-      <Section className="bg-gradient-to-b from-transparent via-primary/5 to-transparent">
+      <Section className="bg-gradient-to-b from-transparent via-accent/5 to-transparent">
         <AnimatedSection>
           <h2 className="font-display font-bold text-2xl md:text-3xl text-foreground mb-8">
             {detail("seePricing")}
@@ -148,19 +146,22 @@ function ChallengeDetailContent({ slug }: { slug: string }) {
       {/* CTA */}
       <Section>
         <AnimatedSection>
-          <div className="bg-gradient-cta rounded-2xl p-8 md:p-12 text-center">
-            <h2 className="font-display font-bold text-2xl md:text-3xl text-foreground mb-3">
-              {detail("cta.title")}
-            </h2>
-            <p className="text-white/80 mb-2 max-w-lg mx-auto">
-              {detail("cta.sub")}
-            </p>
-            <p className="text-sm text-white/60 mb-6">
-              {detail("cta.note")}
-            </p>
-            <Button href="/challenges" size="lg" variant="secondary">
-              {detail("seePricing")}
-            </Button>
+          <div className="relative bg-gradient-card border border-accent/30 rounded-3xl p-8 md:p-12 text-center overflow-hidden">
+            <div className="absolute inset-0 bg-radial-glow opacity-30" />
+            <div className="relative">
+              <h2 className="font-display font-bold text-2xl md:text-3xl text-gradient mb-3">
+                {detail("cta.title")}
+              </h2>
+              <p className="text-muted-foreground mb-2 max-w-lg mx-auto">
+                {detail("cta.sub")}
+              </p>
+              <p className="text-sm text-muted-foreground/70 mb-6">
+                {detail("cta.note")}
+              </p>
+              <Button href="/challenges" size="lg">
+                {detail("seePricing")}
+              </Button>
+            </div>
           </div>
         </AnimatedSection>
       </Section>

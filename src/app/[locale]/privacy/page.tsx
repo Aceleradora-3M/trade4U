@@ -50,8 +50,9 @@ const sections = [
 function PrivacyContent() {
   return (
     <>
-      <section className="bg-gradient-hero pt-32 pb-16 px-4">
-        <div className="max-w-4xl mx-auto">
+      <section className="relative pt-32 pb-16 overflow-hidden">
+        <div className="absolute inset-0 bg-gradient-to-b from-accent/5 via-transparent to-transparent" />
+        <div className="container relative">
           <AnimatedSection>
             <h1 className="font-display font-bold text-4xl md:text-5xl text-gradient mb-4">
               Privacy Policy

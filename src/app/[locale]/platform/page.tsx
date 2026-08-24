@@ -4,8 +4,7 @@ import Image from "next/image";
 import Section from "@/components/shared/Section";
 import AnimatedSection from "@/components/shared/AnimatedSection";
 import Button from "@/components/shared/Button";
-import Badge from "@/components/shared/Badge";
-import { Check } from "lucide-react";
+import { Check, Zap, BarChart3, Shield, Globe, Smartphone } from "lucide-react";
 
 export async function generateMetadata({
   params,
@@ -25,10 +24,12 @@ function PlatformContent() {
   const platforms = useTranslations("platforms");
   const platform = useTranslations("platform");
 
-  const descriptions = [
-    platforms("ctrader.body"),
-    platforms("mt5.body"),
-    platforms("dxtrade.body"),
+  const featureCards = [
+    { icon: Zap, title: platform("card1") || "Lightning Fast Execution", desc: platform("card1Desc") || "Execute trades in milliseconds with our optimized infrastructure." },
+    { icon: BarChart3, title: platform("card2") || "Advanced Charting", desc: platform("card2Desc") || "Professional-grade charts with 100+ indicators." },
+    { icon: Shield, title: platform("card3") || "Risk Management", desc: platform("card3Desc") || "Built-in risk controls to protect your capital." },
+    { icon: Globe, title: platform("card4") || "Multi-Market Access", desc: platform("card4Desc") || "Trade futures across CME, CBOT, NYMEX, and COMEX." },
+    { icon: Smartphone, title: platform("card5") || "Mobile Trading", desc: platform("card5Desc") || "Full-featured mobile apps for iOS and Android." },
   ];
 
   const features = [
@@ -39,21 +40,25 @@ function PlatformContent() {
     platform("f5"),
   ];
 
+  const platformNames = [
+    { name: "Rithmic / R|Trader", desc: platforms("ctrader.body") },
+    { name: "Tradovate", desc: platforms("mt5.body") },
+    { name: "NinjaTrader", desc: platforms("dxtrade.body") },
+  ];
+
   return (
     <>
       {/* Hero */}
-      <section className="bg-gradient-hero pt-32 pb-20 px-4">
-        <div className="max-w-4xl mx-auto text-center">
+      <section className="relative pt-32 pb-20 overflow-hidden">
+        <div className="absolute inset-0 bg-gradient-to-b from-accent/5 via-transparent to-transparent" />
+        <div className="container relative text-center">
           <AnimatedSection>
-            <div className="flex items-center justify-center gap-3 mb-6">
-              <h1 className="font-display font-bold text-4xl md:text-5xl lg:text-6xl text-gradient">
-                {platforms("title")}
-              </h1>
-              <Badge variant="green">{platforms("new")}</Badge>
-            </div>
             <p className="text-xs font-semibold tracking-widest text-accent uppercase mb-4">
               {platforms("eyebrow")}
             </p>
+            <h1 className="font-display font-bold text-4xl md:text-5xl lg:text-6xl text-gradient mb-6">
+              {platforms("title")}
+            </h1>
             <p className="text-lg text-muted-foreground max-w-2xl mx-auto">
               {platform("sub")}
             </p>
@@ -66,10 +71,10 @@ function PlatformContent() {
         <AnimatedSection>
           <div className="relative max-w-4xl mx-auto">
             <div className="absolute inset-0 bg-gradient-to-r from-accent/10 to-primary/10 rounded-3xl blur-3xl" />
-            <div className="relative rounded-3xl overflow-hidden border border-white/10 shadow-elevated">
+            <div className="relative rounded-3xl overflow-hidden border border-border shadow-elevated">
               <Image
                 src="/platform-mockup.jpg"
-                alt="BlackArrow Trading Platform"
+                alt="Trading Platform"
                 width={1200}
                 height={675}
                 className="w-full h-auto"
@@ -80,14 +85,25 @@ function PlatformContent() {
         </AnimatedSection>
       </Section>
 
-      {/* Platform Descriptions */}
+      {/* Feature Cards */}
       <Section>
-        <div className="grid md:grid-cols-3 gap-6 max-w-5xl mx-auto">
-          {descriptions.map((desc, i) => (
-            <AnimatedSection key={i} delay={i * 0.1}>
-              <div className="bg-white/[0.02] border border-white/5 rounded-2xl p-6 hover:border-accent/20 transition-colors h-full">
-                <p className="text-muted-foreground leading-relaxed">
-                  {desc}
+        <AnimatedSection>
+          <h2 className="font-display font-bold text-3xl md:text-4xl text-foreground text-center mb-10">
+            {platform("title")}
+          </h2>
+        </AnimatedSection>
+        <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-6 max-w-5xl mx-auto">
+          {featureCards.map((card, i) => (
+            <AnimatedSection key={i} delay={i * 0.08}>
+              <div className="bg-gradient-card border border-border rounded-3xl p-6 hover:border-accent/30 transition-smooth h-full">
+                <div className="w-12 h-12 rounded-2xl bg-accent/10 flex items-center justify-center mb-4">
+                  <card.icon className="w-6 h-6 text-accent" />
+                </div>
+                <h3 className="font-display font-semibold text-foreground mb-2">
+                  {card.title}
+                </h3>
+                <p className="text-sm text-muted-foreground leading-relaxed">
+                  {card.desc}
                 </p>
               </div>
             </AnimatedSection>
@@ -95,19 +111,37 @@ function PlatformContent() {
         </div>
       </Section>
 
-      {/* Features */}
-      <Section className="bg-gradient-to-b from-transparent via-primary/5 to-transparent">
+      {/* Supported Platforms */}
+      <Section className="bg-gradient-to-b from-transparent via-accent/5 to-transparent">
         <AnimatedSection>
-          <h2 className="font-display font-bold text-3xl md:text-4xl text-foreground text-center mb-10">
-            {platform("title")}
+          <h2 className="font-display font-bold text-2xl md:text-3xl text-foreground text-center mb-10">
+            {platforms("supported") || "Supported Platforms"}
           </h2>
         </AnimatedSection>
+        <div className="grid md:grid-cols-3 gap-6 max-w-5xl mx-auto">
+          {platformNames.map((p, i) => (
+            <AnimatedSection key={i} delay={i * 0.1}>
+              <div className="bg-gradient-card border border-border rounded-3xl p-6 hover:border-accent/30 transition-smooth h-full">
+                <h3 className="font-display font-semibold text-foreground mb-3">
+                  {p.name}
+                </h3>
+                <p className="text-sm text-muted-foreground leading-relaxed">
+                  {p.desc}
+                </p>
+              </div>
+            </AnimatedSection>
+          ))}
+        </div>
+      </Section>
+
+      {/* Features Checklist */}
+      <Section>
         <div className="max-w-2xl mx-auto">
           <ul className="space-y-4">
             {features.map((feature, i) => (
               <AnimatedSection key={i} delay={i * 0.08}>
-                <li className="flex items-center gap-4 bg-white/[0.02] border border-white/5 rounded-xl p-4 hover:border-accent/20 transition-colors">
-                  <div className="w-8 h-8 rounded-lg bg-accent/10 flex items-center justify-center shrink-0">
+                <li className="flex items-center gap-4 bg-gradient-card border border-border rounded-xl p-4 hover:border-accent/30 transition-smooth">
+                  <div className="w-8 h-8 rounded-full bg-accent/10 flex items-center justify-center shrink-0">
                     <Check className="w-4 h-4 text-accent" />
                   </div>
                   <span className="text-foreground">{feature}</span>

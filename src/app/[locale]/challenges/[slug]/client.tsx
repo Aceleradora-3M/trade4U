@@ -10,7 +10,6 @@ export default function ChallengeDetailClient({ slug }: { slug: string }) {
   const badge = useTranslations("badge");
   const rule = useTranslations("rule");
   const cta = useTranslations("cta");
-  const summary = useTranslations("summary");
   const challenge = getChallengeBySlug(slug);
 
   if (!challenge) return null;
@@ -22,10 +21,10 @@ export default function ChallengeDetailClient({ slug }: { slug: string }) {
       {challenge.accounts.map((account) => (
         <div
           key={account.size}
-          className={`relative rounded-2xl border p-6 transition-all hover:scale-[1.02] ${
+          className={`relative rounded-3xl border p-6 transition-smooth hover:scale-[1.02] ${
             account.popular
               ? "border-accent/50 bg-accent/5 shadow-lg shadow-accent/10"
-              : "border-white/10 bg-white/[0.02]"
+              : "border-border bg-gradient-card"
           }`}
         >
           {account.popular && (

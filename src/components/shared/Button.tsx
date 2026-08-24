@@ -21,20 +21,20 @@ type ButtonAsLink = CommonProps &
 type ButtonProps = ButtonAsButton | ButtonAsLink;
 
 const baseStyles =
-  "inline-flex items-center justify-center font-semibold rounded-lg transition-all duration-300 focus:outline-none focus:ring-2 focus:ring-accent/50";
+  "inline-flex items-center justify-center gap-2 font-bold rounded-full transition-smooth focus:outline-none focus:ring-2 focus:ring-accent/50";
 
 const variants = {
   primary:
-    "bg-accent hover:bg-accent-glow text-accent-foreground shadow-lg shadow-accent/25 hover:shadow-accent/40",
+    "bg-gradient-cta text-white shadow-glow hover:scale-[1.03]",
   secondary:
-    "bg-white/10 hover:bg-white/20 text-white border border-white/20",
+    "border border-border bg-card/60 backdrop-blur text-foreground hover:border-accent/40",
   outline:
-    "border-2 border-accent text-accent hover:bg-accent hover:text-accent-foreground",
+    "border border-accent/40 text-accent hover:bg-accent/10",
 };
 
 const sizes = {
-  sm: "px-4 py-2 text-sm",
-  md: "px-6 py-3 text-base",
+  sm: "px-5 py-2.5 text-sm",
+  md: "px-7 py-3.5 text-base",
   lg: "px-8 py-4 text-lg",
 };
 

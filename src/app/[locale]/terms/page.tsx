@@ -23,7 +23,7 @@ const sections = [
   },
   {
     title: "2. Definitions",
-    text: "\"Service\" refers to the Trade4U prop trading evaluation platform, including all challenge programs, simulated trading accounts, and related tools. \"User\" means any individual who registers for and/or uses the Service. \"Challenge\" or \"Evaluation\" refers to the simulated trading assessment programs offered through the platform. \"Funded Account\" refers to the simulated trading account provided after successfully completing an evaluation.",
+    text: '"Service" refers to the Trade4U prop trading evaluation platform, including all challenge programs, simulated trading accounts, and related tools. "User" means any individual who registers for and/or uses the Service. "Challenge" or "Evaluation" refers to the simulated trading assessment programs offered through the platform. "Funded Account" refers to the simulated trading account provided after successfully completing an evaluation.',
   },
   {
     title: "3. Services",
@@ -54,8 +54,9 @@ const sections = [
 function TermsContent() {
   return (
     <>
-      <section className="bg-gradient-hero pt-32 pb-16 px-4">
-        <div className="max-w-4xl mx-auto">
+      <section className="relative pt-32 pb-16 overflow-hidden">
+        <div className="absolute inset-0 bg-gradient-to-b from-accent/5 via-transparent to-transparent" />
+        <div className="container relative">
           <AnimatedSection>
             <h1 className="font-display font-bold text-4xl md:text-5xl text-gradient mb-4">
               Terms of Service

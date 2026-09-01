@@ -4,7 +4,7 @@ import { useTranslations } from "next-intl";
 import { getChallengeBySlug } from "@/data/challenges";
 import Button from "@/components/shared/Button";
 import Badge from "@/components/shared/Badge";
-import { trackStartChallenge, trackInitiateCheckout25k, trackInitiateCheckout50k } from "@/lib/pixel";
+import { trackStartChallenge } from "@/lib/pixel";
 
 export default function ChallengeDetailClient({ slug }: { slug: string }) {
   const badge = useTranslations("badge");
@@ -77,15 +77,9 @@ export default function ChallengeDetailClient({ slug }: { slug: string }) {
             className="w-full"
             size="sm"
             variant={account.popular ? "primary" : "outline"}
-            onClick={() => {
-              trackStartChallenge(
-                challenge.slug,
-                account.size,
-                account.price
-              );
-              if (account.size === "$25K") trackInitiateCheckout25k();
-              else if (account.size === "$50K") trackInitiateCheckout50k();
-            }}
+            onClick={() =>
+              trackStartChallenge(challenge.slug, account.size, account.price)
+            }
           >
             {cta("buyChallenge")}
           </Button>

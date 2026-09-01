@@ -3,7 +3,7 @@
 import { useState } from "react";
 import { useTranslations } from "next-intl";
 import { Link } from "@/i18n/navigation";
-import { trackStartChallenge, trackInitiateCheckout25k, trackInitiateCheckout50k } from "@/lib/pixel";
+import { trackStartChallenge } from "@/lib/pixel";
 import {
   Wallet,
   BarChart3,
@@ -220,11 +220,9 @@ export default function ChallengeTable() {
               href={account.buyUrl}
               target="_blank"
               rel="noopener noreferrer"
-              onClick={() => {
-                trackStartChallenge("instant", account.accountSize, account.price);
-                if (account.id === "25k") trackInitiateCheckout25k();
-                else if (account.id === "50k") trackInitiateCheckout50k();
-              }}
+              onClick={() =>
+                trackStartChallenge("instant", account.accountSize, account.price)
+              }
               className="inline-flex items-center gap-2 rounded-full bg-gradient-cta px-7 py-3 text-sm md:text-base font-bold text-white shadow-glow hover:scale-[1.04] transition-smooth"
             >
               {cta("buyChallenge")} {account.accountSize}

@@ -1,10 +1,33 @@
 "use client";
 
 import Script from "next/script";
+import { usePathname } from "next/navigation";
+import { useEffect } from "react";
+import { PIXEL_ID, trackPageView } from "@/lib/pixel";
 
-const PIXEL_ID = "488367055531398";
+// Module scope on purpose: it has to survive the remount of the locale layout
+// that happens when the user switches language, otherwise that navigation
+// would be treated as a first render and skipped.
+let lastTrackedPath: string | null = null;
 
 export default function MetaPixel() {
+  // Full path including the locale prefix, so /en/faq -> /pt/faq counts as a
+  // new page view.
+  const pathname = usePathname();
+
+  useEffect(() => {
+    // The inline script below already fires the PageView for the page the user
+    // landed on. Only the client-side navigations that follow need one.
+    if (lastTrackedPath === null) {
+      lastTrackedPath = pathname;
+      return;
+    }
+    if (lastTrackedPath === pathname) return;
+
+    lastTrackedPath = pathname;
+    trackPageView();
+  }, [pathname]);
+
   return (
     <>
       <Script id="meta-pixel" strategy="afterInteractive">

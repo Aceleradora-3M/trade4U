@@ -1,9 +1,11 @@
 import Link from "next/link";
+import MetaPixel from "@/components/tracking/MetaPixel";
 
 export default function NotFound() {
   return (
     <html lang="en" className="antialiased">
       <body className="min-h-screen bg-[#0F172A] text-white flex items-center justify-center font-sans">
+        <MetaPixel />
         <div className="text-center px-4">
           <div className="font-bold text-8xl md:text-9xl text-transparent bg-clip-text bg-gradient-to-b from-[#25a5b3] to-[#25a5b3]/30 mb-4">
             404

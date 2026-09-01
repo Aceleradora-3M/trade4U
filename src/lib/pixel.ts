@@ -1,11 +1,11 @@
 declare global {
   interface Window {
-    fbq: (...args: unknown[]) => void;
-    _fbq: (...args: unknown[]) => void;
+    fbq?: (...args: unknown[]) => void;
+    _fbq?: (...args: unknown[]) => void;
   }
 }
 
-const PIXEL_ID = "488367055531398";
+export const PIXEL_ID = "488367055531398";
 
 function fbq(...args: unknown[]) {
   if (typeof window !== "undefined" && window.fbq) {
@@ -48,30 +48,6 @@ export function trackInitiateCheckout50k() {
   });
 }
 
-export function trackBuyChallenge(
-  challengeType: string,
-  size: string,
-  price: string
-) {
-  fbq("track", "Purchase", {
-    content_name: `${challengeType} - ${size}`,
-    content_category: "Challenge",
-    value: parseFloat(price.replace(/[^0-9.]/g, "")),
-    currency: "USD",
-  });
-}
-
 export function trackContact() {
   fbq("track", "Contact");
-}
-
-export function trackLead() {
-  fbq("track", "Lead");
-}
-
-export function trackViewContent(contentName: string, category: string) {
-  fbq("track", "ViewContent", {
-    content_name: contentName,
-    content_category: category,
-  });
 }

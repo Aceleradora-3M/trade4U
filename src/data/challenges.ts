@@ -63,7 +63,7 @@ export const challenges: Challenge[] = [
     phases: [
       {
         name: "challenge.standard.phase1",
-        duration: "30 days",
+        duration: "days:30",
         minDays: "5",
         profitTarget: "8%",
         dailyDD: "4%",
@@ -73,11 +73,11 @@ export const challenges: Challenge[] = [
         commissions: "$4/lot",
         consistency: "challenge.rules.noConsistency",
         sltp: "challenge.rules.notRequired",
-        news: "challenge.rules.allowed",
+        news: "challenge.rules.newsRestricted",
       },
       {
         name: "challenge.standard.phase2",
-        duration: "60 days",
+        duration: "days:60",
         minDays: "5",
         profitTarget: "5%",
         dailyDD: "4%",
@@ -87,7 +87,7 @@ export const challenges: Challenge[] = [
         commissions: "$4/lot",
         consistency: "challenge.rules.noConsistency",
         sltp: "challenge.rules.notRequired",
-        news: "challenge.rules.allowed",
+        news: "challenge.rules.newsRestricted",
       },
       {
         name: "challenge.standard.funded",
@@ -101,7 +101,7 @@ export const challenges: Challenge[] = [
         commissions: "$4/lot",
         consistency: "challenge.rules.noConsistency",
         sltp: "challenge.rules.notRequired",
-        news: "challenge.rules.allowed",
+        news: "challenge.rules.newsRestricted",
       },
     ],
     features: [
@@ -146,7 +146,7 @@ export const challenges: Challenge[] = [
     phases: [
       {
         name: "challenge.instant.phase1",
-        duration: "30 days",
+        duration: "days:30",
         minDays: "5",
         profitTarget: "8%",
         dailyDD: "4%",
@@ -156,7 +156,7 @@ export const challenges: Challenge[] = [
         commissions: "$4/lot",
         consistency: "challenge.rules.noConsistency",
         sltp: "challenge.rules.notRequired",
-        news: "challenge.rules.allowed",
+        news: "challenge.rules.newsRestricted",
       },
       {
         name: "challenge.instant.funded",
@@ -170,7 +170,7 @@ export const challenges: Challenge[] = [
         commissions: "$4/lot",
         consistency: "challenge.rules.noConsistency",
         sltp: "challenge.rules.notRequired",
-        news: "challenge.rules.allowed",
+        news: "challenge.rules.newsRestricted",
       },
     ],
     features: [
@@ -206,7 +206,7 @@ export const challenges: Challenge[] = [
     phases: [
       {
         name: "challenge.oneday.phase1",
-        duration: "1 day",
+        duration: "days:1",
         minDays: "1",
         profitTarget: "6%",
         dailyDD: "4%",
@@ -216,7 +216,7 @@ export const challenges: Challenge[] = [
         commissions: "$4/lot",
         consistency: "challenge.rules.noConsistency",
         sltp: "challenge.rules.notRequired",
-        news: "challenge.rules.allowed",
+        news: "challenge.rules.newsRestricted",
       },
       {
         name: "challenge.oneday.funded",
@@ -230,7 +230,7 @@ export const challenges: Challenge[] = [
         commissions: "$4/lot",
         consistency: "challenge.rules.noConsistency",
         sltp: "challenge.rules.notRequired",
-        news: "challenge.rules.allowed",
+        news: "challenge.rules.newsRestricted",
       },
     ],
     features: [
@@ -275,7 +275,7 @@ export const challenges: Challenge[] = [
         commissions: "$4/lot",
         consistency: "challenge.rules.noConsistency",
         sltp: "challenge.rules.notRequired",
-        news: "challenge.rules.allowed",
+        news: "challenge.rules.newsRestricted",
       },
     ],
     features: [

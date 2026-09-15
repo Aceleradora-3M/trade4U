@@ -1,4 +1,5 @@
 import { setRequestLocale } from "next-intl/server";
+import { localeAlternates } from "@/lib/site";
 import { useTranslations } from "next-intl";
 import Image from "next/image";
 import Section from "@/components/shared/Section";
@@ -17,7 +18,10 @@ export async function generateMetadata({
     es: "Plataforma de Trading",
     pt: "Plataforma de Trading",
   };
-  return { title: titles[locale] || titles.en };
+  return {
+    title: titles[locale] || titles.en,
+    alternates: localeAlternates(locale, "platform"),
+  };
 }
 
 function PlatformContent() {

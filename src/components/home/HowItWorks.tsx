@@ -1,23 +1,25 @@
 "use client";
 
 import { useTranslations } from "next-intl";
+import { Link } from "@/i18n/navigation";
 import { Target, Award, Wallet, ArrowRight } from "lucide-react";
 
-const STEPS = [
-  { badge: "Step 1", eyebrow: "Evaluation Phase", icon: Target },
-  { badge: "Step 2", eyebrow: "Funded Phase", icon: Award },
-  { badge: "Step 3", eyebrow: "Payout", icon: Wallet },
-];
+const STEP_ICONS = [Target, Award, Wallet];
 
 export default function HowItWorks() {
   const t = useTranslations("journey");
   const cta = useTranslations("cta");
 
-  const stepContent = [
-    { title: t("s1.title"), body: t("s1.body") },
-    { title: t("s2.title"), body: t("s2.body") },
-    { title: t("s3.title"), body: t("s3.body") },
-  ];
+  const steps = STEP_ICONS.map((icon, i) => {
+    const n = i + 1;
+    return {
+      icon,
+      badge: `${t("step")} ${n}`,
+      eyebrow: t(`phase${n}`),
+      title: t(`s${n}.title`),
+      body: t(`s${n}.body`),
+    };
+  });
 
   return (
     <section className="py-24 border-t border-border/30">
@@ -38,7 +40,7 @@ export default function HowItWorks() {
           {/* Connecting line */}
           <div className="hidden md:block absolute top-20 left-[16%] right-[16%] h-px bg-gradient-to-r from-transparent via-accent/40 to-transparent" />
 
-          {STEPS.map((step, i) => {
+          {steps.map((step, i) => {
             const IconComp = step.icon;
             return (
               <div
@@ -55,10 +57,10 @@ export default function HowItWorks() {
                   <IconComp className="h-6 w-6" />
                 </div>
                 <h3 className="text-xl md:text-2xl font-display font-bold mb-3">
-                  {stepContent[i].title}
+                  {step.title}
                 </h3>
                 <p className="text-sm text-muted-foreground leading-relaxed">
-                  {stepContent[i].body}
+                  {step.body}
                 </p>
               </div>
             );
@@ -66,13 +68,13 @@ export default function HowItWorks() {
         </div>
 
         <div className="mt-12 text-center">
-          <a
+          <Link
             className="inline-flex items-center gap-2 rounded-full bg-gradient-cta px-8 py-4 text-base font-bold text-white shadow-glow hover:scale-105 transition-smooth"
             href="/#pricing"
           >
             {cta("getFunded")}
             <ArrowRight className="h-4 w-4" />
-          </a>
+          </Link>
         </div>
       </div>
     </section>

@@ -1,4 +1,5 @@
 import { setRequestLocale } from "next-intl/server";
+import { localeAlternates } from "@/lib/site";
 import { useTranslations } from "next-intl";
 import Section from "@/components/shared/Section";
 import AnimatedSection from "@/components/shared/AnimatedSection";
@@ -17,13 +18,17 @@ export async function generateMetadata({
     es: "Preguntas Frecuentes",
     pt: "Perguntas Frequentes",
   };
-  return { title: titles[locale] || titles.en };
+  return {
+    title: titles[locale] || titles.en,
+    alternates: localeAlternates(locale, "faq"),
+  };
 }
 
 function FaqContent() {
   const section = useTranslations("section.faq");
   const faq = useTranslations("faq");
   const cta = useTranslations("cta");
+  const common = useTranslations("common");
 
   const items = [
     { question: faq("q1"), answer: faq("a1") },
@@ -42,7 +47,7 @@ function FaqContent() {
         <div className="container relative text-center">
           <AnimatedSection>
             <p className="text-xs font-semibold tracking-widest text-accent uppercase mb-4">
-              Trade4U Prop
+              {common("eyebrow")}
             </p>
             <h1 className="font-display font-bold text-4xl md:text-5xl lg:text-6xl text-gradient mb-6">
               {section("title")}

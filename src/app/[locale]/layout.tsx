@@ -4,6 +4,7 @@ import { getMessages, setRequestLocale } from "next-intl/server";
 import { notFound } from "next/navigation";
 import { Inter, Work_Sans } from "next/font/google";
 import { routing } from "@/i18n/routing";
+import { SITE_URL } from "@/lib/site";
 import Header from "@/components/layout/Header";
 import Footer from "@/components/layout/Footer";
 import LanguageSwitcher from "@/components/layout/LanguageSwitcher";
@@ -35,30 +36,41 @@ export async function generateMetadata({
 }) {
   const { locale } = await params;
   const titles: Record<string, string> = {
-    en: "Trade4U - Your Journey to Funded Trading Starts Here",
-    es: "Trade4U - Tu Camino hacia el Trading Fondeado Comienza Aquí",
-    pt: "Trade4U - Sua Jornada para o Trading Financiado Começa Aqui",
+    en: "Trade4U | Simulated CME Futures Evaluations",
+    es: "Trade4U | Evaluaciones de Trading Simulado de Futuros CME",
+    pt: "Trade4U | Avaliações de Trading Simulado de Futuros CME",
   };
   const descriptions: Record<string, string> = {
-    en: "Get funded up to $150,000. Trade with our capital, keep up to 90% of the profits. No risk of your own money.",
-    es: "Obtén fondeo de hasta $150,000. Opera con nuestro capital, quédate con hasta el 90% de las ganancias.",
-    pt: "Receba financiamento de até $150,000. Opere com nosso capital, fique com até 90% dos lucros.",
+    en: "Simulated futures evaluations on CME instruments. Simulated accounts from $25K to $150K, up to 90% profit split. Evaluation fee applies. Trading involves substantial risk.",
+    es: "Evaluaciones de trading simulado en futuros CME. Cuentas simuladas de $25K a $150K, reparto de beneficios de hasta 90%. Se aplica cuota de evaluación. Operar futuros implica un riesgo sustancial.",
+    pt: "Avaliações de trading simulado em futuros CME. Contas simuladas de $25K a $150K, divisão de lucros de até 90%. Taxa de avaliação aplicável. Operar futuros envolve risco substancial.",
   };
 
+  const title = titles[locale] || titles.en;
+  const description = descriptions[locale] || descriptions.en;
+
   return {
+    metadataBase: new URL(SITE_URL),
     title: {
-      default: titles[locale] || titles.en,
+      default: title,
       template: "%s | Trade4U",
     },
-    description: descriptions[locale] || descriptions.en,
+    description,
     icons: {
       icon: "/favicon.svg",
     },
     openGraph: {
-      title: titles[locale] || titles.en,
-      description: descriptions[locale] || descriptions.en,
+      title,
+      description,
       siteName: "Trade4U",
       type: "website",
+      locale,
+      url: `${SITE_URL}/${locale}`,
+    },
+    twitter: {
+      card: "summary_large_image",
+      title,
+      description,
     },
   };
 }

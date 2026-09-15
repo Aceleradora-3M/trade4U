@@ -2,6 +2,7 @@
 
 import { useTranslations } from "next-intl";
 import { Link } from "@/i18n/navigation";
+import { hasLegalEntity, legalEntity } from "@/data/legal";
 
 export default function Footer() {
   const t = useTranslations("footer");
@@ -29,8 +30,8 @@ export default function Footer() {
               </Link>
             </li>
             <li>
-              <Link href="/" className="hover:text-accent transition-smooth">
-                {challenge("freedom.name")}
+              <Link href="/platform" className="hover:text-accent transition-smooth">
+                {nav("platform")}
               </Link>
             </li>
           </ul>
@@ -80,8 +81,16 @@ export default function Footer() {
               </Link>
             </li>
             <li>
-              <Link href="/terms" className="hover:text-accent transition-smooth">
+              <Link href="/risk-disclosure" className="hover:text-accent transition-smooth">
                 {t("risk")}
+              </Link>
+            </li>
+            <li>
+              <Link
+                href="/restricted-countries"
+                className="hover:text-accent transition-smooth"
+              >
+                {t("restricted")}
               </Link>
             </li>
           </ul>
@@ -90,6 +99,21 @@ export default function Footer() {
 
       <div className="border-t border-border/50">
         <div className="container py-6 space-y-3">
+          {hasLegalEntity && (
+            <div className="text-xs text-muted-foreground leading-relaxed max-w-4xl">
+              <span className="font-semibold text-foreground/90">
+                {t("entityHeading")}:
+              </span>{" "}
+              {legalEntity.name} · {t("regNumber")} {legalEntity.registrationNumber}{" "}
+              · {legalEntity.address} · {legalEntity.country} ·{" "}
+              <a
+                href={`mailto:${legalEntity.email}`}
+                className="hover:text-accent transition-smooth"
+              >
+                {legalEntity.email}
+              </a>
+            </div>
+          )}
           <p className="text-xs text-muted-foreground leading-relaxed max-w-4xl">
             {t("disclaimer")}
           </p>

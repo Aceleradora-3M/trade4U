@@ -1,4 +1,5 @@
 import { setRequestLocale } from "next-intl/server";
+import { localeAlternates } from "@/lib/site";
 import Section from "@/components/shared/Section";
 import AnimatedSection from "@/components/shared/AnimatedSection";
 
@@ -13,7 +14,10 @@ export async function generateMetadata({
     es: "Terminos de Servicio",
     pt: "Termos de Servico",
   };
-  return { title: titles[locale] || titles.en };
+  return {
+    title: titles[locale] || titles.en,
+    alternates: localeAlternates(locale, "terms"),
+  };
 }
 
 const sections = [
@@ -23,11 +27,11 @@ const sections = [
   },
   {
     title: "2. Definitions",
-    text: '"Service" refers to the Trade4U prop trading evaluation platform, including all challenge programs, simulated trading accounts, and related tools. "User" means any individual who registers for and/or uses the Service. "Challenge" or "Evaluation" refers to the simulated trading assessment programs offered through the platform. "Funded Account" refers to the simulated trading account provided after successfully completing an evaluation.',
+    text: '"Service" refers to the Trade4U prop trading evaluation platform, including all challenge programs, simulated trading accounts, and related tools. "User" means any individual who registers for and/or uses the Service. "Challenge" or "Evaluation" refers to the simulated trading assessment programs offered through the platform. "Simulated Funded Account" refers to the simulated trading account provided after successfully completing an evaluation. No account offered by Trade4U holds or trades real capital.',
   },
   {
     title: "3. Services",
-    text: "Trade4U offers simulated futures trading evaluation programs. Users purchase access to evaluation challenges where they must meet specified profit targets while adhering to risk management rules including daily drawdown limits and maximum drawdown limits. Successful completion of an evaluation may result in access to a funded simulated trading account with profit-sharing arrangements as described in the specific program terms.",
+    text: "Trade4U offers simulated futures trading evaluation programs. Users purchase access to evaluation challenges where they must meet specified profit targets while adhering to risk management rules including daily drawdown limits and maximum drawdown limits. Successful completion of an evaluation may result in access to a simulated funded account with profit-sharing arrangements on simulated profits as described in the specific program terms.",
   },
   {
     title: "4. User Obligations",
@@ -35,7 +39,7 @@ const sections = [
   },
   {
     title: "5. Payment",
-    text: "All challenge fees are due at the time of purchase and are processed through our authorized payment providers. Fees are non-refundable except as explicitly stated in the specific program terms. Profit payouts for funded accounts are processed according to the payout schedule and split ratio described in the applicable program documentation.",
+    text: "All challenge fees are due at the time of purchase and are processed through our authorized payment providers. Fees are non-refundable except as explicitly stated in the specific program terms. Payout requests on simulated profits are subject to review and, once approved, are processed according to the payout schedule and split ratio described in the applicable program documentation.",
   },
   {
     title: "6. Risk Disclosure",

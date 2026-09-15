@@ -6,6 +6,14 @@ import { ArrowRight } from "lucide-react";
 export default function Hero() {
   const t = useTranslations("hero");
   const cta = useTranslations("cta");
+  const conditions = useTranslations("conditions");
+  const disclosure = useTranslations("disclosure");
+
+  const programParams = [
+    { label: conditions("target"), value: conditions("targetVal") },
+    { label: conditions("max"), value: conditions("maxVal") },
+    { label: conditions("minDays"), value: conditions("minDaysVal") },
+  ];
 
   return (
     <section className="relative overflow-hidden bg-gradient-hero">
@@ -35,6 +43,11 @@ export default function Hero() {
             {/* Subtitle */}
             <p className="mt-6 max-w-xl text-base md:text-lg text-muted-foreground leading-relaxed">
               {t("sub")}
+            </p>
+
+            {/* Above-the-fold risk disclosure */}
+            <p className="mt-5 max-w-xl text-xs leading-relaxed text-muted-foreground">
+              {disclosure("aboveFold")}
             </p>
 
             {/* 4 stats */}
@@ -85,26 +98,29 @@ export default function Hero() {
 
               <img
                 src="/hero-candles.png"
-                alt="Trading performance"
+                alt=""
                 loading="lazy"
                 className="relative w-full h-full object-contain animate-float motion-reduce:animate-none"
               />
 
-              {/* Floating card 1 - top left */}
-              <div className="absolute top-8 left-0 rounded-2xl border border-accent/40 bg-card/80 backdrop-blur-xl px-5 py-4 shadow-elevated animate-float motion-reduce:animate-none">
-                <div className="text-xs text-muted-foreground">P&amp;L Today</div>
-                <div className="text-3xl font-display font-black text-accent-glow">+$3,450</div>
-                <div className="text-xs text-accent-glow/80">+3.34%</div>
-              </div>
-
-              {/* Floating card 2 - bottom right */}
-              <div className="absolute bottom-6 right-0 rounded-2xl border border-border bg-card/80 backdrop-blur-xl px-5 py-4 shadow-elevated animate-float-delayed motion-reduce:animate-none">
-                <div className="text-xs text-muted-foreground">Funded Account</div>
-                <div className="text-2xl font-display font-black text-foreground">$103,450</div>
-                <div className="flex items-center gap-1 text-xs text-accent-glow">
-                  Live
-                  <span className="h-1.5 w-1.5 rounded-full bg-accent-glow animate-pulse" />
+              {/* Program parameters — static, no performance representation */}
+              <div className="absolute bottom-6 left-0 right-0 mx-auto w-[min(20rem,100%)] rounded-2xl border border-accent/30 bg-card/90 backdrop-blur-xl px-5 py-4 shadow-elevated">
+                <div className="text-[10px] font-bold uppercase tracking-[0.2em] text-accent-glow mb-3">
+                  {t("paramsTitle")}
                 </div>
+                <dl className="space-y-2">
+                  {programParams.map((param) => (
+                    <div
+                      key={param.label}
+                      className="flex items-baseline justify-between gap-4"
+                    >
+                      <dt className="text-xs text-muted-foreground">{param.label}</dt>
+                      <dd className="text-sm font-display font-bold text-foreground text-right">
+                        {param.value}
+                      </dd>
+                    </div>
+                  ))}
+                </dl>
               </div>
             </div>
           </div>

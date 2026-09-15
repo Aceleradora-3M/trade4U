@@ -1,4 +1,5 @@
 import { setRequestLocale } from "next-intl/server";
+import { localeAlternates } from "@/lib/site";
 import { useTranslations } from "next-intl";
 import Section from "@/components/shared/Section";
 import AnimatedSection from "@/components/shared/AnimatedSection";
@@ -16,7 +17,10 @@ export async function generateMetadata({
     es: "Nosotros",
     pt: "Sobre",
   };
-  return { title: titles[locale] || titles.en };
+  return {
+    title: titles[locale] || titles.en,
+    alternates: localeAlternates(locale, "about"),
+  };
 }
 
 function AboutContent() {

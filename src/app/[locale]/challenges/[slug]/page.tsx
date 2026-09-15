@@ -1,4 +1,5 @@
 import { setRequestLocale } from "next-intl/server";
+import { localeAlternates } from "@/lib/site";
 import { useTranslations } from "next-intl";
 import { notFound } from "next/navigation";
 import { challenges, getChallengeBySlug } from "@/data/challenges";
@@ -19,7 +20,7 @@ export async function generateMetadata({
 }: {
   params: Promise<{ locale: string; slug: string }>;
 }) {
-  const { slug } = await params;
+  const { locale, slug } = await params;
   const challenge = getChallengeBySlug(slug);
   if (!challenge) return { title: "Not Found" };
   const names: Record<string, string> = {
@@ -28,7 +29,10 @@ export async function generateMetadata({
     oneday: "One-Day Challenge",
     instantFunded: "Instant Funded",
   };
-  return { title: names[slug] || slug };
+  return {
+    title: names[slug] || slug,
+    alternates: localeAlternates(locale, `challenges/${slug}`),
+  };
 }
 
 const tKeyMap: Record<string, string> = {
@@ -42,6 +46,22 @@ function ChallengeDetailContent({ slug }: { slug: string }) {
   const detail = useTranslations("detail");
   const ruleT = useTranslations("rule");
   const challengeT = useTranslations("challenge");
+  const common = useTranslations("common");
+  const rulesT = useTranslations("challenge.rules");
+
+  /**
+   * Rule values in `data/challenges.ts` are locale-neutral tokens:
+   * "challenge.rules.<key>" for named values and "days:<n>" for durations.
+   * Anything else (percentages, ratios, prices) is rendered as-is.
+   */
+  const resolveValue = (value: string) => {
+    if (value.startsWith("challenge.rules.")) {
+      return rulesT(value.slice("challenge.rules.".length));
+    }
+    const days = /^days:(\d+)$/.exec(value);
+    if (days) return ruleT("days", { count: Number(days[1]) });
+    return value;
+  };
 
   const challenge = getChallengeBySlug(slug);
   if (!challenge) notFound();
@@ -60,7 +80,7 @@ function ChallengeDetailContent({ slug }: { slug: string }) {
               className="inline-flex items-center gap-2 text-sm text-muted-foreground hover:text-accent transition-smooth mb-6"
             >
               <ArrowLeft className="w-4 h-4" />
-              Back
+              {common("back")}
             </Link>
 
             <h1 className="font-display font-bold text-4xl md:text-5xl text-gradient mb-3">
@@ -119,7 +139,7 @@ function ChallengeDetailContent({ slug }: { slug: string }) {
                         {rule.label}
                       </span>
                       <span className="text-sm font-medium text-foreground">
-                        {rule.value}
+                        {resolveValue(rule.value)}
                       </span>
                     </div>
                   ))}

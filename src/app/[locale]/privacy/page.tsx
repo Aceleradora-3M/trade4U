@@ -1,4 +1,5 @@
 import { setRequestLocale } from "next-intl/server";
+import { localeAlternates } from "@/lib/site";
 import Section from "@/components/shared/Section";
 import AnimatedSection from "@/components/shared/AnimatedSection";
 
@@ -13,7 +14,10 @@ export async function generateMetadata({
     es: "Politica de Privacidad",
     pt: "Politica de Privacidade",
   };
-  return { title: titles[locale] || titles.en };
+  return {
+    title: titles[locale] || titles.en,
+    alternates: localeAlternates(locale, "privacy"),
+  };
 }
 
 const sections = [

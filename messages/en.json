@@ -10,12 +10,12 @@
     "platform": "Trading Platform"
   },
   "cta": {
-    "getFunded": "Get Funded",
+    "getFunded": "Start Evaluation",
     "viewChallenges": "View Challenges",
     "learnMore": "Learn more",
     "buyChallenge": "Buy Challenge",
-    "startToday": "Start Your Challenge Today",
-    "startTodaySub": "Trade real capital up to $150,000. Keep 90% of your profits.",
+    "startToday": "Start Your Evaluation Today",
+    "startTodaySub": "Trade a simulated account of up to $150,000 and receive up to 90% of the simulated profits.",
     "startChallenge": "Start Challenge",
     "contactUs": "Contact Support",
     "freeTrial": "Free trial",
@@ -23,18 +23,19 @@
   },
   "hero": {
     "platform": "Trading Platform Available",
-    "badge": "Now funding new traders worldwide",
+    "badge": "Simulated CME futures evaluations",
     "titleA": "Empowering",
     "titleB": "Promising",
     "titleC": "Traders Worldwide",
-    "sub": "Prove your skills, get funded with up to $150K and keep up to 90% of your profits — paid in real cash within 24 hours.",
+    "sub": "Prove your skills on a simulated account of up to $150K and receive up to 90% of the simulated profits. Approved payout requests are processed within 24 hours.",
     "s1": "Profit Split",
-    "s2": "Max Account Size",
-    "s3": "Payout Processing",
+    "s2": "Max Simulated Account",
+    "s3": "Processing after approval",
     "s4": "One-Day Challenge",
     "f1": "90% profit split for the trader",
-    "f2": "Payouts processed within 24 hours",
-    "f3": "Futures trading with CME data"
+    "f2": "Payout requests processed within 24h of approval",
+    "f3": "Futures trading with CME data",
+    "paramsTitle": "Program parameters"
   },
   "trustbar": {
     "eyebrow": "Recognized by the industry",
@@ -45,15 +46,15 @@
   },
   "bigstats": {
     "countries": "Countries Served",
-    "paid": "Paid to Trade4U Traders",
+    "paid": "Payouts to Trade4U Traders",
     "traders": "Active Traders",
-    "processing": "Guaranteed Payout Processing",
+    "processing": "Payout Processing After Approval",
     "instruments": "Available Instruments"
   },
   "conditions": {
     "eyebrow": "TRADING CONDITIONS",
     "title": "Built for serious traders",
-    "sub": "Transparent rules across every program. No hidden traps.",
+    "sub": "Full rulebook published for every program.",
     "target": "Profit Target",
     "daily": "Daily Drawdown",
     "max": "Max Drawdown",
@@ -85,7 +86,7 @@
     "card2": "Advanced Charting",
     "card2Desc": "Professional-grade charts with 100+ indicators.",
     "card3": "Risk Management",
-    "card3Desc": "Built-in risk controls to protect your capital.",
+    "card3Desc": "Built-in risk controls to keep you inside the drawdown limits.",
     "card4": "Multi-Market Access",
     "card4Desc": "Trade futures across CME, CBOT, NYMEX, and COMEX.",
     "card5": "Mobile Trading",
@@ -93,15 +94,15 @@
   },
   "proof": {
     "eyebrow": "PAYOUT PROOF",
-    "title": "Real payouts to real traders",
-    "sub": "Verified withdrawals processed in under 24 hours. You could be next.",
+    "title": "Payouts to Trade4U traders",
+    "sub": "Approved payout requests are processed within 24 hours. Amounts shown are past payouts and are not a forecast.",
     "paid": "Paid",
     "amount": "Payout",
     "account": "Account"
   },
   "models": {
     "eyebrow": "ACCOUNT MODELS",
-    "title": "Choose your funding journey",
+    "title": "Choose your evaluation program",
     "sub": "Three programs designed for every trading style.",
     "from": "Starting from",
     "cta": "Get Started"
@@ -114,9 +115,9 @@
       "scaleUp": "Scale to higher capital with consistency",
       "lowEntry": "Lowest entry fee in the market",
       "activation": "Pay activation only when you pass",
-      "fastTrack": "Fast-track to funded status",
+      "fastTrack": "Fast-track to a simulated account",
       "noEval": "No evaluation, no profit target",
-      "tradeNow": "Trade live capital from day one"
+      "tradeNow": "Trade a simulated account from day one"
     }
   },
   "promo": {
@@ -130,7 +131,7 @@
     "traders": "Rewarded Traders",
     "paid": "Total Rewarded",
     "split": "90% Profit Split",
-    "payout": "Fast Payouts",
+    "payout": "24h Payout Processing",
     "sltp": "No SL/TP Required",
     "data": "Real-Time Data"
   },
@@ -142,7 +143,7 @@
   },
   "section": {
     "challenges": {
-      "title": "Choose your path to funding",
+      "title": "Choose your evaluation program",
       "sub": "Four programs designed for every type of trader."
     },
     "how": {
@@ -157,8 +158,8 @@
         "body": "Trade futures, follow the rules and meet your profit target."
       },
       "s3": {
-        "title": "3. Get funded & paid",
-        "body": "Trade live capital and withdraw 90% of your profits."
+        "title": "3. Get your simulated account & payouts",
+        "body": "Trade the simulated account and request up to 90% of the simulated profits."
       }
     },
     "pricing": {
@@ -173,11 +174,11 @@
       },
       "f2": {
         "title": "Transparent rules",
-        "body": "No hidden traps. Every metric documented."
+        "body": "Full rulebook published. Every metric documented."
       },
       "f3": {
-        "title": "Fast payouts",
-        "body": "Withdraw your profits without delays."
+        "title": "Payout processing",
+        "body": "Approved payout requests are processed within 24 hours."
       },
       "f4": {
         "title": "Pro platforms",
@@ -201,7 +202,7 @@
   "challenge": {
     "standard": {
       "name": "Standard Challenge",
-      "tagline": "Two-phase evaluation. Proven path to funding."
+      "tagline": "Two-phase evaluation on a simulated account. Proven path."
     },
     "instant": {
       "name": "Instant Activation",
@@ -209,19 +210,26 @@
     },
     "oneday": {
       "name": "One-Day Challenge",
-      "tagline": "One session. One target. Get funded today."
+      "tagline": "One session. One target. Simulated account the same day."
     },
     "instantFunded": {
       "name": "Instant Funded",
-      "tagline": "No evaluation. Trade live capital from day one."
+      "tagline": "No evaluation. Trade a simulated account from day one."
     },
     "instantFunding": {
       "name": "Instant Funding",
-      "tagline": "No challenge phase. Trade live capital from day one."
+      "tagline": "No challenge phase. Trade a simulated account from day one."
     },
     "freedom": {
       "name": "Freedom",
       "tagline": "30-day challenge with no minimum trading days."
+    },
+    "rules": {
+      "unlimited": "Unlimited",
+      "noConsistency": "None",
+      "notRequired": "Not required",
+      "allowed": "Allowed",
+      "newsRestricted": "Restricted"
     }
   },
   "badge": {
@@ -233,13 +241,13 @@
       "challenge": "Phase 1 — Challenge"
     },
     "2": {
-      "funded": "Phase 2 — Funded"
+      "funded": "Phase 2 — Simulated Account"
     },
     "evaluation": "Evaluation",
-    "funded": "Funded Account",
-    "fundedAccount": "Funded Account",
+    "funded": "Simulated Account",
+    "fundedAccount": "Simulated Account",
     "challenge30": "Challenge — 30 days",
-    "fundedFreedom": "Funded (Freedom)"
+    "fundedFreedom": "Simulated Account (Freedom)"
   },
   "rule": {
     "duration": "Duration",
@@ -261,7 +269,8 @@
     "activation": "Activation Fee",
     "minProfitDays": "Min Profitable Days",
     "minDailyProfit": "Min Daily Profit",
-    "maxLoss": "Max Loss"
+    "maxLoss": "Max Loss",
+    "days": "{count, plural, =1 {# day} other {# days}}"
   },
   "panel": {
     "tradingRules": "Trading Rules",
@@ -280,7 +289,7 @@
     "staticAt": "Static at"
   },
   "footer": {
-    "tagline": "Funded futures trading for serious traders.",
+    "tagline": "Simulated CME futures evaluations.",
     "product": "Product",
     "company": "Company",
     "legal": "Legal",
@@ -288,11 +297,14 @@
     "privacy": "Privacy",
     "risk": "Risk Disclosure",
     "disclaimer": "Trading futures involves substantial risk and is not suitable for every investor. Past performance is not indicative of future results. Trade4U provides simulated trading evaluations.",
-    "rights": "All rights reserved."
+    "rights": "All rights reserved.",
+    "restricted": "Restricted Countries",
+    "entityHeading": "Legal entity",
+    "regNumber": "Registration no."
   },
   "about": {
     "title": "Built by traders, for traders",
-    "body": "Trade4U was founded with a simple mission: give skilled futures traders access to real capital with rules that reward consistency, not luck. We combine institutional-grade infrastructure with a 90/10 profit split — the most generous in the industry.",
+    "body": "Trade4U was founded with a simple mission: give skilled futures traders a simulated environment where rules reward consistency, not luck. We combine institutional-grade infrastructure with a 90/10 profit split on simulated profits.",
     "missionTitle": "Our Mission",
     "valuesTitle": "Our Values",
     "value1": "Transparency",
@@ -316,9 +328,9 @@
   },
   "faq": {
     "q1": "What platforms can I trade on?",
-    "a1": "Industry-standard futures platforms compatible with major data feeds.",
-    "q2": "How fast are payouts?",
-    "a2": "Payouts are processed quickly once minimum requirements are met.",
+    "a1": "You trade on BlackArrow, the official platform for Trade4U evaluations, with real-time CME data feeds.",
+    "q2": "How do payouts work?",
+    "a2": "A request can be submitted after 5 profitable days with a $200 minimum daily profit and compliance with the 30% consistency rule. Once approved, processing takes up to 24 hours.",
     "q3": "Do I need a stop-loss?",
     "a3": "Stop-losses are not required (recommended on the One-Day Challenge).",
     "q4": "What happens if I trade during news?",
@@ -326,7 +338,7 @@
     "q5": "Can I hold positions overnight?",
     "a5": "Position-holding rules depend on the program. See each challenge page for details.",
     "q6": "What's the consistency rule?",
-    "a6": "It limits how much a single day or trade can contribute to your total profits, ensuring sustainable trading.",
+    "a6": "It limits how much a single day or trade can contribute to your total profits, encouraging sustainable trading.",
     "supportTitle": "Still have questions?",
     "supportBody": "Our support team is available 24/7 to help you."
   },
@@ -335,20 +347,20 @@
     "title": "Why traders choose Trade4U",
     "sub": "The top reasons to trade with us.",
     "split": {
-      "title": "15% Profit Share in Challenge",
-      "body": "Earn 15% of all your profits during the evaluation phase."
+      "title": "15% Profit Share in the Evaluation",
+      "body": "Receive 15% of your simulated profits during the evaluation phase."
     },
     "payouts": {
-      "title": "Lightning-Fast Payouts",
-      "body": "Guaranteed processing in just 24 hours."
+      "title": "24h Payout Processing",
+      "body": "Approved payout requests are processed within 24 hours."
     },
     "weekly": {
       "title": "Weekly Payouts",
-      "body": "Withdraw funded account profits as often as every week."
+      "body": "Payout requests on simulated profits can be submitted as often as every week."
     },
     "scale": {
       "title": "Scale Without Limits",
-      "body": "Show consistency and scale your account up to 100% payouts."
+      "body": "Show consistency and scale your simulated account up to a 90% profit split."
     },
     "loyalty": {
       "title": "Trade2Earn",
@@ -371,7 +383,7 @@
       "body": "Real-time quotes, advanced charting and the precision tools serious futures traders demand."
     },
     "dxtrade": {
-      "body": "Web, desktop and mobile — manage all your funded futures accounts from a single BlackArrow login."
+      "body": "Web, desktop and mobile — manage all your simulated futures accounts from a single BlackArrow login."
     }
   },
   "featured": {
@@ -380,22 +392,22 @@
   "journey": {
     "eyebrow": "YOUR JOURNEY",
     "title": "How Does It Work?",
-    "sub": "We give you a demo account to prove your skills. Pass the evaluation and earn real money.",
+    "sub": "You get a simulated account to prove your skills. Meet the evaluation requirements and become eligible for payouts on simulated profits.",
     "step": "Step",
     "phase1": "Evaluation Phase",
-    "phase2": "Funded Phase",
+    "phase2": "Simulated Account Phase",
     "phase3": "Payout",
     "s1": {
       "title": "Complete the Evaluation",
       "body": "Hit the profit target while staying within daily and total drawdown limits."
     },
     "s2": {
-      "title": "Earn as a Funded Trader",
-      "body": "You get a new account where you earn up to 90% of profits in real money."
+      "title": "Trade the Simulated Account",
+      "body": "You get a new simulated account with entitlement to up to 90% of the simulated profits."
     },
     "s3": {
       "title": "Get Paid",
-      "body": "Withdraw as soon as 7 days after your first trade. Fast payouts."
+      "body": "Your first payout request can be submitted from 7 days after your first trade, subject to review and program rules."
     },
     "detailTitle": "Your Journey in Detail",
     "rule1": "No Martingale",
@@ -404,7 +416,7 @@
   },
   "plans": {
     "eyebrow": "CHOOSE YOUR JOURNEY",
-    "title": "Your Funding Journey Starts Here",
+    "title": "Choose Your Evaluation",
     "sub": "Pick the plan that best fits your trading style.",
     "oneStep": "1 Step",
     "twoStep": "2 Step",
@@ -413,14 +425,14 @@
     "twoStepClassic": "2-Step Classic",
     "phase1": "Step 1",
     "phase2": "Step 2",
-    "fundedStage": "Funded Stage",
+    "fundedStage": "Simulated Account Stage",
     "tradingPeriod": "Trading Period",
     "minDays": "Min Trading Days",
     "maxDailyLoss": "Max Daily Loss",
     "maxTotalLoss": "Max Total Loss",
     "profitTarget": "Profit Target",
     "tokens": "Trade4U Tokens",
-    "refundable": "Refundable Fee",
+    "refundable": "Evaluation Fee",
     "free": "Free",
     "noConsistency": "No Consistency Rules",
     "mt5Available": "BlackArrow Platform Included",
@@ -430,14 +442,14 @@
   "love": {
     "eyebrow": "OUR BENEFITS",
     "title": "Why traders love Trade4U?",
-    "sub": "The highest-rated prop trading experience in the industry.",
+    "sub": "Built for CME futures traders.",
     "experience": {
       "title": "Built for Futures Traders",
       "body": "Designed specifically for serious CME futures traders."
     },
     "spreads": {
-      "title": "Up to $150K Funded",
-      "body": "Trade with up to $150,000 in simulated capital."
+      "title": "Simulated Account up to $150K",
+      "body": "Trade a simulated account of up to $150,000 on CME instruments."
     },
     "multiasset": {
       "title": "Futures Trading",
@@ -452,8 +464,8 @@
       "body": "Get help from our team whenever you need it."
     },
     "global": {
-      "title": "Worldwide Access",
-      "body": "Open to traders across the globe."
+      "title": "International Access",
+      "body": "Available in most countries. See our restricted countries list."
     }
   },
   "team": {
@@ -471,11 +483,11 @@
   },
   "payoutssec": {
     "eyebrow": "PAYOUTS",
-    "title": "Reach Financial Success",
-    "sub": "Check the latest payouts to our traders. You could be next!",
-    "fast": "Fast Payouts",
-    "bigTitle": "Lightning-Fast Payouts",
-    "bigBody": "Renowned speed and reliability. Fast, easy and hassle-free for you as a trader.",
+    "title": "Payouts",
+    "sub": "Past payouts to Trade4U traders. Amounts shown are not a forecast.",
+    "fast": "24h Processing",
+    "bigTitle": "24h Payout Processing",
+    "bigBody": "Approved payout requests are processed within 24 hours, by crypto or bank transfer.",
     "process": {
       "title": "Simple Payout Process",
       "body": "Easily request payouts from your dashboard."
@@ -488,7 +500,7 @@
       "title": "Bank Transfer",
       "body": "Get paid via trusted banking partners."
     },
-    "stat1": "Average Payout Time",
+    "stat1": "Processing Time After Approval",
     "stat2": "Profit Split",
     "stat3": "Customer Support",
     "stat4": "Total Payouts"
@@ -502,11 +514,11 @@
     "r1": {
       "name": "Diego R.",
       "title": "An actual real prop firm",
-      "body": "After years trying prop firms, I hadn't found one that came close. Phase 2 credentials right after passing Phase 1, funded the next day and payouts without delay."
+      "body": "After years trying prop firms, I had not found one that came close. Phase 2 credentials right after passing Phase 1, simulated account the next day and payouts without delay."
     },
     "r2": {
       "name": "Hana T.",
-      "title": "No weird tricks",
+      "title": "Clear rules",
       "body": "Clear rules, fixed drawdown, reasonable targets — everything makes sense. Built by traders, for traders."
     },
     "r3": {
@@ -549,8 +561,8 @@
   },
   "ctafinal": {
     "eyebrow": "START TODAY",
-    "title": "Your Funding Journey Starts Here",
-    "sub": "Join thousands of traders already trading with Trade4U and keeping up to 90% of their profits."
+    "title": "Start Your Evaluation",
+    "sub": "Choose a program, follow the rules and receive up to 90% of the simulated profits."
   },
   "eyebrow": {
     "process": "Process",
@@ -562,8 +574,8 @@
   },
   "table": {
     "eyebrow": "PRICING & ACCOUNTS",
-    "title": "Pick your account, fund your trading",
-    "sub": "Compare every program side by side. Real prices, no hidden fees.",
+    "title": "Pick your account, start your evaluation",
+    "sub": "Compare every program side by side. Final prices. Evaluation fee is non-refundable.",
     "col": {
       "account": "Account size",
       "price": "Price",
@@ -572,14 +584,14 @@
       "maxDD": "Max drawdown"
     },
     "foot": {
-      "split": "Up to 90% profit split on every program",
+      "split": "Up to 90% profit split on simulated profits",
       "platforms": "Trade futures on professional platforms"
     },
     "learnMore": "Learn more about this program",
     "popular": "Popular",
     "challengeWord": "Challenge",
     "accountWord": "Account",
-    "challengeAccount": "FUNDED ACCOUNT",
+    "challengeAccount": "SIMULATED ACCOUNT",
     "from": "From",
     "total": "Total",
     "oneTimePayment": "One-time payment",
@@ -597,11 +609,11 @@
     "cta": {
       "title": "Ready to start this program?",
       "sub": "Pick your account size and start trading today. Pricing is on the homepage.",
-      "note": "Up to 90% profit split · Payouts in 24 hours"
+      "note": "Up to 90% profit split · Payout requests processed within 24h of approval"
     }
   },
   "perks": {
-    "payouts24h": "Payouts in 24h"
+    "payouts24h": "Processed within 24h of approval"
   },
   "val": {
     "eod": "EOD",
@@ -634,6 +646,76 @@
     "minProfitDays": "Minimum number of profitable trading days required.",
     "minDailyProfit": "Minimum profit you must reach on a profitable day.",
     "maxLoss": "Maximum loss allowed during the challenge phase.",
-    "activation": "Fee charged once to activate the funded account."
+    "activation": "Fee charged once to activate the simulated account."
+  },
+  "disclosure": {
+    "aboveFold": "Trade4U provides simulated trading evaluations. Trading futures involves substantial risk of loss and is not suitable for every investor. Simulated results do not represent actual trading. Past performance is not indicative of future results."
+  },
+  "common": {
+    "back": "Back",
+    "eyebrow": "Trade4U Prop",
+    "profitSplit": "Profit Split",
+    "maxDD": "Max Drawdown"
+  },
+  "risk": {
+    "title": "Risk Disclosure",
+    "updated": "Last updated: September 2026",
+    "intro": "Read this disclosure before purchasing any Trade4U program. It describes what the product is, what you can lose, and what Trade4U does not promise.",
+    "s1": {
+      "title": "1. This is a simulated trading product",
+      "body": "Trade4U provides simulated futures trading evaluations. Every account issued by Trade4U — during an evaluation and after it — is a simulated account, running on simulated order flow priced with real-time CME market data. Trade4U is not a broker-dealer, a futures commission merchant or an investment adviser, and does not hold client money for trading. No order placed in a Trade4U account is routed to an exchange."
+    },
+    "s2": {
+      "title": "2. Risk of loss",
+      "body": "Trading futures, including in a simulated environment, involves substantial risk and is not suitable for every investor. The evaluation fee is the amount you pay to take part in a program. It is non-refundable, and you should assume it is at risk in full: if you breach a drawdown limit or any other program rule, the account is closed and the fee is not returned."
+    },
+    "s3": {
+      "title": "3. No guarantee of approval or payout",
+      "body": "Reaching a profit target does not by itself create a right to a payout. Every account is subject to the published rules of its program — drawdown limits, minimum profitable days, minimum daily profit, consistency rules and news-trading restrictions — and every payout request is subject to review. Trade4U makes no representation that any trader will pass an evaluation, become eligible for a payout, or receive any particular amount."
+    },
+    "s4": {
+      "title": "4. Simulated results do not represent actual trading",
+      "body": "Simulated performance results have inherent limitations. Because the trades have not actually been executed, the results may under- or over-compensate for the impact of market factors such as liquidity and slippage. No representation is being made that any account will or is likely to achieve profits or losses similar to those shown. Past performance, simulated or otherwise, is not indicative of future results."
+    },
+    "s5": {
+      "title": "5. Eligibility and restricted jurisdictions",
+      "body": "Trade4U programs are not available in every country. Access is restricted in sanctioned and high-risk jurisdictions and may be further limited by local law. Review the restricted countries list before purchasing. You are responsible for confirming that your participation is lawful where you live."
+    },
+    "s6": {
+      "title": "6. No investment advice",
+      "body": "Nothing on this website is investment, financial, legal or tax advice, or a solicitation to buy or sell any financial instrument. Trading decisions you make in a Trade4U account are your own. If you are unsure whether these programs are appropriate for you, seek independent professional advice."
+    },
+    "seeRestricted": "See the restricted countries list"
+  },
+  "restricted": {
+    "title": "Restricted Countries",
+    "updated": "Last updated: September 2026",
+    "intro": "Trade4U evaluation programs are not available to residents of, or persons located in, the jurisdictions listed below. The list reflects international sanctions and anti-money-laundering restrictions and may change without notice.",
+    "listTitle": "Restricted jurisdictions",
+    "note": "Access may also be restricted by local law in countries that are not listed here. You are responsible for confirming that your participation is lawful where you live. If you are unsure, contact support before purchasing.",
+    "contact": "Contact support",
+    "list": [
+      "Afghanistan",
+      "Belarus",
+      "Central African Republic",
+      "Cuba",
+      "Democratic Republic of the Congo",
+      "Iran",
+      "Iraq",
+      "Libya",
+      "Mali",
+      "Myanmar (Burma)",
+      "Nicaragua",
+      "North Korea",
+      "Russia",
+      "Somalia",
+      "South Sudan",
+      "Sudan",
+      "Syria",
+      "Ukraine — Crimea, Donetsk and Luhansk regions",
+      "Venezuela",
+      "Yemen",
+      "Zimbabwe"
+    ]
   }
 }

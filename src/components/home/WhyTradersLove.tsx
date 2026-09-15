@@ -1,6 +1,7 @@
 "use client";
 
 import { useTranslations } from "next-intl";
+import { Link } from "@/i18n/navigation";
 import {
   Briefcase,
   TrendingDown,
@@ -16,7 +17,12 @@ const CARDS = [
   { icon: Layers, titleKey: "multiasset.title", bodyKey: "multiasset.body" },
   { icon: MonitorSmartphone, titleKey: "platforms.title", bodyKey: "platforms.body" },
   { icon: Headphones, titleKey: "support.title", bodyKey: "support.body" },
-  { icon: Globe, titleKey: "global.title", bodyKey: "global.body" },
+  {
+    icon: Globe,
+    titleKey: "global.title",
+    bodyKey: "global.body",
+    href: "/restricted-countries" as const,
+  },
 ];
 
 export default function WhyTradersLove() {
@@ -52,7 +58,16 @@ export default function WhyTradersLove() {
                   {t(card.titleKey)}
                 </h3>
                 <p className="text-sm text-muted-foreground leading-relaxed">
-                  {t(card.bodyKey)}
+                  {card.href ? (
+                    <Link
+                      href={card.href}
+                      className="underline underline-offset-4 decoration-border hover:text-accent hover:decoration-accent transition-smooth"
+                    >
+                      {t(card.bodyKey)}
+                    </Link>
+                  ) : (
+                    t(card.bodyKey)
+                  )}
                 </p>
               </div>
             );

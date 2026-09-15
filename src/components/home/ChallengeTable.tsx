@@ -19,7 +19,10 @@ import {
 interface AccountRow {
   icon: typeof Wallet;
   ruleKey: string;
-  value: string;
+  /** Literal value, already locale-neutral (numbers, percentages, contracts). */
+  value?: string;
+  /** Key under the `val` namespace, for values that must be translated. */
+  valueKey?: string;
 }
 
 interface Account {
@@ -39,7 +42,7 @@ const ACCOUNTS: Account[] = [
     price: "$99",
     buyUrl: "https://pay.hotmart.com/H106010807E",
     rows: [
-      { icon: Wallet, ruleKey: "activation", value: "One-time fee" },
+      { icon: Wallet, ruleKey: "activation", valueKey: "oneTimeFee" },
       { icon: BarChart3, ruleKey: "minProfitDays", value: "5" },
       { icon: Coins, ruleKey: "minDailyProfit", value: "$200" },
       { icon: ShieldAlert, ruleKey: "maxDD", value: "RT (Trailing)" },
@@ -54,7 +57,7 @@ const ACCOUNTS: Account[] = [
     price: "$189",
     buyUrl: "https://pay.hotmart.com/D106011089X",
     rows: [
-      { icon: Wallet, ruleKey: "activation", value: "One-time fee" },
+      { icon: Wallet, ruleKey: "activation", valueKey: "oneTimeFee" },
       { icon: BarChart3, ruleKey: "minProfitDays", value: "5" },
       { icon: Coins, ruleKey: "minDailyProfit", value: "$200" },
       { icon: ShieldAlert, ruleKey: "maxDD", value: "RT (Trailing)" },
@@ -70,6 +73,7 @@ export default function ChallengeTable() {
   const ch = useTranslations("challenge");
   const cta = useTranslations("cta");
   const perks = useTranslations("perks");
+  const val = useTranslations("val");
 
   const [activeAccount, setActiveAccount] = useState(0);
   const account = ACCOUNTS[activeAccount];
@@ -185,7 +189,7 @@ export default function ChallengeTable() {
                       </button>
                     </div>
                     <span className="text-xs sm:text-sm md:text-base font-semibold text-foreground text-right shrink-0">
-                      {row.value}
+                      {row.valueKey ? val(row.valueKey) : row.value}
                     </span>
                   </div>
                 );

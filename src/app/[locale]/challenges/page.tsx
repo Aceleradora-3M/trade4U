@@ -1,4 +1,5 @@
 import { setRequestLocale } from "next-intl/server";
+import { localeAlternates } from "@/lib/site";
 import { useTranslations } from "next-intl";
 import Section from "@/components/shared/Section";
 import AnimatedSection from "@/components/shared/AnimatedSection";
@@ -17,7 +18,10 @@ export async function generateMetadata({
     es: "Desafios",
     pt: "Desafios",
   };
-  return { title: titles[locale] || titles.en };
+  return {
+    title: titles[locale] || titles.en,
+    alternates: localeAlternates(locale, "challenges"),
+  };
 }
 
 const tKeyMap: Record<string, string> = {
@@ -31,6 +35,8 @@ function ChallengesContent() {
   const section = useTranslations("section.challenges");
   const t = useTranslations("challenge");
   const cta = useTranslations("cta");
+  const common = useTranslations("common");
+  const disclosure = useTranslations("disclosure");
 
   return (
     <>
@@ -40,13 +46,16 @@ function ChallengesContent() {
         <div className="container relative text-center">
           <AnimatedSection>
             <p className="text-xs font-semibold tracking-widest text-accent uppercase mb-4">
-              Trade4U Prop
+              {common("eyebrow")}
             </p>
             <h1 className="font-display font-bold text-4xl md:text-5xl lg:text-6xl text-gradient mb-6">
               {section("title")}
             </h1>
             <p className="text-lg text-muted-foreground max-w-2xl mx-auto">
               {section("sub")}
+            </p>
+            <p className="mt-5 text-xs leading-relaxed text-muted-foreground max-w-2xl mx-auto">
+              {disclosure("aboveFold")}
             </p>
           </AnimatedSection>
         </div>
@@ -76,7 +85,7 @@ function ChallengesContent() {
                     <div className="grid grid-cols-2 gap-3 mb-6">
                       <div className="bg-white/[0.04] rounded-xl p-3">
                         <p className="text-xs text-muted-foreground mb-1">
-                          Profit Split
+                          {common("profitSplit")}
                         </p>
                         <p className="text-sm font-semibold text-accent">
                           {fundedPhase.profitSplit}
@@ -84,7 +93,7 @@ function ChallengesContent() {
                       </div>
                       <div className="bg-white/[0.04] rounded-xl p-3">
                         <p className="text-xs text-muted-foreground mb-1">
-                          Max Drawdown
+                          {common("maxDD")}
                         </p>
                         <p className="text-sm font-semibold text-foreground">
                           {fundedPhase.maxDD}

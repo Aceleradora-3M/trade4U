@@ -10,13 +10,13 @@
     "platform": "Plataforma de Trading"
   },
   "cta": {
-    "getFunded": "Iniciar Avaliação",
-    "viewChallenges": "Ver Desafios",
+    "getFunded": "Iniciar avaliação",
+    "viewChallenges": "Ver todos os programas",
     "learnMore": "Saiba Mais",
-    "buyChallenge": "Iniciar Desafio",
-    "startToday": "Comece sua avaliação hoje",
-    "startTodaySub": "Opere uma conta simulada de até $150.000 e receba até 90% dos lucros simulados.",
-    "startChallenge": "Iniciar Desafio",
+    "buyChallenge": "Iniciar avaliação —",
+    "startToday": "Comece sua avaliação",
+    "startTodaySub": "Opere uma conta simulada de até $150.000 sob regras publicadas na íntegra, e fique com até 90% dos lucros simulados.",
+    "startChallenge": "Ver preços",
     "contactUs": "Contatar Suporte",
     "freeTrial": "Teste Grátis",
     "login": "Entrar"
@@ -24,18 +24,18 @@
   "hero": {
     "platform": "Plataforma de Trading Disponível",
     "badge": "Avaliações de trading simulado de futuros CME",
-    "titleA": "Impulsionando",
-    "titleB": "Traders",
-    "titleC": "Promissores no Mundo",
-    "sub": "Prove suas habilidades em uma conta simulada de até $150.000 e receba até 90% dos lucros simulados. Solicitações de pagamento são processadas em até 24h após aprovação.",
-    "s1": "Divisão de Lucros",
-    "s2": "Conta Simulada Máxima",
-    "s3": "Processamento após aprovação",
-    "s4": "Desafio One-Day",
+    "titleA": "Cada regra ",
+    "titleB": "publicada",
+    "titleC": "antes do pagamento. Futuros CME, até $150 mil simulados.",
+    "sub": "Uma taxa. O regulamento inteiro é público antes de você começar. Cumpriu, fica com até 90% dos lucros simulados.",
+    "s1": "Trader / Trade4U",
+    "s2": "Maior conta simulada",
+    "s3": "Payout após aprovação",
+    "s4": "One-Day, entrada",
     "f1": "90% de divisão de lucros para o trader",
     "f2": "Pagamentos processados em até 24h após aprovação",
     "f3": "Trading de futuros com dados CME",
-    "paramsTitle": "Parâmetros do programa"
+    "paramsTitle": "As regras que você opera"
   },
   "trustbar": {
     "eyebrow": "Reconhecidos pela indústria",
@@ -53,8 +53,8 @@
   },
   "conditions": {
     "eyebrow": "CONDIÇÕES DE TRADING",
-    "title": "Feito para traders sérios",
-    "sub": "Regras publicadas na íntegra para todos os programas.",
+    "title": "Nada aqui muda depois que você paga",
+    "sub": "O regulamento completo de cada programa está publicado. Leia antes de decidir.",
     "target": "Meta de Lucro",
     "daily": "Drawdown Diário",
     "max": "Drawdown Máximo",
@@ -73,8 +73,8 @@
   },
   "platform": {
     "eyebrow": "PLATAFORMA BLACKARROW",
-    "title": "Opere futuros na BlackArrow — feita para performance",
-    "sub": "A BlackArrow é nossa plataforma oficial de trading: dados CME em tempo real, execução nativa de futuros e as ferramentas de book que traders de futuros exigem.",
+    "title": "BlackArrow — feita para futuros, não adaptada a eles",
+    "sub": "Nossa plataforma oficial de trading: dados CME em tempo real, execução nativa de futuros e as ferramentas de book que trader de futuros exige.",
     "f1": "Dados CME em tempo real inclusos",
     "f2": "Contratos Micro e Mini de futuros",
     "f3": "Book de ofertas e ordens avançadas",
@@ -91,14 +91,6 @@
     "card4Desc": "Opere futuros na CME, CBOT, NYMEX e COMEX.",
     "card5": "Trading Mobile",
     "card5Desc": "Apps completos para iOS e Android."
-  },
-  "proof": {
-    "eyebrow": "PROVA DE PAGAMENTOS",
-    "title": "Pagamentos a traders Trade4U",
-    "sub": "Solicitações aprovadas são processadas em até 24 horas. Os valores exibidos são pagamentos passados e não representam previsão.",
-    "paid": "Pago",
-    "amount": "Pagamento",
-    "account": "Conta"
   },
   "models": {
     "eyebrow": "MODELOS DE CONTA",
@@ -121,25 +113,7 @@
     }
   },
   "promo": {
-    "welcome": "Bem-vindo à Trade4U"
-  },
-  "payouts": {
-    "recent": "Pagamentos recentes aos nossos traders"
-  },
-  "trust": {
-    "accounts": "Contas Trade4U",
-    "traders": "Traders recompensados",
-    "paid": "Total pago",
-    "split": "90% Divisão de Lucros",
-    "payout": "Processamento em 24h",
-    "sltp": "Sem SL/TP Obrigatório",
-    "data": "Dados em Tempo Real"
-  },
-  "award": {
-    "year": "Prop Firm do Ano 2025",
-    "experience": "Melhor Experiência de Trading",
-    "rated": "Avaliação Excelente",
-    "africa": "Melhor Prop Firm LATAM"
+    "welcome": "Avaliação de $25K — $99, preço cheio $165."
   },
   "section": {
     "challenges": {
@@ -194,9 +168,9 @@
       }
     },
     "faq": {
-      "title": "Perguntas Frequentes",
-      "sub": "Tudo o que você precisa saber antes de começar.",
-      "viewAll": "Ver todas as FAQs"
+      "title": "Antes de decidir",
+      "sub": "As respostas que a maioria dos traders quer antes de pagar.",
+      "viewAll": "Ver todas as perguntas"
     }
   },
   "challenge": {
@@ -236,19 +210,6 @@
     "popular": "Mais Popular",
     "noEval": "Sem Avaliação"
   },
-  "phase": {
-    "1": {
-      "challenge": "Fase 1 — Desafio"
-    },
-    "2": {
-      "funded": "Fase 2 — Conta Simulada"
-    },
-    "evaluation": "Avaliação",
-    "funded": "Conta Simulada",
-    "fundedAccount": "Conta Simulada",
-    "challenge30": "Desafio — 30 dias",
-    "fundedFreedom": "Conta Simulada (Freedom)"
-  },
   "rule": {
     "duration": "Duração",
     "minDays": "Dias Mínimos",
@@ -271,22 +232,6 @@
     "minDailyProfit": "Lucro Mínimo Diário",
     "maxLoss": "Perda Máxima",
     "days": "{count, plural, =1 {# dia} other {# dias}}"
-  },
-  "panel": {
-    "tradingRules": "Regras de Trading",
-    "restrictions": "Restrições",
-    "accountSizes": "Tamanhos de Conta",
-    "startingFrom": "A partir de",
-    "profitSplit": "Divisão de Lucros",
-    "leverage": "Alavancagem",
-    "commissions": "Comissões"
-  },
-  "summary": {
-    "price": "Preço",
-    "target": "Meta de Lucro",
-    "maxDD": "Drawdown Máx.",
-    "activation": "Ativação",
-    "staticAt": "Estático em"
   },
   "footer": {
     "tagline": "Avaliações de trading simulado de futuros CME.",
@@ -342,35 +287,6 @@
     "supportTitle": "Ainda tem dúvidas?",
     "supportBody": "Nossa equipe de suporte está disponível 24/7 para ajudá-lo."
   },
-  "apart": {
-    "eyebrow": "O Que Nos Diferencia",
-    "title": "Por que os traders escolhem a Trade4U",
-    "sub": "As principais razões para operar conosco.",
-    "split": {
-      "title": "15% de Divisão na Avaliação",
-      "body": "Receba 15% dos seus lucros simulados durante a fase de avaliação."
-    },
-    "payouts": {
-      "title": "Processamento em 24h",
-      "body": "Solicitações aprovadas são processadas em até 24 horas."
-    },
-    "weekly": {
-      "title": "Pagamentos Semanais",
-      "body": "Solicitações de pagamento sobre lucros simulados podem ser feitas semanalmente."
-    },
-    "scale": {
-      "title": "Escalar Sem Limites",
-      "body": "Mostre consistência e escale sua conta simulada com até 90% de divisão de lucros."
-    },
-    "loyalty": {
-      "title": "Trade2Earn",
-      "body": "Recompensas de fidelidade por cada operação que você fizer."
-    },
-    "norules": {
-      "title": "Sem Regras de Consistência",
-      "body": "Opere livremente sem restrições de consistência."
-    }
-  },
   "platforms": {
     "eyebrow": "PLATAFORMA DE TRADING",
     "title": "Powered by BlackArrow",
@@ -386,86 +302,58 @@
       "body": "Web, desktop e mobile — todas as suas contas simuladas em um único login BlackArrow."
     }
   },
-  "featured": {
-    "eyebrow": "Destacados Em"
-  },
   "journey": {
     "eyebrow": "SUA JORNADA",
-    "title": "Como Funciona?",
-    "sub": "Você recebe uma conta simulada para demonstrar suas habilidades. Ao cumprir os requisitos da avaliação, passa a ter direito a payout sobre os lucros simulados.",
+    "title": "Três fases. Sem surpresa.",
+    "sub": "Você opera uma conta simulada para demonstrar sua habilidade. Cumpriu os requisitos publicados, passa a ter direito a payout sobre os lucros simulados.",
     "step": "Passo",
     "phase1": "Fase de Avaliação",
     "phase2": "Fase da Conta Simulada",
     "phase3": "Pagamento",
     "s1": {
-      "title": "Complete a Avaliação",
-      "body": "Atinja a meta de lucros dentro dos limites de drawdown diário e total."
+      "title": "Passe na avaliação",
+      "body": "Atinja a meta de lucro sem estourar o drawdown diário nem o total. Os dois números estão publicados por programa."
     },
     "s2": {
-      "title": "Opere a Conta Simulada",
-      "body": "Você recebe uma nova conta simulada com direito a até 90% dos lucros simulados."
+      "title": "Opere a conta simulada",
+      "body": "Uma nova conta simulada, com direito a até 90% dos lucros simulados que ela gerar."
     },
     "s3": {
-      "title": "Receba seu Pagamento",
-      "body": "A primeira solicitação de pagamento pode ser feita a partir de 7 dias após a primeira operação, sujeita a análise e às regras do programa."
+      "title": "Solicite seu pagamento",
+      "body": "A primeira solicitação pode ser feita 7 dias após sua primeira operação. Solicitações aprovadas são processadas em até 24 horas."
     },
     "detailTitle": "Sua Jornada em Detalhes",
     "rule1": "Sem Martingale",
     "rule2": "Dias mínimos de operação",
     "rule3": "Respeitar limites de drawdown"
   },
-  "plans": {
-    "eyebrow": "ESCOLHA SUA JORNADA",
-    "title": "Escolha Sua Avaliação",
-    "sub": "Escolha o plano que melhor se adapta ao seu estilo de trading.",
-    "oneStep": "1 Passo",
-    "twoStep": "2 Passos",
-    "account": "Conta",
-    "oneStepBright": "1-Step Bright",
-    "twoStepClassic": "2-Step Classic",
-    "phase1": "Passo 1",
-    "phase2": "Passo 2",
-    "fundedStage": "Etapa da Conta Simulada",
-    "tradingPeriod": "Período de Trading",
-    "minDays": "Dias Mín. de Trading",
-    "maxDailyLoss": "Perda Diária Máx.",
-    "maxTotalLoss": "Perda Total Máx.",
-    "profitTarget": "Meta de Lucro",
-    "tokens": "Trade4U Tokens",
-    "refundable": "Taxa de Avaliação",
-    "free": "Grátis",
-    "noConsistency": "Sem Regras de Consistência",
-    "mt5Available": "Plataforma BlackArrow Incluída",
-    "fastSupport": "Suporte 24/7 ao Vivo",
-    "payOptions": "Opções de Pagamento"
-  },
   "love": {
-    "eyebrow": "NOSSOS BENEFÍCIOS",
-    "title": "Por que os traders amam a Trade4U?",
-    "sub": "Feito para quem opera futuros CME.",
+    "eyebrow": "POR QUE A TRADE4U",
+    "title": "O que você recebe, dito sem rodeio",
+    "sub": "Sem promessa vaga. É exatamente isto que o programa inclui.",
     "experience": {
-      "title": "Feito para Traders de Futuros",
-      "body": "Pensado especificamente para traders sérios de futuros CME."
+      "title": "Só futuros",
+      "body": "Construída em torno de instrumentos de futuros CME, não adaptada de outro mercado."
     },
     "spreads": {
-      "title": "Conta Simulada de até $150K",
-      "body": "Opere uma conta simulada de até $150.000 em instrumentos CME."
+      "title": "Conta simulada de até $150 mil",
+      "body": "Prove sua habilidade com tamanho, sem expor capital próprio ao mercado."
     },
     "multiasset": {
-      "title": "Trading de Futuros",
-      "body": "Opere contratos Micro e Mini de futuros sobre instrumentos CME."
+      "title": "Contratos Micro e Mini",
+      "body": "Ajuste o tamanho da posição ao seu risco, do Micro ao Mini."
     },
     "platforms": {
-      "title": "Plataformas Profissionais",
-      "body": "Opere nas plataformas preferidas por traders sérios de futuros."
+      "title": "Plataformas profissionais",
+      "body": "As ferramentas de execução que trader de futuros já usa — sem gambiarra proprietária."
     },
     "support": {
-      "title": "Suporte Dedicado",
-      "body": "Receba ajuda do nosso time quando precisar."
+      "title": "Suporte dedicado",
+      "body": "Gente de verdade que conhece o regulamento, não um script."
     },
     "global": {
-      "title": "Acesso Internacional",
-      "body": "Disponível na maioria dos países. Consulte a lista de países restritos."
+      "title": "Acesso internacional",
+      "body": "Disponível na maioria dos países. A lista de restritos está publicada."
     }
   },
   "team": {
@@ -537,11 +425,6 @@
       "body": "Eficiência constante. Meu último pagamento chegou em menos de 14 horas. A Trade4U define o padrão."
     }
   },
-  "videos": {
-    "eyebrow": "DEPOIMENTOS",
-    "title": "Histórias de Traders",
-    "sub": "Traders reais que cresceram suas contas e sacaram rápido conosco."
-  },
   "t2e": {
     "eyebrow": "TRADE2EARN",
     "title": "Conheça Nosso Programa de Fidelidade",
@@ -560,22 +443,14 @@
     }
   },
   "ctafinal": {
-    "eyebrow": "COMECE HOJE",
-    "title": "Comece Sua Avaliação",
-    "sub": "Escolha um programa, cumpra as regras e receba até 90% dos lucros simulados."
-  },
-  "eyebrow": {
-    "process": "Processo",
-    "pricing": "Preços",
-    "programs": "Programas",
-    "contact": "Contato",
-    "faq": "FAQ",
-    "why": "Por que Trade4U"
+    "eyebrow": "ANTES DE COMEÇAR",
+    "title": "Leia as regras. Depois decida.",
+    "sub": "O regulamento completo de cada programa é público — metas, drawdown, consistência, prazo de pagamento. Nada é revelado só depois que você paga."
   },
   "table": {
     "eyebrow": "PREÇOS E CONTAS",
-    "title": "Escolha sua conta e inicie sua avaliação",
-    "sub": "Compare todos os programas lado a lado. Preços finais. Taxa de avaliação não reembolsável.",
+    "title": "Uma taxa. Sem assinatura. Sem condição que aparece depois.",
+    "sub": "Cada parâmetro abaixo é o parâmetro que você opera. A taxa de avaliação é cobrada uma vez e não é reembolsável.",
     "col": {
       "account": "Tamanho da conta",
       "price": "Preço",
@@ -584,15 +459,15 @@
       "maxDD": "Drawdown máximo"
     },
     "foot": {
-      "split": "Até 90% de divisão sobre os lucros simulados em todos os programas",
-      "platforms": "Opere futuros em plataformas profissionais"
+      "split": "Até 90% dos lucros simulados para o trader",
+      "platforms": "Futuros em plataformas profissionais"
     },
-    "learnMore": "Saiba mais sobre este programa",
+    "learnMore": "Ver o regulamento completo",
     "popular": "Popular",
     "challengeWord": "Desafio",
     "accountWord": "Conta",
     "challengeAccount": "CONTA SIMULADA",
-    "from": "Valor",
+    "from": "PREÇO CHEIO",
     "total": "Total",
     "oneTimePayment": "Pagamento único",
     "accountLabelOrder": "before"
@@ -613,40 +488,18 @@
     }
   },
   "perks": {
-    "payouts24h": "Processamento em até 24h após aprovação"
+    "payouts24h": "Solicitações aprovadas processadas em até 24h"
   },
   "val": {
     "eod": "EOD",
     "perAccount": "Por conta",
     "minDays": "5 dias positivos",
-    "consistency": "40%",
+    "consistency": "30%",
     "maxAccounts": "Até 20 contas",
     "trailing": "RT (Trailing)",
     "none": "Nenhuma",
     "oneTimeFee": "Pagamento único",
     "noMinDays": "Sem mínimo"
-  },
-  "tip": {
-    "profitTarget": "Meta de lucro que você deve atingir nesta fase.",
-    "maxDD": "Perda total máxima permitida antes da conta ser reprovada.",
-    "dailyDD": "Perda máxima permitida em um único dia de operação.",
-    "duration": "Prazo disponível para completar a fase.",
-    "minDays": "Número mínimo de dias de operação exigidos.",
-    "leverage": "Alavancagem máxima disponível por tipo de contrato.",
-    "split": "Divisão de lucros entre trader e firma.",
-    "commissions": "Comissão por contrato (round-trip).",
-    "consistency": "O resultado diário não pode ultrapassar esse percentual do total.",
-    "sltp": "Política de uso de stop-loss / take-profit.",
-    "news": "Operação durante notícias de alto impacto.",
-    "profitableDays": "Dias lucrativos exigidos para um pagamento.",
-    "inactivity": "A conta é encerrada após esse período sem operações.",
-    "reset": "Custo para resetar a conta após um breach.",
-    "exposure": "Exposição máxima simultânea de contratos permitida.",
-    "maxAccounts": "Número máximo de contas que você pode manter simultaneamente.",
-    "minProfitDays": "Número mínimo de dias lucrativos exigidos.",
-    "minDailyProfit": "Lucro mínimo a atingir em um dia lucrativo.",
-    "maxLoss": "Perda máxima permitida durante a fase de desafio.",
-    "activation": "Taxa cobrada uma única vez para ativar a conta simulada."
   },
   "disclosure": {
     "aboveFold": "A Trade4U oferece avaliações de trading simulado. Operar futuros envolve risco substancial de perda e não é adequado para todos os investidores. Resultados simulados não representam operações reais. Desempenho passado não garante resultados futuros."

@@ -1,7 +1,8 @@
 import { setRequestLocale } from "next-intl/server";
 import { localeAlternates } from "@/lib/site";
 import { useTranslations } from "next-intl";
-import { notFound } from "next/navigation";
+import { notFound, redirect } from "next/navigation";
+import { getMarket } from "@/data/market";
 import { challenges, getChallengeBySlug } from "@/data/challenges";
 import Section from "@/components/shared/Section";
 import AnimatedSection from "@/components/shared/AnimatedSection";
@@ -195,6 +196,7 @@ export default async function ChallengeDetailPage({
   params: Promise<{ locale: string; slug: string }>;
 }) {
   const { locale, slug } = await params;
+  if (!getMarket(locale).sellsPrograms) redirect(`/${locale}#pricing`);
   setRequestLocale(locale);
   return <ChallengeDetailContent slug={slug} />;
 }

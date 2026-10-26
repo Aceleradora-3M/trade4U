@@ -1,13 +1,15 @@
 "use client";
 
-import { useTranslations } from "next-intl";
+import { useLocale, useTranslations } from "next-intl";
 import { Link } from "@/i18n/navigation";
+import { getMarket } from "@/data/market";
 import { hasLegalEntity, legalEntity } from "@/data/legal";
 
 export default function Footer() {
   const t = useTranslations("footer");
   const nav = useTranslations("nav");
   const challenge = useTranslations("challenge");
+  const { sellsPrograms } = getMarket(useLocale());
 
   return (
     <footer className="border-t border-border/50 bg-background/60 mt-20">
@@ -25,7 +27,10 @@ export default function Footer() {
           </h4>
           <ul className="space-y-2 text-sm text-muted-foreground">
             <li>
-              <Link href="/challenges" className="hover:text-accent transition-smooth">
+              <Link
+                href={sellsPrograms ? "/challenges" : "/#pricing"}
+                className="hover:text-accent transition-smooth"
+              >
                 {challenge("instantFunding.name")}
               </Link>
             </li>

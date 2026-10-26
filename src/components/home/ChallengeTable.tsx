@@ -15,7 +15,7 @@ export default function ChallengeTable() {
   const perks = useTranslations("perks");
   const val = useTranslations("val");
 
-  const { offers } = getMarket(useLocale());
+  const { offers, sellsPrograms } = getMarket(useLocale());
   const [activeAccount, setActiveAccount] = useState(0);
   const account = offers[activeAccount];
   const single = offers.length === 1;
@@ -158,7 +158,7 @@ export default function ChallengeTable() {
           {/* Footer 2: learn more + buy */}
           <div className="border-t border-border/60 px-7 md:px-10 py-6 flex flex-wrap gap-3 items-center justify-between">
             <Link
-              href="/challenges"
+              href={sellsPrograms ? "/challenges" : "/#rules"}
               className="inline-flex items-center gap-1.5 text-sm font-semibold text-accent-glow hover:gap-2.5 transition-all"
             >
               {t("learnMore")}

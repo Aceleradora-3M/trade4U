@@ -25,7 +25,7 @@ export default function TradingConditions() {
   const t = useTranslations("conditions");
 
   return (
-    <section className="py-20 md:py-24 border-t border-border/30">
+    <section id="rules" className="py-20 md:py-24 border-t border-border/30">
       <div className="container">
         <div className="max-w-2xl mx-auto text-center mb-14">
           <div className="text-[11px] font-semibold uppercase tracking-[0.25em] text-accent-glow/90 mb-4">

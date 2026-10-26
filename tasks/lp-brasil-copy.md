@@ -48,9 +48,12 @@ mantidos; commit + push na main.
 
 ## Pendente
 
-1. `/pt/challenges` e `/pt/challenges/[slug]` ainda listam os 4 programas em USD
-   (`src/data/challenges.ts`), sem relação com a oferta de R$ 389.
-2. Botão da página `/pt/how-it-works` leva a `/challenges` (mesmo problema).
+1. ~~`/pt/challenges` e `/pt/challenges/[slug]` listavam os 4 programas em USD.~~
+   Resolvido: `market.sellsPrograms = false` no PT, essas rotas fazem 307 para
+   `/pt#pricing`. "Ver as regras" do card aponta para `/pt#rules` (os Termos são
+   texto jurídico genérico, sem as regras). Rodapé "Conta sem prova" -> `/pt#pricing`.
+2. As tags hreflang de `/en/challenges*` ainda listam a URL `pt-BR`, que agora
+   redireciona.
 3. Copy aprovada usa "saque é de verdade" e "o máximo que você gasta são os
    R$ 389". Passou pela aprovação da página, mas é o tipo de frase que o filtro
    de 15/09 (`meta-compliance-landing.md`) evitava. Vale rever antes de subir

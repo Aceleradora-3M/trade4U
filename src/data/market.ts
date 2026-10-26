@@ -37,6 +37,11 @@ interface Market {
   offers: Offer[];
   /** How many `faq.q{n}` entries the home page shows. */
   homeFaqCount: number;
+  /**
+   * Whether the locale sells the programs in `data/challenges.ts`. When it
+   * does not, /challenges redirects to the home pricing section.
+   */
+  sellsPrograms: boolean;
 }
 
 const INTERNATIONAL: Market = {
@@ -77,6 +82,7 @@ const INTERNATIONAL: Market = {
     },
   ],
   homeFaqCount: 4,
+  sellsPrograms: true,
 };
 
 // Brazil sells a single account, priced in reais and paid by Pix. Same Hotmart
@@ -102,6 +108,7 @@ const BRAZIL: Market = {
     },
   ],
   homeFaqCount: 10,
+  sellsPrograms: false,
 };
 
 const MARKETS: Record<string, Market> = {

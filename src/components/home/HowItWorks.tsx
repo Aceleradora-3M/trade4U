@@ -1,8 +1,8 @@
 "use client";
 
 import { useTranslations } from "next-intl";
-import { Link } from "@/i18n/navigation";
 import { Target, Award, Wallet, ArrowRight } from "lucide-react";
+import CheckoutLink from "@/components/shared/CheckoutLink";
 
 const STEP_ICONS = [Target, Award, Wallet];
 
@@ -68,13 +68,13 @@ export default function HowItWorks() {
         </div>
 
         <div className="mt-12 text-center">
-          <Link
+          <CheckoutLink
+            fallbackHref="/#pricing"
+            fallbackLabel={cta("getFunded")}
             className="inline-flex items-center gap-2 rounded-full bg-gradient-cta px-8 py-4 text-base font-bold text-white shadow-glow hover:scale-105 transition-smooth"
-            href="/#pricing"
           >
-            {cta("getFunded")}
             <ArrowRight className="h-4 w-4" />
-          </Link>
+          </CheckoutLink>
         </div>
       </div>
     </section>

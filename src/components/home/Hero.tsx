@@ -2,18 +2,24 @@
 
 import { useTranslations } from "next-intl";
 import { ArrowRight } from "lucide-react";
+import CheckoutLink from "@/components/shared/CheckoutLink";
 
 export default function Hero() {
   const t = useTranslations("hero");
   const cta = useTranslations("cta");
-  const conditions = useTranslations("conditions");
   const disclosure = useTranslations("disclosure");
 
-  const programParams = [
-    { label: conditions("target"), value: conditions("targetVal") },
-    { label: conditions("max"), value: conditions("maxVal") },
-    { label: conditions("minDays"), value: conditions("minDaysVal") },
-  ];
+  const stats = [1, 2, 3, 4].map((n) => ({
+    value: t(`s${n}v`),
+    label: t(`s${n}`),
+  }));
+
+  const programParams = [1, 2, 3].map((n) => ({
+    label: t(`p${n}`),
+    value: t(`p${n}v`),
+  }));
+
+  const titleC = t("titleC");
 
   return (
     <section className="relative overflow-hidden bg-gradient-hero">
@@ -36,8 +42,12 @@ export default function Hero() {
             <h1 className="font-display font-bold tracking-[-0.02em] leading-[1.05] text-[clamp(2.25rem,5vw,4rem)] animate-fade-up">
               {t("titleA")}{" "}
               <span className="text-gradient-accent font-semibold italic">{t("titleB")}</span>
-              <br />
-              <span className="font-light text-foreground/95">{t("titleC")}</span>
+              {titleC && (
+                <>
+                  <br />
+                  <span className="font-light text-foreground/95">{titleC}</span>
+                </>
+              )}
             </h1>
 
             {/* Subtitle */}
@@ -52,33 +62,23 @@ export default function Hero() {
 
             {/* 4 stats */}
             <div className="mt-8 grid grid-cols-2 sm:grid-cols-4 gap-x-4 gap-y-5 max-w-2xl">
-              <div>
-                <div className="text-lg md:text-xl font-display font-black text-foreground leading-tight">90% / 10%</div>
-                <div className="text-xs text-muted-foreground mt-1 leading-tight">{t("s1")}</div>
-              </div>
-              <div>
-                <div className="text-lg md:text-xl font-display font-black text-foreground leading-tight">$150K</div>
-                <div className="text-xs text-muted-foreground mt-1 leading-tight">{t("s2")}</div>
-              </div>
-              <div>
-                <div className="text-lg md:text-xl font-display font-black text-foreground leading-tight">24h</div>
-                <div className="text-xs text-muted-foreground mt-1 leading-tight">{t("s3")}</div>
-              </div>
-              <div>
-                <div className="text-lg md:text-xl font-display font-black text-foreground leading-tight">$149</div>
-                <div className="text-xs text-muted-foreground mt-1 leading-tight">{t("s4")}</div>
-              </div>
+              {stats.map((stat) => (
+                <div key={stat.label}>
+                  <div className="text-lg md:text-xl font-display font-black text-foreground leading-tight">{stat.value}</div>
+                  <div className="text-xs text-muted-foreground mt-1 leading-tight">{stat.label}</div>
+                </div>
+              ))}
             </div>
 
             {/* CTAs */}
             <div className="mt-9 flex flex-wrap items-center gap-4">
-              <a
-                href="#pricing"
+              <CheckoutLink
+                fallbackHref="/#pricing"
+                fallbackLabel={cta("startChallenge")}
                 className="group inline-flex items-center gap-2 rounded-full bg-gradient-cta px-7 py-3.5 text-base font-bold text-white shadow-glow hover:scale-[1.03] transition-smooth"
               >
-                {cta("startChallenge")}
                 <ArrowRight className="h-5 w-5 group-hover:translate-x-1 transition-smooth" />
-              </a>
+              </CheckoutLink>
               <a
                 href="https://dashboard.trade4uprop.com/"
                 target="_blank"

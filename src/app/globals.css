@@ -152,6 +152,12 @@ h1, h2, h3, h4, h5, h6 {
   background-clip: text;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
+  /* The background is clipped to each line fragment, so an italic glyph at the
+     end of a line overhangs it and loses its last pixels. Give every fragment
+     its own room. */
+  padding-right: 0.1em;
+  -webkit-box-decoration-break: clone;
+  box-decoration-break: clone;
 }
 
 .shadow-glow {

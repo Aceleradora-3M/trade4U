@@ -1,19 +1,19 @@
 "use client";
 
-import { useTranslations } from "next-intl";
+import { useLocale, useTranslations } from "next-intl";
 import { Link } from "@/i18n/navigation";
+import { getMarket } from "@/data/market";
 import Accordion from "../shared/Accordion";
 
 export default function HomeFAQ() {
   const section = useTranslations("section.faq");
   const faq = useTranslations("faq");
 
-  const items = [
-    { question: faq("q1"), answer: faq("a1") },
-    { question: faq("q2"), answer: faq("a2") },
-    { question: faq("q3"), answer: faq("a3") },
-    { question: faq("q4"), answer: faq("a4") },
-  ];
+  const { homeFaqCount } = getMarket(useLocale());
+  const items = Array.from({ length: homeFaqCount }, (_, i) => ({
+    question: faq(`q${i + 1}`),
+    answer: faq(`a${i + 1}`),
+  }));
 
   return (
     <section className="py-24 border-t border-border/30">

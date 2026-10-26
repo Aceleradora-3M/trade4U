@@ -38,12 +38,12 @@ export async function generateMetadata({
   const titles: Record<string, string> = {
     en: "Trade4U | Simulated CME Futures Evaluations",
     es: "Trade4U | Evaluaciones de Trading Simulado de Futuros CME",
-    pt: "Trade4U | Avaliações de Trading Simulado de Futuros CME",
+    pt: "Trade4U | Conta de R$ 125 mil na bolsa americana",
   };
   const descriptions: Record<string, string> = {
     en: "Simulated futures evaluations on CME instruments. Simulated accounts from $25K to $150K, up to 90% profit split. Evaluation fee applies. Trading involves substantial risk.",
     es: "Evaluaciones de trading simulado en futuros CME. Cuentas simuladas de $25K a $150K, reparto de beneficios de hasta 90%. Se aplica cuota de evaluación. Operar futuros implica un riesgo sustancial.",
-    pt: "Avaliações de trading simulado em futuros CME. Contas simuladas de $25K a $150K, divisão de lucros de até 90%. Taxa de avaliação aplicável. Operar futuros envolve risco substancial.",
+    pt: "Pague R$ 389 no Pix, uma vez só, e opere uma conta simulada de R$ 125 mil na bolsa americana. Sem prova. Até 90% do resultado, com saque no Pix. Operar na bolsa envolve risco.",
   };
 
   const title = titles[locale] || titles.en;

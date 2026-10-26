@@ -4,6 +4,7 @@ import { useState, useEffect } from "react";
 import { useTranslations } from "next-intl";
 import { Link } from "@/i18n/navigation";
 import { Sparkles, Menu, X } from "lucide-react";
+import CheckoutLink from "@/components/shared/CheckoutLink";
 
 export default function Header() {
   const t = useTranslations("nav");
@@ -70,12 +71,11 @@ export default function Header() {
             >
               {t("login")}
             </a>
-            <Link
+            <CheckoutLink
+              fallbackHref="/#pricing"
+              fallbackLabel={cta("startChallenge")}
               className="inline-flex items-center rounded-full bg-gradient-accent px-4 py-2 text-sm font-semibold text-accent-foreground shadow-glow hover:opacity-90 transition-smooth"
-              href="/#pricing"
-            >
-              {cta("startChallenge")}
-            </Link>
+            />
           </div>
 
           {/* Mobile menu button */}
@@ -116,13 +116,12 @@ export default function Header() {
                 >
                   {t("login")}
                 </a>
-                <Link
+                <CheckoutLink
+                  fallbackHref="/#pricing"
+                  fallbackLabel={cta("startChallenge")}
                   className="text-sm font-semibold rounded-full bg-gradient-accent px-4 py-2 text-accent-foreground"
-                  href="/#pricing"
                   onClick={() => setMobileOpen(false)}
-                >
-                  {cta("startChallenge")}
-                </Link>
+                />
               </div>
             </div>
           </div>

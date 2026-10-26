@@ -1,71 +1,11 @@
 "use client";
 
 import { useState } from "react";
-import { useTranslations } from "next-intl";
+import { useLocale, useTranslations } from "next-intl";
 import { Link } from "@/i18n/navigation";
+import { getMarket } from "@/data/market";
 import { trackStartChallenge } from "@/lib/pixel";
-import {
-  Wallet,
-  BarChart3,
-  Coins,
-  ShieldAlert,
-  Layers,
-  Activity,
-  Info,
-  Check,
-  ArrowRight,
-} from "lucide-react";
-
-interface AccountRow {
-  icon: typeof Wallet;
-  ruleKey: string;
-  /** Literal value, already locale-neutral (numbers, percentages, contracts). */
-  value?: string;
-  /** Key under the `val` namespace, for values that must be translated. */
-  valueKey?: string;
-}
-
-interface Account {
-  id: string;
-  accountSize: string;
-  priceFrom: string;
-  price: string;
-  buyUrl: string;
-  rows: AccountRow[];
-}
-
-const ACCOUNTS: Account[] = [
-  {
-    id: "25k",
-    accountSize: "$25K",
-    priceFrom: "$165",
-    price: "$99",
-    buyUrl: "https://pay.hotmart.com/H106010807E",
-    rows: [
-      { icon: Wallet, ruleKey: "activation", valueKey: "oneTimeFee" },
-      { icon: BarChart3, ruleKey: "minProfitDays", value: "5" },
-      { icon: Coins, ruleKey: "minDailyProfit", value: "$200" },
-      { icon: ShieldAlert, ruleKey: "maxDD", value: "RT (Trailing)" },
-      { icon: Layers, ruleKey: "exposure", value: "4 Minis" },
-      { icon: Activity, ruleKey: "consistency", value: "30%" },
-    ],
-  },
-  {
-    id: "50k",
-    accountSize: "$50K",
-    priceFrom: "$315",
-    price: "$189",
-    buyUrl: "https://pay.hotmart.com/D106011089X",
-    rows: [
-      { icon: Wallet, ruleKey: "activation", valueKey: "oneTimeFee" },
-      { icon: BarChart3, ruleKey: "minProfitDays", value: "5" },
-      { icon: Coins, ruleKey: "minDailyProfit", value: "$200" },
-      { icon: ShieldAlert, ruleKey: "maxDD", value: "RT (Trailing)" },
-      { icon: Layers, ruleKey: "exposure", value: "10 Minis" },
-      { icon: Activity, ruleKey: "consistency", value: "30%" },
-    ],
-  },
-];
+import { Info, Check, ArrowRight } from "lucide-react";
 
 export default function ChallengeTable() {
   const t = useTranslations("table");
@@ -75,8 +15,10 @@ export default function ChallengeTable() {
   const perks = useTranslations("perks");
   const val = useTranslations("val");
 
+  const { offers } = getMarket(useLocale());
   const [activeAccount, setActiveAccount] = useState(0);
-  const account = ACCOUNTS[activeAccount];
+  const account = offers[activeAccount];
+  const single = offers.length === 1;
 
   return (
     <section id="pricing" className="py-20 md:py-28 border-t border-border/30">
@@ -104,23 +46,25 @@ export default function ChallengeTable() {
         </div>
 
         {/* Toggle 2 — Account size */}
-        <div className="mb-10 flex justify-center">
-          <div className="inline-flex flex-wrap items-center justify-center gap-1 rounded-full border border-border bg-card/50 p-1.5 max-w-full">
-            {ACCOUNTS.map((acc, i) => (
-              <button
-                key={acc.id}
-                onClick={() => setActiveAccount(i)}
-                className={`relative inline-flex items-center gap-2 rounded-full px-5 md:px-6 py-2.5 text-xs md:text-sm transition-smooth ${
-                  activeAccount === i
-                    ? "bg-gradient-cta text-white font-light shadow-glow"
-                    : "text-muted-foreground font-semibold hover:text-foreground"
-                }`}
-              >
-                {t("challengeWord")} {acc.accountSize}
-              </button>
-            ))}
+        {!single && (
+          <div className="mb-10 flex justify-center">
+            <div className="inline-flex flex-wrap items-center justify-center gap-1 rounded-full border border-border bg-card/50 p-1.5 max-w-full">
+              {offers.map((acc, i) => (
+                <button
+                  key={acc.id}
+                  onClick={() => setActiveAccount(i)}
+                  className={`relative inline-flex items-center gap-2 rounded-full px-5 md:px-6 py-2.5 text-xs md:text-sm transition-smooth ${
+                    activeAccount === i
+                      ? "bg-gradient-cta text-white font-light shadow-glow"
+                      : "text-muted-foreground font-semibold hover:text-foreground"
+                  }`}
+                >
+                  {t("challengeWord")} {acc.sizeLabel}
+                </button>
+              ))}
+            </div>
           </div>
-        </div>
+        )}
 
         {/* Card */}
         <div className="mx-auto max-w-5xl rounded-3xl border border-border bg-gradient-card overflow-hidden shadow-elevated">
@@ -135,7 +79,7 @@ export default function ChallengeTable() {
                   {t("accountWord")}
                 </div>
                 <div className="text-3xl sm:text-4xl md:text-5xl font-display font-black text-foreground">
-                  {account.accountSize}
+                  {account.sizeLabel}
                 </div>
               </div>
             </div>
@@ -225,11 +169,11 @@ export default function ChallengeTable() {
               target="_blank"
               rel="noopener noreferrer"
               onClick={() =>
-                trackStartChallenge("instant", account.accountSize, account.price)
+                trackStartChallenge("instant", account.size, account.price, account.currency)
               }
               className="inline-flex items-center gap-2 rounded-full bg-gradient-cta px-7 py-3 text-sm md:text-base font-bold text-white shadow-glow hover:scale-[1.04] transition-smooth"
             >
-              {cta("buyChallenge")} {account.accountSize}
+              {single ? cta("checkout") : `${cta("buyChallenge")} ${account.sizeLabel}`}
               <ArrowRight className="h-4 w-4" />
             </a>
           </div>

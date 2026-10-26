@@ -3,6 +3,7 @@
 import { useTranslations } from "next-intl";
 import { Link } from "@/i18n/navigation";
 import { ArrowRight } from "lucide-react";
+import CheckoutLink from "@/components/shared/CheckoutLink";
 
 export default function CTAFinal() {
   const t = useTranslations("ctafinal");
@@ -28,13 +29,13 @@ export default function CTAFinal() {
             </p>
 
             <div className="mt-10 flex flex-wrap justify-center gap-4">
-              <Link
-                href="/challenges"
+              <CheckoutLink
+                fallbackHref="/challenges"
+                fallbackLabel={cta("getFunded")}
                 className="inline-flex items-center gap-2 rounded-full bg-gradient-cta px-8 py-4 text-base font-bold text-white shadow-glow hover:scale-105 transition-smooth"
               >
-                {cta("getFunded")}
                 <ArrowRight className="h-4 w-4" />
-              </Link>
+              </CheckoutLink>
               <Link
                 href="/how-it-works"
                 className="inline-flex items-center gap-2 rounded-full border border-border bg-card/40 backdrop-blur px-8 py-4 text-base font-semibold text-foreground hover:border-accent/40 transition-smooth"

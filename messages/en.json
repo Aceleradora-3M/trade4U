@@ -19,7 +19,8 @@
     "startChallenge": "See pricing",
     "contactUs": "Contact Support",
     "freeTrial": "Free trial",
-    "login": "Log in"
+    "login": "Log in",
+    "checkout": "Get my account"
   },
   "hero": {
     "platform": "Trading Platform Available",
@@ -35,7 +36,17 @@
     "f1": "90% profit split for the trader",
     "f2": "Payout requests processed within 24h of approval",
     "f3": "Futures trading with CME data",
-    "paramsTitle": "The rules you trade under"
+    "paramsTitle": "The rules you trade under",
+    "s1v": "90% / 10%",
+    "s2v": "$150K",
+    "s3v": "24h",
+    "s4v": "$149",
+    "p1": "Profit Target",
+    "p1v": "Per program",
+    "p2": "Max Drawdown",
+    "p2v": "Static / Trailing",
+    "p3": "Min Trading Days",
+    "p3v": "From 1 day"
   },
   "trustbar": {
     "eyebrow": "Recognized by the industry",
@@ -231,7 +242,9 @@
     "minProfitDays": "Min Profitable Days",
     "minDailyProfit": "Min Daily Profit",
     "maxLoss": "Max Loss",
-    "days": "{count, plural, =1 {# day} other {# days}}"
+    "days": "{count, plural, =1 {# day} other {# days}}",
+    "release": "Account release",
+    "access": "Access"
   },
   "footer": {
     "tagline": "Simulated CME futures evaluations.",
@@ -499,7 +512,11 @@
     "trailing": "RT (Trailing)",
     "none": "None",
     "oneTimeFee": "One-time fee",
-    "noMinDays": "No minimum"
+    "noMinDays": "No minimum",
+    "instantNoEval": "Instant, no evaluation",
+    "login10": "Login within 10 min",
+    "upTo90": "Up to 90%",
+    "yourSize": "Your choice"
   },
   "disclosure": {
     "aboveFold": "Trade4U provides simulated trading evaluations. Trading futures involves substantial risk of loss and is not suitable for every investor. Simulated results do not represent actual trading. Past performance is not indicative of future results."

@@ -27,13 +27,14 @@ export function trackPageView() {
 export function trackStartChallenge(
   challengeType: string,
   size: string,
-  price: string
+  price: string,
+  currency = "USD"
 ) {
   const payload = {
     content_name: `${challengeType} - ${size}`,
     content_category: "Challenge",
     value: parseFloat(price.replace(/[^0-9.]/g, "")),
-    currency: "USD",
+    currency,
   };
 
   fbq("track", "InitiateCheckout", payload);

@@ -14,28 +14,39 @@
     "viewChallenges": "Ver todos os programas",
     "learnMore": "Saiba Mais",
     "buyChallenge": "Iniciar avaliação —",
-    "startToday": "Comece sua avaliação",
-    "startTodaySub": "Opere uma conta simulada de até $150.000 sob regras publicadas na íntegra, e fique com até 90% dos lucros simulados.",
+    "startToday": "Comece hoje",
+    "startTodaySub": "Pague R$ 389 no Pix e opere uma conta simulada de R$ 125 mil na bolsa americana. Sem prova.",
     "startChallenge": "Ver preços",
     "contactUs": "Contatar Suporte",
     "freeTrial": "Teste Grátis",
-    "login": "Entrar"
+    "login": "Entrar",
+    "checkout": "Quero minha conta"
   },
   "hero": {
     "platform": "Plataforma de Trading Disponível",
-    "badge": "Avaliações de trading simulado de futuros CME",
-    "titleA": "Cada regra ",
-    "titleB": "publicada",
-    "titleC": "antes do pagamento. Futuros CME, até $150 mil simulados.",
-    "sub": "Uma taxa. O regulamento inteiro é público antes de você começar. Cumpriu, fica com até 90% dos lucros simulados.",
-    "s1": "Trader / Trade4U",
-    "s2": "Maior conta simulada",
-    "s3": "Payout após aprovação",
-    "s4": "One-Day, entrada",
+    "badge": "Sem prova · Paga e saca no Pix",
+    "titleA": "Opere R$ 125 mil na bolsa americana.",
+    "titleB": "Sem depositar nada.",
+    "titleC": "",
+    "sub": "Você paga uma taxa única e recebe uma conta de R$ 125 mil para operar. Seguiu as regras, fica com até 90% do resultado, pago no seu Pix.",
+    "s1": "paga uma vez só",
+    "s2": "de conta pra operar",
+    "s3": "do resultado é seu",
+    "s4": "pra pagar e pra sacar",
     "f1": "90% de divisão de lucros para o trader",
     "f2": "Pagamentos processados em até 24h após aprovação",
     "f3": "Trading de futuros com dados CME",
-    "paramsTitle": "As regras que você opera"
+    "paramsTitle": "Sua conta",
+    "s1v": "R$ 389",
+    "s2v": "R$ 125 mil",
+    "s3v": "Até 90%",
+    "s4v": "Pix",
+    "p1": "Você pagou",
+    "p1v": "R$ 389, uma vez",
+    "p2": "Onde opera",
+    "p2v": "Bolsa americana",
+    "p3": "Saque",
+    "p3v": "No seu Pix"
   },
   "trustbar": {
     "eyebrow": "Reconhecidos pela indústria",
@@ -52,24 +63,24 @@
     "instruments": "Instrumentos Disponíveis"
   },
   "conditions": {
-    "eyebrow": "CONDIÇÕES DE TRADING",
-    "title": "Nada aqui muda depois que você paga",
-    "sub": "O regulamento completo de cada programa está publicado. Leia antes de decidir.",
-    "target": "Meta de Lucro",
-    "daily": "Drawdown Diário",
-    "max": "Drawdown Máximo",
-    "leverage": "Alavancagem",
-    "minDays": "Dias Mín. de Trading",
-    "news": "Trading em Notícias",
-    "weekend": "Posições no Fim de Semana",
+    "eyebrow": "REGRAS E SAQUE",
+    "title": "Sem letra miúda. São só 3 regras.",
+    "sub": "Notícias dos EUA, limite de perda e melhor dia. Quebrou alguma, a conta é encerrada. Respeitou as três, pode sacar.",
+    "target": "Do resultado",
+    "daily": "Limite de perda",
+    "max": "Melhor dia",
+    "leverage": "Liberação",
+    "minDays": "Para sacar",
+    "news": "Notícias dos EUA",
+    "weekend": "Primeiro saque",
     "allowed": "Permitido",
-    "targetVal": "Por programa",
-    "dailyVal": "Fim do dia",
-    "maxVal": "Estático / Trailing",
-    "leverageVal": "Micro 10 / Mini 1",
-    "minDaysVal": "A partir de 1 dia",
-    "newsVal": "Restrito",
-    "weekendVal": "Permitido"
+    "targetVal": "Até 90% é seu",
+    "dailyVal": "Está no regulamento",
+    "maxVal": "Até 30% do total",
+    "leverageVal": "Na hora, sem prova",
+    "minDaysVal": "5 dias de R$ 1.000+",
+    "newsVal": "Sem operar ±5 min",
+    "weekendVal": "7 dias após a 1ª operação"
   },
   "platform": {
     "eyebrow": "PLATAFORMA BLACKARROW",
@@ -113,7 +124,7 @@
     }
   },
   "promo": {
-    "welcome": "Avaliação de $25K — $99, preço cheio $165."
+    "welcome": "Pague R$ 389 no Pix e opere uma conta de R$ 125 mil na bolsa americana."
   },
   "section": {
     "challenges": {
@@ -168,8 +179,8 @@
       }
     },
     "faq": {
-      "title": "Antes de decidir",
-      "sub": "As respostas que a maioria dos traders quer antes de pagar.",
+      "title": "O que todo mundo pergunta",
+      "sub": "Respostas curtas, antes de você pagar.",
       "viewAll": "Ver todas as perguntas"
     }
   },
@@ -191,7 +202,7 @@
       "tagline": "Sem avaliação. Opere uma conta simulada desde o primeiro dia."
     },
     "instantFunding": {
-      "name": "Instant Funding",
+      "name": "Conta sem prova",
       "tagline": "Sem fase de desafio. Opere uma conta simulada desde o primeiro dia."
     },
     "freedom": {
@@ -231,17 +242,19 @@
     "minProfitDays": "Dias Lucrativos Mínimos",
     "minDailyProfit": "Lucro Mínimo Diário",
     "maxLoss": "Perda Máxima",
-    "days": "{count, plural, =1 {# dia} other {# dias}}"
+    "days": "{count, plural, =1 {# dia} other {# dias}}",
+    "release": "Liberação",
+    "access": "Acesso"
   },
   "footer": {
-    "tagline": "Avaliações de trading simulado de futuros CME.",
+    "tagline": "Contas simuladas na bolsa americana, com preço ao vivo.",
     "product": "Produto",
     "company": "Empresa",
     "legal": "Legal",
     "terms": "Termos",
     "privacy": "Privacidade",
     "risk": "Divulgação de Risco",
-    "disclaimer": "Operar futuros envolve risco substancial e não é adequado para todos os investidores. O desempenho passado não garante resultados futuros. A Trade4U oferece avaliações de trading simulado.",
+    "disclaimer": "As contas são simuladas. A conta de R$ 125 mil equivale a US$ 25 mil; os valores em reais usam o dólar a R$ 5,00 e podem variar com o câmbio. Operar na bolsa envolve risco e pode não ser adequado para todos. Resultado passado não garante resultado futuro.",
     "rights": "Todos os direitos reservados.",
     "restricted": "Países Restritos",
     "entityHeading": "Entidade legal",
@@ -272,18 +285,34 @@
     "toast": "Obrigado! Responderemos em menos de 24 horas."
   },
   "faq": {
-    "q1": "Em quais plataformas posso operar?",
-    "a1": "Você opera na BlackArrow, a plataforma oficial dos desafios da Trade4U, com data feeds CME em tempo real.",
-    "q2": "Como funcionam os pagamentos?",
-    "a2": "A solicitação pode ser feita após 5 dias lucrativos com lucro mínimo diário de $200 e respeitando a regra de consistência de 30%. Após aprovação, o processamento ocorre em até 24 horas.",
-    "q3": "Preciso de stop-loss?",
-    "a3": "O stop-loss não é obrigatório (recomendado no Desafio One-Day).",
-    "q4": "O que acontece se eu operar durante notícias?",
-    "a4": "Operar 5 minutos antes/depois de notícias de alto impacto (FOMC, NFP, CPI, GDP) resulta em fechamento da conta.",
-    "q5": "Posso manter posições overnight?",
-    "a5": "As regras de overnight dependem do programa. Consulte cada página de challenge.",
-    "q6": "O que é a regra de consistência?",
-    "a6": "Limita quanto um único dia ou trade pode contribuir para o total dos seus lucros, incentivando um trading sustentável.",
+    "q1": "Isso é dinheiro de verdade?",
+    "a1": "A conta é simulada, mas o saque é de verdade: cai em reais no seu Pix.",
+    "q2": "Posso perder mais do que paguei?",
+    "a2": "Não. Você não coloca dinheiro na corretora. O máximo que você gasta são os R$ 389.",
+    "q3": "Preciso saber operar?",
+    "a3": "Precisa entender o básico de compra e venda na bolsa. Se você nunca operou, vale aprender antes, porque quebrar uma regra encerra a conta.",
+    "q4": "Já opero mini índice aqui. Muda muito?",
+    "a4": "Não. A lógica é a mesma: gráfico, compra e venda. Muda o que você opera e o horário.",
+    "q5": "Preciso abrir conta lá fora?",
+    "a5": "Não. Nem conta no exterior, nem cartão internacional. Paga e saca no Pix.",
+    "q6": "Por que R$ 125 mil?",
+    "a6": "A conta é de US$ 25 mil, porque a bolsa é americana. Em reais, dá cerca de R$ 125 mil. Mas você não mexe com dólar: paga em reais e saca em reais, no Pix.",
+    "q7": "Tem prova ou desafio?",
+    "a7": "Não. Pagou, a conta libera.",
+    "q8": "E se eu quebrar uma regra?",
+    "a8": "A conta é encerrada e você não saca. Se quiser, ativa outra.",
+    "q9": "Posso ter mais de uma conta?",
+    "a9": "Pode, até 20 ao mesmo tempo.",
+    "q10": "Dá pra operar à noite?",
+    "a10": "Dá. A bolsa americana funciona quase 24 horas, de domingo à noite até sexta. Dá pra operar depois do trabalho.",
+    "q11": "Quando posso sacar?",
+    "a11": "Depois de terminar pelo menos 5 dias no positivo, com R$ 1.000 ou mais de resultado em cada um, respeitando as 3 regras. O primeiro saque pode ser pedido 7 dias depois da sua primeira operação e cai no seu Pix em até 7 dias úteis.",
+    "q12": "O que acontece se eu operar na hora das notícias?",
+    "a12": "Algumas vezes por mês o governo americano anuncia juros, emprego, inflação e PIB, e a bolsa dispara para cima ou para baixo. Operar 5 minutos antes ou 5 minutos depois do anúncio encerra a conta. O dia e a hora saem com antecedência: no calendário econômico aparecem como FOMC, NFP, CPI e GDP.",
+    "q13": "Por que nenhum dia pode valer mais que 30%?",
+    "a13": "Nenhum dia sozinho pode valer mais que 30% do seu resultado total. A ideia é resultado constante, não um tiro de sorte.",
+    "q14": "Em qual plataforma eu opero?",
+    "a14": "Na BlackArrow, a plataforma oficial da Trade4U, com preços ao vivo da bolsa americana. Funciona no navegador, no computador e no celular.",
     "supportTitle": "Ainda tem dúvidas?",
     "supportBody": "Nossa equipe de suporte está disponível 24/7 para ajudá-lo."
   },
@@ -303,49 +332,49 @@
     }
   },
   "journey": {
-    "eyebrow": "SUA JORNADA",
-    "title": "Três fases. Sem surpresa.",
-    "sub": "Você opera uma conta simulada para demonstrar sua habilidade. Cumpriu os requisitos publicados, passa a ter direito a payout sobre os lucros simulados.",
+    "eyebrow": "COMO FUNCIONA",
+    "title": "Paga, opera, saca.",
+    "sub": "Sem prova: pagou, a conta já vem liberada. Seguiu as regras, saca no Pix.",
     "step": "Passo",
-    "phase1": "Fase de Avaliação",
-    "phase2": "Fase da Conta Simulada",
-    "phase3": "Pagamento",
+    "phase1": "Pagamento",
+    "phase2": "Acesso",
+    "phase3": "Saque",
     "s1": {
-      "title": "Passe na avaliação",
-      "body": "Atinja a meta de lucro sem estourar o drawdown diário nem o total. Os dois números estão publicados por programa."
+      "title": "Paga no Pix",
+      "body": "R$ 389, uma vez só. Sem mensalidade."
     },
     "s2": {
-      "title": "Opere a conta simulada",
-      "body": "Uma nova conta simulada, com direito a até 90% dos lucros simulados que ela gerar."
+      "title": "Recebe o acesso e opera",
+      "body": "O login chega no seu e-mail em até 10 minutos, com a conta já liberada. Opere na bolsa americana, pelo computador ou pelo celular."
     },
     "s3": {
-      "title": "Solicite seu pagamento",
-      "body": "A primeira solicitação pode ser feita 7 dias após sua primeira operação. Solicitações aprovadas são processadas em até 24 horas."
+      "title": "Saca no Pix",
+      "body": "Seguiu as regras, pede o saque. O primeiro pode ser pedido 7 dias depois da sua primeira operação e cai no seu Pix em até 7 dias úteis."
     },
-    "detailTitle": "Sua Jornada em Detalhes",
-    "rule1": "Sem Martingale",
-    "rule2": "Dias mínimos de operação",
-    "rule3": "Respeitar limites de drawdown"
+    "detailTitle": "Passo a passo",
+    "rule1": "Não operar na hora das notícias dos EUA",
+    "rule2": "Respeitar o limite de perda",
+    "rule3": "Nenhum dia acima de 30% do resultado"
   },
   "love": {
-    "eyebrow": "POR QUE A TRADE4U",
-    "title": "O que você recebe, dito sem rodeio",
-    "sub": "Sem promessa vaga. É exatamente isto que o programa inclui.",
+    "eyebrow": "ENTENDA",
+    "title": "Como assim, sem depositar?",
+    "sub": "Você recebe uma conta de R$ 125 mil para operar na bolsa americana. Não coloca dinheiro seu: paga só a taxa de R$ 389.",
     "experience": {
-      "title": "Só futuros",
-      "body": "Construída em torno de instrumentos de futuros CME, não adaptada de outro mercado."
+      "title": "Mesa proprietária",
+      "body": "A conta é simulada, mas os preços são de verdade: os mesmos da bolsa americana, ao vivo. Esse modelo já é comum aqui no Brasil."
     },
     "spreads": {
-      "title": "Conta simulada de até $150 mil",
-      "body": "Prove sua habilidade com tamanho, sem expor capital próprio ao mercado."
+      "title": "O máximo que você gasta é R$ 389",
+      "body": "Operando sozinho, você coloca seu dinheiro na corretora e um dia ruim leva o que colocou. Aqui você opera R$ 125 mil sem depositar nada."
     },
     "multiasset": {
-      "title": "Contratos Micro e Mini",
-      "body": "Ajuste o tamanho da posição ao seu risco, do Micro ao Mini."
+      "title": "Tudo da bolsa americana",
+      "body": "Nasdaq (NQ), S&P 500 (ES), Dow Jones (YM), Russell (RTY), petróleo (CL) e ouro (GC). Você escolhe o tamanho de cada operação."
     },
     "platforms": {
-      "title": "Plataformas profissionais",
-      "body": "As ferramentas de execução que trader de futuros já usa — sem gambiarra proprietária."
+      "title": "Pelo computador ou celular",
+      "body": "Você opera na BlackArrow, pelo navegador. A bolsa americana funciona quase 24 horas, de domingo à noite até sexta."
     },
     "support": {
       "title": "Suporte dedicado",
@@ -443,14 +472,14 @@
     }
   },
   "ctafinal": {
-    "eyebrow": "ANTES DE COMEÇAR",
-    "title": "Leia as regras. Depois decida.",
-    "sub": "O regulamento completo de cada programa é público — metas, drawdown, consistência, prazo de pagamento. Nada é revelado só depois que você paga."
+    "eyebrow": "SEM PROVA",
+    "title": "Paga hoje, opera hoje.",
+    "sub": "R$ 389 no Pix. Login em até 10 minutos. Sem prova."
   },
   "table": {
-    "eyebrow": "PREÇOS E CONTAS",
-    "title": "Uma taxa. Sem assinatura. Sem condição que aparece depois.",
-    "sub": "Cada parâmetro abaixo é o parâmetro que você opera. A taxa de avaliação é cobrada uma vez e não é reembolsável.",
+    "eyebrow": "OFERTA",
+    "title": "Tudo que vem por R$ 389",
+    "sub": "Uma conta de R$ 125 mil, liberada na hora. Paga uma vez no Pix, sem mensalidade.",
     "col": {
       "account": "Tamanho da conta",
       "price": "Preço",
@@ -459,17 +488,17 @@
       "maxDD": "Drawdown máximo"
     },
     "foot": {
-      "split": "Até 90% dos lucros simulados para o trader",
-      "platforms": "Futuros em plataformas profissionais"
+      "split": "Paga e saca no Pix, sem conta lá fora",
+      "platforms": "BlackArrow no navegador, computador ou celular"
     },
     "learnMore": "Ver o regulamento completo",
     "popular": "Popular",
     "challengeWord": "Desafio",
-    "accountWord": "Conta",
+    "accountWord": "Conta de",
     "challengeAccount": "CONTA SIMULADA",
     "from": "PREÇO CHEIO",
     "total": "Total",
-    "oneTimePayment": "Pagamento único",
+    "oneTimePayment": "no Pix · paga uma vez, sem mensalidade",
     "accountLabelOrder": "before"
   },
   "detail": {
@@ -488,7 +517,7 @@
     }
   },
   "perks": {
-    "payouts24h": "Solicitações aprovadas processadas em até 24h"
+    "payouts24h": "Saque no Pix em até 7 dias úteis"
   },
   "val": {
     "eod": "EOD",
@@ -499,10 +528,14 @@
     "trailing": "RT (Trailing)",
     "none": "Nenhuma",
     "oneTimeFee": "Pagamento único",
-    "noMinDays": "Sem mínimo"
+    "noMinDays": "Sem mínimo",
+    "instantNoEval": "Na hora, sem prova",
+    "login10": "Login em até 10 min",
+    "upTo90": "Até 90% é seu",
+    "yourSize": "Você escolhe"
   },
   "disclosure": {
-    "aboveFold": "A Trade4U oferece avaliações de trading simulado. Operar futuros envolve risco substancial de perda e não é adequado para todos os investidores. Resultados simulados não representam operações reais. Desempenho passado não garante resultados futuros."
+    "aboveFold": "A conta é simulada, com os preços ao vivo da bolsa americana. Operar na bolsa envolve risco e pode não ser adequado para todos. Resultado passado não garante resultado futuro."
   },
   "common": {
     "back": "Voltar",

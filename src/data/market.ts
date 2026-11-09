@@ -51,7 +51,7 @@ const INTERNATIONAL: Market = {
       size: "$25K",
       sizeLabel: "$25K",
       priceFrom: "$165",
-      price: "$99",
+      price: "$65",
       currency: "USD",
       buyUrl: "https://pay.hotmart.com/H106010807E",
       rows: [

@@ -1,9 +1,9 @@
 "use client";
 
 import type { ReactNode } from "react";
-import { useLocale, useTranslations } from "next-intl";
+import { useTranslations } from "next-intl";
 import { Link } from "@/i18n/navigation";
-import { getDirectOffer } from "@/data/market";
+import { useDirectOffer } from "@/components/shared/BrlPriceProvider";
 import { trackStartChallenge } from "@/lib/pixel";
 
 interface CheckoutLinkProps {
@@ -28,9 +28,8 @@ export default function CheckoutLink({
   onClick,
   children,
 }: CheckoutLinkProps) {
-  const locale = useLocale();
   const cta = useTranslations("cta");
-  const offer = getDirectOffer(locale);
+  const offer = useDirectOffer();
 
   if (!offer) {
     return (

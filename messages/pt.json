@@ -15,7 +15,7 @@
     "learnMore": "Saiba Mais",
     "buyChallenge": "Iniciar avaliação —",
     "startToday": "Comece hoje",
-    "startTodaySub": "Pague R$ 389 no Pix e opere uma conta simulada de R$ 125 mil na bolsa americana. Sem prova.",
+    "startTodaySub": "Pague {precoPix} no Pix e opere uma conta simulada de R$ 125 mil na bolsa americana. Sem prova.",
     "startChallenge": "Ver preços",
     "contactUs": "Contatar Suporte",
     "freeTrial": "Teste Grátis",
@@ -37,12 +37,12 @@
     "f2": "Pagamentos processados em até 24h após aprovação",
     "f3": "Trading de futuros com dados CME",
     "paramsTitle": "Sua conta",
-    "s1v": "R$ 389",
+    "s1v": "{precoPix}",
     "s2v": "R$ 125 mil",
     "s3v": "Até 90%",
     "s4v": "Pix",
     "p1": "Você pagou",
-    "p1v": "R$ 389, uma vez",
+    "p1v": "{precoPix}, uma vez",
     "p2": "Onde opera",
     "p2v": "Bolsa americana",
     "p3": "Saque",
@@ -124,7 +124,7 @@
     }
   },
   "promo": {
-    "welcome": "Pague R$ 389 no Pix e opere uma conta de R$ 125 mil na bolsa americana."
+    "welcome": "Pague {precoPix} no Pix e opere uma conta de R$ 125 mil na bolsa americana."
   },
   "section": {
     "challenges": {
@@ -288,7 +288,7 @@
     "q1": "Isso é dinheiro de verdade?",
     "a1": "A conta é simulada, mas o saque é de verdade: cai em reais no seu Pix.",
     "q2": "Posso perder mais do que paguei?",
-    "a2": "Não. Você não coloca dinheiro na corretora. O máximo que você gasta são os R$ 389.",
+    "a2": "Não. Você não coloca dinheiro na corretora. O máximo que você gasta são os {precoPix}.",
     "q3": "Preciso saber operar?",
     "a3": "Precisa entender o básico de compra e venda na bolsa. Se você nunca operou, vale aprender antes, porque quebrar uma regra encerra a conta.",
     "q4": "Já opero mini índice aqui. Muda muito?",
@@ -341,7 +341,7 @@
     "phase3": "Saque",
     "s1": {
       "title": "Paga no Pix",
-      "body": "R$ 389, uma vez só. Sem mensalidade."
+      "body": "{precoPix}, uma vez só. Sem mensalidade."
     },
     "s2": {
       "title": "Recebe o acesso e opera",
@@ -359,13 +359,13 @@
   "love": {
     "eyebrow": "ENTENDA",
     "title": "Como assim, sem depositar?",
-    "sub": "Você recebe uma conta de R$ 125 mil para operar na bolsa americana. Não coloca dinheiro seu: paga só a taxa de R$ 389.",
+    "sub": "Você recebe uma conta de R$ 125 mil para operar na bolsa americana. Não coloca dinheiro seu: paga só a taxa de {precoPix}.",
     "experience": {
       "title": "Mesa proprietária",
       "body": "A conta é simulada, mas os preços são de verdade: os mesmos da bolsa americana, ao vivo. Esse modelo já é comum aqui no Brasil."
     },
     "spreads": {
-      "title": "O máximo que você gasta é R$ 389",
+      "title": "O máximo que você gasta é {precoPix}",
       "body": "Operando sozinho, você coloca seu dinheiro na corretora e um dia ruim leva o que colocou. Aqui você opera R$ 125 mil sem depositar nada."
     },
     "multiasset": {
@@ -474,11 +474,11 @@
   "ctafinal": {
     "eyebrow": "SEM PROVA",
     "title": "Paga hoje, opera hoje.",
-    "sub": "R$ 389 no Pix. Login em até 10 minutos. Sem prova."
+    "sub": "{precoPix} no Pix. Login em até 10 minutos. Sem prova."
   },
   "table": {
     "eyebrow": "OFERTA",
-    "title": "Tudo que vem por R$ 389",
+    "title": "Tudo que vem por {precoPix}",
     "sub": "Uma conta de R$ 125 mil, liberada na hora. Paga uma vez no Pix, sem mensalidade.",
     "col": {
       "account": "Tamanho da conta",

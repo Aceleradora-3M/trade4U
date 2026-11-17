@@ -86,7 +86,8 @@ const INTERNATIONAL: Market = {
 };
 
 // Brazil sells a single account, priced in reais and paid by Pix. Same Hotmart
-// product as the international $25K.
+// product as the international $25K: `price` is only the fallback, the page
+// shows US$ 65 at the live USD/BRL rate (src/lib/brlPrice.ts, useMarket).
 const BRAZIL: Market = {
   offers: [
     {
@@ -117,13 +118,4 @@ const MARKETS: Record<string, Market> = {
 
 export function getMarket(locale: string): Market {
   return MARKETS[locale] ?? INTERNATIONAL;
-}
-
-/**
- * The offer every primary CTA checks out directly, when the locale sells only
- * one. Otherwise CTAs lead to the pricing section to pick an account.
- */
-export function getDirectOffer(locale: string): Offer | undefined {
-  const { offers } = getMarket(locale);
-  return offers.length === 1 ? offers[0] : undefined;
 }

@@ -1,9 +1,9 @@
 "use client";
 
 import { useState } from "react";
-import { useLocale, useTranslations } from "next-intl";
+import { useTranslations } from "next-intl";
 import { Link } from "@/i18n/navigation";
-import { getMarket } from "@/data/market";
+import { useMarket } from "@/components/shared/BrlPriceProvider";
 import { trackStartChallenge } from "@/lib/pixel";
 import { Info, Check, ArrowRight } from "lucide-react";
 
@@ -15,7 +15,7 @@ export default function ChallengeTable() {
   const perks = useTranslations("perks");
   const val = useTranslations("val");
 
-  const { offers, sellsPrograms } = getMarket(useLocale());
+  const { offers, sellsPrograms } = useMarket();
   const [activeAccount, setActiveAccount] = useState(0);
   const account = offers[activeAccount];
   const single = offers.length === 1;

@@ -9,6 +9,8 @@ import Header from "@/components/layout/Header";
 import Footer from "@/components/layout/Footer";
 import LanguageSwitcher from "@/components/layout/LanguageSwitcher";
 import MetaPixel from "@/components/tracking/MetaPixel";
+import { BrlPriceProvider } from "@/components/shared/BrlPriceProvider";
+import { formatBrl, getBrlPrice } from "@/lib/brlPrice";
 import "../globals.css";
 
 const inter = Inter({
@@ -43,11 +45,14 @@ export async function generateMetadata({
   const descriptions: Record<string, string> = {
     en: "Simulated futures evaluations on CME instruments. Simulated accounts from $25K to $150K, up to 90% profit split. Evaluation fee applies. Trading involves substantial risk.",
     es: "Evaluaciones de trading simulado en futuros CME. Cuentas simuladas de $25K a $150K, reparto de beneficios de hasta 90%. Se aplica cuota de evaluación. Operar futuros implica un riesgo sustancial.",
-    pt: "Pague R$ 389 no Pix, uma vez só, e opere uma conta simulada de R$ 125 mil na bolsa americana. Sem prova. Até 90% do resultado, com saque no Pix. Operar na bolsa envolve risco.",
+    pt: "Pague {precoPix} no Pix, uma vez só, e opere uma conta simulada de R$ 125 mil na bolsa americana. Sem prova. Até 90% do resultado, com saque no Pix. Operar na bolsa envolve risco.",
   };
 
   const title = titles[locale] || titles.en;
-  const description = descriptions[locale] || descriptions.en;
+  let description = descriptions[locale] || descriptions.en;
+  if (locale === "pt") {
+    description = description.replace("{precoPix}", formatBrl(await getBrlPrice()));
+  }
 
   return {
     metadataBase: new URL(SITE_URL),
@@ -90,6 +95,7 @@ export default async function LocaleLayout({
 
   setRequestLocale(locale);
   const messages = await getMessages();
+  const brlPrice = locale === "pt" ? formatBrl(await getBrlPrice()) : null;
 
   return (
     <html
@@ -106,11 +112,13 @@ export default async function LocaleLayout({
       </head>
       <body className="min-h-screen bg-background text-foreground font-sans">
         <NextIntlClientProvider messages={messages}>
-          <MetaPixel />
-          <Header />
-          <main>{children}</main>
-          <Footer />
-          <LanguageSwitcher />
+          <BrlPriceProvider price={brlPrice}>
+            <MetaPixel />
+            <Header />
+            <main>{children}</main>
+            <Footer />
+            <LanguageSwitcher />
+          </BrlPriceProvider>
         </NextIntlClientProvider>
       </body>
     </html>

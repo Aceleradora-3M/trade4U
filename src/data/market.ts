@@ -51,7 +51,7 @@ const INTERNATIONAL: Market = {
       size: "$25K",
       sizeLabel: "$25K",
       priceFrom: "$165",
-      price: "$65",
+      price: "$60",
       currency: "USD",
       buyUrl: "https://pay.hotmart.com/H106010807E",
       rows: [
@@ -87,7 +87,7 @@ const INTERNATIONAL: Market = {
 
 // Brazil sells a single account, priced in reais and paid by Pix. Same Hotmart
 // product as the international $25K: `price` is only the fallback, the page
-// shows US$ 65 at the live USD/BRL rate (src/lib/brlPrice.ts, useMarket).
+// shows US$ 60 at the live USD/BRL rate (src/lib/brlPrice.ts, useMarket).
 const BRAZIL: Market = {
   offers: [
     {
@@ -95,7 +95,7 @@ const BRAZIL: Market = {
       size: "$25K",
       sizeLabel: "R$ 125 mil",
       priceFrom: "R$ 688",
-      price: "R$ 389",
+      price: "R$ 382",
       currency: "BRL",
       buyUrl: "https://pay.hotmart.com/H106010807E",
       rows: [

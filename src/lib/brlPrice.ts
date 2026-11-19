@@ -4,7 +4,7 @@
  * dollar price converted at the current USD/BRL rate instead of a fixed amount
  * that falls behind when the dollar rises.
  */
-export const BRAZIL_PRICE_USD = 65;
+export const BRAZIL_PRICE_USD = 60;
 
 /** Placeholder written in `messages/pt.json` wherever the price appears. */
 export const BRL_PRICE_TOKEN = "{precoPix}";

@@ -53,7 +53,7 @@ const INTERNATIONAL: Market = {
       priceFrom: "$165",
       price: "$60",
       currency: "USD",
-      buyUrl: "https://pay.hotmart.com/H106010807E",
+      buyUrl: "https://pay.hotmart.com/H106010807E?checkoutMode=10",
       rows: [
         { icon: Wallet, ruleKey: "activation", valueKey: "oneTimeFee" },
         { icon: BarChart3, ruleKey: "minProfitDays", value: "5" },
@@ -97,7 +97,7 @@ const BRAZIL: Market = {
       priceFrom: "R$ 688",
       price: "R$ 382",
       currency: "BRL",
-      buyUrl: "https://pay.hotmart.com/H106010807E",
+      buyUrl: "https://pay.hotmart.com/H106010807E?checkoutMode=10",
       rows: [
         { icon: Wallet, ruleKey: "activation", valueKey: "oneTimeFee" },
         { icon: Zap, ruleKey: "release", valueKey: "instantNoEval" },

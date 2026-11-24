@@ -5,9 +5,6 @@ import { notFound } from "next/navigation";
 import { Inter, Work_Sans } from "next/font/google";
 import { routing } from "@/i18n/routing";
 import { SITE_URL } from "@/lib/site";
-import Header from "@/components/layout/Header";
-import Footer from "@/components/layout/Footer";
-import LanguageSwitcher from "@/components/layout/LanguageSwitcher";
 import MetaPixel from "@/components/tracking/MetaPixel";
 import { BrlPriceProvider } from "@/components/shared/BrlPriceProvider";
 import { formatBrl, getBrlPrice } from "@/lib/brlPrice";
@@ -114,10 +111,7 @@ export default async function LocaleLayout({
         <NextIntlClientProvider messages={messages}>
           <BrlPriceProvider price={brlPrice}>
             <MetaPixel />
-            <Header />
-            <main>{children}</main>
-            <Footer />
-            <LanguageSwitcher />
+            {children}
           </BrlPriceProvider>
         </NextIntlClientProvider>
       </body>

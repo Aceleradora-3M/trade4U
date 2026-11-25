@@ -6,6 +6,14 @@ import { ArrowRight, Volume2 } from "lucide-react";
 import { Link } from "@/i18n/navigation";
 import CheckoutLink from "@/components/shared/CheckoutLink";
 import { VSL, isVideoFile } from "@/data/vsl";
+import ChallengeTable from "@/components/home/ChallengeTable";
+import TradingConditions from "@/components/home/TradingConditions";
+import PlatformShowcase from "@/components/home/PlatformShowcase";
+import HowItWorks from "@/components/home/HowItWorks";
+import WhyTradersLove from "@/components/home/WhyTradersLove";
+import HomeFAQ from "@/components/home/HomeFAQ";
+import CTAFinal from "@/components/home/CTAFinal";
+import Footer from "@/components/layout/Footer";
 
 export default function VslClient() {
   const t = useTranslations("hero");
@@ -38,7 +46,10 @@ export default function VslClient() {
   const titleC = t("titleC");
 
   return (
-    <main className="relative min-h-screen overflow-hidden bg-gradient-hero">
+    <main>
+      <section
+        className={`relative overflow-hidden bg-gradient-hero ${showCta ? "" : "min-h-screen"}`}
+      >
       <div className="absolute inset-0 bg-grid opacity-40 pointer-events-none" />
       <div className="absolute -top-40 left-1/4 h-[500px] w-[500px] rounded-full bg-accent/15 blur-[140px] pointer-events-none" />
 
@@ -112,15 +123,36 @@ export default function VslClient() {
           )}
         </div>
 
-        <p className="mt-10 max-w-2xl text-xs leading-relaxed text-muted-foreground">
-          {disclosure("aboveFold")}
-        </p>
-        <nav className="mt-4 flex flex-wrap justify-center gap-x-4 gap-y-1 text-xs text-muted-foreground">
-          <Link href="/terms" className="hover:text-accent transition-smooth">{footer("terms")}</Link>
-          <Link href="/privacy" className="hover:text-accent transition-smooth">{footer("privacy")}</Link>
-          <Link href="/risk-disclosure" className="hover:text-accent transition-smooth">{footer("risk")}</Link>
-        </nav>
+        {/* Until the rest of the page is revealed, the legal notice sits here;
+            afterwards the full site footer takes over. */}
+        {!showCta && (
+          <>
+            <p className="mt-10 max-w-2xl text-xs leading-relaxed text-muted-foreground">
+              {disclosure("aboveFold")}
+            </p>
+            <nav className="mt-4 flex flex-wrap justify-center gap-x-4 gap-y-1 text-xs text-muted-foreground">
+              <Link href="/terms" className="hover:text-accent transition-smooth">{footer("terms")}</Link>
+              <Link href="/privacy" className="hover:text-accent transition-smooth">{footer("privacy")}</Link>
+              <Link href="/risk-disclosure" className="hover:text-accent transition-smooth">{footer("risk")}</Link>
+            </nav>
+          </>
+        )}
       </div>
+      </section>
+
+      {/* The home page sections below the hero appear together with the CTA. */}
+      {showCta && (
+        <div className="relative animate-fade-up">
+          <ChallengeTable />
+          <TradingConditions />
+          <PlatformShowcase />
+          <HowItWorks />
+          <WhyTradersLove />
+          <HomeFAQ />
+          <CTAFinal />
+          <Footer />
+        </div>
+      )}
     </main>
   );
 }

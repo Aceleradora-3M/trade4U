@@ -47,6 +47,16 @@ export function trackStartChallenge(
   }
 }
 
+/** Visitor turned the VSL sound on, which restarts it from the beginning. */
+export function trackVslPlay() {
+  fbq("trackCustom", "vsl_play");
+}
+
+/** Visitor has watched `percent` of the VSL with sound on (vsl_25, vsl_50, ...). */
+export function trackVslProgress(percent: number) {
+  fbq("trackCustom", `vsl_${percent}`, { percent });
+}
+
 export function trackContact() {
   fbq("track", "Contact");
 }

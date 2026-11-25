@@ -2,7 +2,8 @@
 
 import { useEffect, useRef, useState } from "react";
 import { useTranslations } from "next-intl";
-import { ArrowRight, Volume2 } from "lucide-react";
+import { ArrowRight, Play, Volume2 } from "lucide-react";
+import { trackVslPlay, trackVslProgress } from "@/lib/pixel";
 import { Link } from "@/i18n/navigation";
 import CheckoutLink from "@/components/shared/CheckoutLink";
 import { VSL, isVideoFile } from "@/data/vsl";
@@ -15,6 +16,11 @@ import HomeFAQ from "@/components/home/HomeFAQ";
 import CTAFinal from "@/components/home/CTAFinal";
 import Footer from "@/components/layout/Footer";
 
+/** Percentages of the video watched that each fire a Meta Pixel event. */
+const VSL_MILESTONES = [25, 50, 75, 100];
+/** Largest forward step (seconds) between two timeupdates that still counts as playback. */
+const MAX_FORWARD_STEP = 1.5;
+
 export default function VslClient() {
   const t = useTranslations("hero");
   const cta = useTranslations("cta");
@@ -22,7 +28,11 @@ export default function VslClient() {
   const footer = useTranslations("footer");
   const [showCta, setShowCta] = useState(false);
   const [muted, setMuted] = useState(true);
+  const [paused, setPaused] = useState(false);
   const videoRef = useRef<HTMLVideoElement>(null);
+  /** Furthest point reached by playing, in seconds. */
+  const maxWatched = useRef(0);
+  const firedMilestones = useRef(new Set<number>());
   const isFile = isVideoFile(VSL.src);
 
   // Embeds can't report playback time, so they fall back to a page timer.
@@ -39,8 +49,48 @@ export default function VslClient() {
     if (!video) return;
     video.muted = false;
     video.currentTime = 0;
+    maxWatched.current = 0;
     void video.play();
     setMuted(false);
+    trackVslPlay();
+  }
+
+  // There is no seek bar, so tapping the video only pauses and resumes it.
+  function togglePlay() {
+    const video = videoRef.current;
+    if (!video) return;
+    if (video.paused) void video.play();
+    else video.pause();
+  }
+
+  function handleTimeUpdate(video: HTMLVideoElement) {
+    const time = video.currentTime;
+    if (time >= VSL.ctaDelaySeconds) setShowCta(true);
+    // Only time actually played counts; a jump ahead is undone in handleSeeking.
+    if (time <= maxWatched.current + MAX_FORWARD_STEP) {
+      maxWatched.current = Math.max(maxWatched.current, time);
+    }
+    if (muted || !video.duration) return;
+    const percent = (maxWatched.current / video.duration) * 100;
+    for (const milestone of VSL_MILESTONES) {
+      if (percent >= milestone && !firedMilestones.current.has(milestone)) {
+        firedMilestones.current.add(milestone);
+        trackVslProgress(milestone);
+      }
+    }
+  }
+
+  // Blocks skipping ahead by other means (keyboard, media keys, picture-in-picture).
+  function handleSeeking(video: HTMLVideoElement) {
+    if (video.currentTime > maxWatched.current + MAX_FORWARD_STEP) {
+      video.currentTime = maxWatched.current;
+    }
+  }
+
+  function handleEnded() {
+    if (muted || firedMilestones.current.has(100)) return;
+    firedMilestones.current.add(100);
+    trackVslProgress(100);
   }
 
   const titleC = t("titleC");
@@ -80,13 +130,31 @@ export default function VslClient() {
                 autoPlay
                 muted
                 playsInline
-                controls={!muted}
+                disablePictureInPicture
+                disableRemotePlayback
                 preload="auto"
-                onTimeUpdate={(e) => {
-                  if (e.currentTarget.currentTime >= VSL.ctaDelaySeconds) setShowCta(true);
-                }}
+                onTimeUpdate={(e) => handleTimeUpdate(e.currentTarget)}
+                onSeeking={(e) => handleSeeking(e.currentTarget)}
+                onPlay={() => setPaused(false)}
+                onPause={() => setPaused(true)}
+                onEnded={handleEnded}
+                onContextMenu={(e) => e.preventDefault()}
                 className="h-full w-full object-cover"
               />
+              {!muted && (
+                <button
+                  type="button"
+                  onClick={togglePlay}
+                  aria-label={paused ? "Continuar vídeo" : "Pausar vídeo"}
+                  className={`absolute inset-0 flex items-center justify-center ${paused ? "bg-black/30" : ""}`}
+                >
+                  {paused && (
+                    <span className="flex h-16 w-16 items-center justify-center rounded-full bg-gradient-cta text-white shadow-glow">
+                      <Play className="h-7 w-7 fill-current" />
+                    </span>
+                  )}
+                </button>
+              )}
               {muted && (
                 <button
                   type="button"

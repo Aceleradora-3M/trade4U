@@ -19,8 +19,6 @@ export default function Hero() {
     value: t(`p${n}v`),
   }));
 
-  const titleC = t("titleC");
-
   return (
     <section className="relative overflow-hidden bg-gradient-hero">
       {/* Background layers */}
@@ -40,14 +38,11 @@ export default function Hero() {
 
             {/* H1 */}
             <h1 className="font-display font-bold tracking-[-0.02em] leading-[1.05] text-[clamp(2.25rem,5vw,4rem)] animate-fade-up">
-              {t("titleA")}{" "}
-              <span className="text-gradient-accent font-semibold italic">{t("titleB")}</span>
-              {titleC && (
-                <>
-                  <br />
-                  <span className="font-light text-foreground/95">{titleC}</span>
-                </>
-              )}
+              {t.rich("headline", {
+                hl: (chunks) => (
+                  <span className="text-gradient-accent font-semibold italic">{chunks}</span>
+                ),
+              })}
             </h1>
 
             {/* Subtitle */}
